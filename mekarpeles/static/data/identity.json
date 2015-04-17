@@ -1,0 +1,52 @@
+{"uuid": "c582c1b9-5052-4bd5-aca0-0c1687e01475",
+ "name": "Michael E. Karpeles",
+ "nick": "Mek",
+ "dob": "1988-07-31",
+ "avatar": "http://i.imgur.com/9eY3OHa.jpg",
+ "keys": {      
+   "ssh": "/static/keys/id_rsa.pub",
+   "gpg": "/static/keys/mek.public.gpg-key"   
+ },
+ "anthropometry": {
+   "height": 173,
+   "weight": 143
+ },
+ "contact": {
+   "email": "michael.karpeles@gmail.com",
+   "phone": "+1 (415) 690-8033"
+ },
+ "ids": {
+   "orcid": "0000-0003-3054-6859"
+ },
+ "networks": {
+   "google": "michael.karpeles",
+   "github": "mekarpeles",
+   "facebook": "michael.karpeles",
+   "bitcoin": "1Mxy8K1FdfM9Cg1dP2yFNQTmyvsrqerga6",
+   "stackoverflow": "mekarpeles",
+   "linkedin": "mekarpeles",
+   "archive.org": "mek_",
+   "trello": "mek_",
+   "bitbucket": "__mek__",
+   "irc": "__mek__",
+   "quora": "Mek-Karpeles",
+   "angellist": "mek"
+ },
+ "appearance": {
+   "hair": "brown",
+   "eyes": "hazel",
+   "glasses": true
+ },
+ "genealogy": "/static/data/genealogy.ged",
+ "interests": {
+   "media": "/static/data/media.json"
+ },
+ "friends": "https://www.facebook.com/michael.karpeles/friends",
+ "organization": {
+   "targets": "http://bit.ly/1FEzKlH",
+   "tasks": "https://trello.com/b/X7t8WL2d/mekarpeles",
+   "calendar": "https://www.google.com/calendar/embed?src=michael.karpeles%40gmail.com&ctz=America/Los_Angeles",
+   "commonbook": "https://github.com/mekarpeles/commonbook/blob/master/common.org"
+ }
+}
+ 

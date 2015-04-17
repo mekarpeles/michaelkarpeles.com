@@ -1,0 +1,36 @@
+Build postgres sparse matrix of candidates and their voting history
+data available in bulk here: https://www.govtrack.us/developers/data
+Supervised/community/domain-expert approach toward classifying each "bill" (most expensive step time-wise)
+Simple algorithm (possibly a summed-weighted avg) to determine best candidate based on your (online-learning trained profile or anonymous 1-time) questionairre
+Basic website using python flask, node.js or some equivalent web-stack.
+support:
+Jan Paul, 
+Joe Polastre, <joe@polastre.com> Presidential Innovations Fellow
+William Marks <whhhmarks@gmail.com> Nethercutt Foundation (501c3)
+Alexis Rossi <alexis@archive.org>, Internet Archive
+David Yoon <dave.yoon@gmail.com>, FWD.us
+resources + other attemps
+data - http://projects.washingtonpost.com/congress/113/senate/members/
+paper - http://www.springer.com/us/book/9783319065502
+article - http://spectrum.ieee.org/tech-talk/computing/software/a-recommendation-engine-for-politics
+product - Versa tried to do this; ElectNext (defunct) https://versahq.com/ -- unfortunately got acquired by change.org                
+
+
+One small step (concept) towards informing our US voting system:
+problem: A significant inefficiency in the political arena is caused by requiring voters to compress the dimensionality of their entire belief system into a logistic classification of a single candidate. To exacerbate the problem, these voters' decisions are typically motivated (read: swayed) by the candidates' "pitch" and appeal, rather than empirical evidence of candidates' voting history on bills and the likes.
+solution: One solution to address this problem is a n (=10? needs to be A/B tested) question poll (possibly allow user to answer more, if desired) which presents the potential voter with questions relevant to their political stance/interests (on economics, education, military, human rights). Simple user-item filtering is done to surface the candidates which empirically best align with your beliefs.
+challenges: A candidate may align well with your beliefs but be sleazy/unethical (have irreconcilable differences which need to be addressed by the system) . People may feel disproportionately strong towards certain (deal-breaker) policies. And more problems. And more problems. The intent of the concept is to aim for 80/20 and increase the impact of each vote (perhaps achieve more votes / representation).
+Implementation:
+1. Build postgres sparse matrix of candidates and their voting history
+data available in bulk here: https://www.govtrack.us/developers/data
+2. Supervised/community/domain-expert labeling/classifying of each "bill" (most expensive step time-wise)
+3. Simple algorithm (possibly a summed-weighted avg) to determine best candidate based on voters' (online-learning on trained profile, or anonymous 1-time answers to) questionnaire
+4. Basic website using python flask, RoR, node.js or some equivalent web-stack.
+Optimistic Next Steps:
+* Using bitcoin protocol to allow people to vote/publish (even if it's not an official system) using these recommendations.
+Other Attempts (aka, it's not original/novel):
+This was attempted once before by ElectNext aka VersaHQ (https://versahq.com (defunct)) which went and got acquired by Change.org. 
+* data - http://projects.washingtonpost.com/congre…/…/senate/members/
+* paper - http://www.springer.com/us/book/9783319065502
+* article - http://spectrum.ieee.org/…/a-recommendation-engine-for-poli…
+cc: Jan Paul Posma, Justin E. Lane, Joe Polastre, Sarah Allen, David Yoon, Ozzie Gooen, Lior Abraham

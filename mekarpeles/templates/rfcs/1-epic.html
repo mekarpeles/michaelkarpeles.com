@@ -1,0 +1,45 @@
+<pre>
+
+An Ecosystem for Literate Research
+Request for Comment: ?
+
+Status of this Memo
+
+   This memo provides information for the Internet community.  It does
+   not specify an Internet standard of any kind.  Distribution of this
+   memo is unlimited.Status of this Memo
+
+
+Abstract
+
+The idea of implementing org-mode (as a rending environment) as
+opposed to html and allowing web "resources" to execute each other as
+modules. I am imagining a "living" (interactive, evolving), connected
+web ecosystem for literate, reproducible research/programming which
+allows native programmatic interop/intercommunication between
+resources, modular and reusable components.
+
+For example, imagine being in a (webpage) resource and clicking a
+block to execute its underlying routine / dependencies (run within the
+context of your client or perhaps the resource optoinally
+provides/points to a VM for this purpose). Trying an alternative
+approach to an existing "research paper" could be as simple as forking
+or linking to their "resource" (perhaps each resource has a git repo
+associated with it at some special endpoint determined by an RFC) and
+inheriting the programmatic qualities of their org-mode document for
+free.
+
+The easiest solution (which would be helpful all to... maybe 100
+people) is an emacs org-browser mode (which uses org-mode but allows
+navigation of or between networked org-mode documents) and uses the
+native OS as the environment (as opposed to browser client) for
+computation (which makes more sense).  The whole thing is fuzzy and
+just proof of concept, not genuinely a recommendation of a specific
+implementation.
+
+
+Ahmed El-Hassany This idea reminds me of the work of Richard Taylor's
+group at UC Irvine: here is one paper and you can easily track the
+others on their website
+http://dl.acm.org/citation.cfm?id=2048147.2048202&coll=DL&dl=GUIDE&hc_location=ufi
+</pre>

@@ -1,0 +1,23 @@
+{"uuid": "c582c1b9-5052-4bd5-aca0-0c1687e01475",
+ "name": "Michael E. Karpeles",
+ "dob": "1988-07-31",
+ "avatar": "https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/8/005/079/105/37edd2b.jpg",
+ "keys": {      
+   "ssh": "/static/keys/id_rsa.pub",
+   "gpg": "/static/keys/<michael.karpeles@gmail.com>.public.gpg-key"
+ },
+ "anthropometry": {
+   "height": 173,
+   "weight": 143
+ },
+ "contact": {
+   "email": "michael.karpeles@gmail.com",
+   "phone": "+1 (415) 690-8033",
+ },
+ "appearance": {
+   "hair": "brown",
+   "eyes": "hazel",
+   "glasses": true
+ }
+}
+ 
