@@ -1,0 +1,58 @@
+<!doctype html>
+<html class="no-js" lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Browser 2.0</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="/static/styles/browser.css"/>
+    <link rel="icon" type="image/png" href="/static/imgs/favicon.ico"/>
+  </head>
+  <body>
+    <!--[if lt IE 8]>
+        <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+    <div id="browser">
+      <header>
+        <div id="collections-bar">
+          <ul id="collections">
+            <li class="selected">
+              <a href="">Active Collection</a>
+              <span class="bubble hotkey hotkey-prefix">a</span>
+              <span class="bubble count">1</span>
+            </li>
+            <!--
+                <li>
+                  <a href="#">2nd Collection</a>
+                  <span class="bubble hotkey hotkey-prefix">b</span>
+                  <span class="bubble count">2</span>
+                </li>
+                -->
+          </ul>
+        </div>
+        <div id="resources-bar">
+          <ul id="resources">
+            <li>
+              <a href="#">placeholder</a>
+              <span class="bubble hotkey hotkey-suffix">1</span>
+            </li>
+          </ul>
+        </div>
+      </header>
+
+      <div id="canvas"></div>
+
+      <footer>
+        <div id="cli">
+          <input id="omnibox" placeholder="M-x" type="text"/>
+        </div>
+
+        <div id="windowManager">
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="static/scripts/browser.js"></script>
+</div>

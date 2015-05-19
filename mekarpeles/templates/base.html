@@ -4,58 +4,19 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>app.py</title>
+        <title>Mek's Commonbook</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <script type="text/javascript" src="/static/build/js/app.js"></script>
         <link rel="stylesheet" type="text/css" href="/static/styles/style.css"/>
+        <link rel="icon" type="image/png" href="/static/imgs/favicon.ico"/>
     </head>
     <body>
         <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
-        <h1>Michael E. Karpeles</h1>
-
-        {% include "toc.html" %}
-        <ol class="sections">
-        {% include "identity.html" %}
-        {% include "qs/index.html" %}
-        {% include "projects/index.html" %}
-        {% include "rfcs/index.html" %}
-        {% include "essays/index.html" %}
-        {% include "experiments/index.html" %}
-        {% include "apis/index.html" %}
-        </ol>
-        <!--
-        <div class="mission">
-          <h2>Mission</h2>
-          bret victor inventing on principle
-        </div>
-
-        <div class="mission">
-          <h2>Inspirations</h2>
-          <ol>
-            <li>
-              <a href="http://intuitionanalytics.com/other/knowledgeDatabase/">
-                Santiago Ortiz
-              </a>
-            </li>
-            <li>
-              <a href="http://www.math.niu.edu/~rusin/known-math/">
-                Dave Rusin
-              </a>
-            </li>
-          </ol>
-        </div>
-        <div class="groups">
-          <h2>Groups</h2>
-          <ol>
-            <li><a href="/groups/hqsf2"></a></li>
-        </div>
-
-        - mission, philosophy & principles
-        -->
+        {% include template %}
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>

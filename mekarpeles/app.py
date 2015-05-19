@@ -17,9 +17,8 @@ from configs import options
 
 urls = (
     '/api/v1/<resource>', views.Api,
-    '/<section>/<path:resource>', views.Section,
-    '/<section>', views.Section,
-    '/<path:uri>', views.Base,
+    '/<path:resource>', views.Section,
+    '/<path:uri>', views.Section,
     '/', views.Base
     )
 app = router(Flask(__name__), urls)

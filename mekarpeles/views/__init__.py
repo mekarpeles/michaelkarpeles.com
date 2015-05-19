@@ -18,22 +18,22 @@ from configs import approot
 
 class Base(MethodView):
     def get(self, uri=None):
-        return render_template('base.html')
+        return render_template('base.html', template='index.html')
 
 class Partial(MethodView):
     def get(self, partial):
         return render_template('partials/%s.html' % partial)
 
 class Section(MethodView):
-    def get(self, section, resource=None):
-        if not resource:
-            try:                
-                return render_template(
-                    '%s.html' % 
-                    section.replace(".html", ""))
-            except:
-                resource = "index"
-        return render_template('%s/%s.html' % (section, resource))
+    def get(self, resource=None):
+        layout = resource.replace(".html", "")
+        if not resource or resource[-1] == '/':
+            layout = resource + "index"
+        try:
+            return render_template("%s" % layout)
+        except:
+            return render_template('base.html', template='%s/index.html' % layout)
+
 
 def rest_api(f):
     """Decorator to allow routes to return json"""

@@ -1,0 +1,139 @@
+<h1>Towards World Wide Web 2.0</h1>
+<p>The following is an email response to a friend at schema.org
+regarding an initiative called <a href="https://graph.global">The
+World Wide Graph (w2g)</a>.</p>
+
+<pre>
+Thanks for the link! RSS is a great protocol (which I don't intend on
+redesigning or replacing) and the interfaces you linked me to seem to
+make great use of RSS -- I do, however, hope to push the web, in its
+entirety, towards a slightly different direction. RSS is a great way
+of subscribing to content on specific sites, not necessarily as a way
+to see what's happening (the derivative) across the entire web. For
+instance, I probably wouldn't use RSS if I wanted to see all the
+places across the web where a specific "tag" (e.g. a person) was
+mentioned. What I imagine with w2g is something much more akin to a
+public "facebook tag", where you can register a universal tag (across
+the entire web) and be notified when any website on the internet uses
+*your* tag, or a tag you follow. Many of the implementation details
+are described on https://graph.global.
+
+TL;DR -- That the universal document index (the web) and entity
+database should be a public and inherent property of the World Wide
+Web, implemented in the style of DNS, and not a centralized system
+maintained privately by search engines. W2g is an attempt at creating
+such a universal entity database.
+
+Inspiration:
+My central goal is to further Paul Otlet, et al's, vision and head
+toward an amalgamous World Wide Web (a Universal Knowledge Repository)
+freed of arbitrary, discrete "document" boundaries. A world wide web
+which isn't experienced through discrete, independent "web pages"
+(even if the unit of content an author publishes is still a
+"document") but instead the interaction and cooperation of content
+within them. More pragmatically, I am suggesting the emergence of a
+public layer over the exiting web which enables users (independently,
+via applications such as browsers or GNU utilities[1], in a
+decentralized fashion; i.e. without a search engine) to make queries
+which generate dynamic views/compositions of pertinent content. A
+world wide web wherein protected access to an underlying, versioned,
+universal indexing system is granted as an inherent property of HTTP
+itself.
+
+I think the Internet Archive has the capability of achieving this
+reality. And with it could come a new generation of tools for
+consuming and republishing this content, and for browsing,
+visualizing, and discovering paths through and between knowledge. And
+not just knowledge -- our comprehension and understanding of
+knowledge[2].
+
+Dissolving the boundaries between discrete documents (via semantic
+tagging and publicly accessible indices), and creating a public,
+distributed universal entity graph are just the first steps to a much
+brighter future. With this foundation in place, we can begin
+calculating and dynamically composing paths through knowledge. We can
+dynamically generate curricula; responsive sequences of resources for
+individuals to learn new things. We can establish previously
+unexplored connections between disparate branches of knowledge,
+dynamically fact check knowledge against its neighbors, automatically
+infer citations, explore epistemological and pedagogical provenance of
+knowledge, and even craft self-organizing systems which improve our
+classifications and produce new knowledge over time.
+
+Toward this end, I'm working with Ted Nelson, Drew Winget (stanford
+digital library), the Internet Archive, and some folks at Google on
+planning achievable first steps. The first of which, is exploring how
+a *public* universal entity graph will be created using existing
+standards, which supports such a future.
+
+From the literature I've read and the experts I've queried, RDF (as a
+general concept), schema.org (as an implementation of RDF), and
+services like w2g (physical implementations of open/public universal
+entity graphs) seem to be one approach towards achieving this first
+step.
+
+Without context, this whole mission likely seems a far-fetched fool's
+paradise -- that may be so; while there remains a chance, I intend to
+devote my entire life towards the mission of progressing *public*
+systems for universal knowledge, and I'm confident over my lifetime I
+can move the needle, or at least continue contributing towards laying
+a foundation which empowers others to do so.
+
+I'm sure you're already overwhelmed by my "essay" response to your
+simple question (which hopefully by now I've answered): "What problem
+[am I] trying to solve". If you are passionate about these topics and
+interested in people's thoughts on the matter, I've began compiling a
+compendium (something of a curricula) on Universal Knowledge which
+(based on historical precedent) will likely outspan my lifetime --
+https://docs.google.com/document/d/1upjXuPM_rVbZcFm3aqdg-T8fHCClxnfMAMVTIaqt-_4/edit#
+
+Beginnings: Originally when I started my phd program, I was working on
+an open conversational search engine (similar to DuckDuckGo) called
+GnuAsk. It addressed two main contentions with existing search
+engines. First, I was annoyed with being limited to a single query as
+a medium for interfacing with a knowledge base. At the time, every
+query was evaluated independently (unlike markov chains, previously
+searches did not inform future searches) and converging on the correct
+query was an arduous process. I imagined an alternative engine with
+which users conversed using natural language. The engine was able to
+disambiguate via conversation and used models to generate accurate
+queries based on the progression of the user's dialog. The result of
+each conversation was a directed chain of resources (from which
+intermediary answers had been obtained), and ultimately an answer to a
+specific question. This "list" (DAG) was then compressed into a single
+URL called a GNUrl (like a tinyurl) which preserved the provenance
+trail of the conversation and could be shared with friends as a single
+link. The second reason I was distraught is, search engines are able
+to find and compile lists of relevant "documents", but in the average
+case, their job stops there. What should happen is, the engine should
+direct the user to the exact piece of knowledge they are after, and
+other relevant information (they might not have known existed). To
+their credit, DDG Zero-click, Google Now, and others are beginning to
+address this concern, albeit in a centralized fashion.
+
+Centralized "portals" or services (i.e. google and gnuask) which only
+expose a small fraction of their infrastructure, and through
+restrictive APIs, are good first steps, but I now realize I was
+building features at the wrong level. My goal has since matured to
+address how we might be able to enrich HTTP as a protocol and
+ecosystem, rather than continue the entrenchment of these monolithic,
+centralized services. Someday, I hope the world wide web becomes more
+like a public library, where its citizens have access to the
+underlying indices and knowledge graphs -- after all, such sentiments
+were a great early inspiration for the web. When this day comes, I'll
+look forward to the amazing unix-style utilities which filter, map,
+and reduce over the internet as a whole, and which empowers everyone's
+computer, and all its applications, with ubiquitous search.
+
+Footnotes:
+[1] I wrote an essay on this called, "What the Browser is Missing"
+(https://michaelkarpeles.com/essays/philosophy/what-the-browser-is-missing.html)
+which imparts partial blame to browsers and browser vendors, but I
+believe an important part of the equation lies with the HTTP protocol
+and how we as a society have grown to (mis-) use it.
+
+[2] Imagine a utility or interface like
+https://michaelkarpeles.com/math.html, which is capable of producing a
+heatmap overlay to illustrates one's relative understanding / coverage
+of different mathematical domains).
+</pre>

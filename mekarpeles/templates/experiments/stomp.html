@@ -1,0 +1,112 @@
+<pre>
+"Stomp"
+Guide on building your first HID USB Device
+A Foot-pedal stomp keyboard
+est: 1 weekend
+
+Reasons
+--------
+
+Back in 2013-01, I sat down for a few hours reading about interfacing
+with USB devices on Linux. My goal was to write bindings for the <a href="http://www.stealthswitch.com/">StealthSwitch</a>
+foot petal keyboard so I could use it (my feet) to control my window
+manager, <a href="http://www.nongnu.org/stumpwm/">stumpwm</a>. Stumpwm is a tiling window manager with similar keybindings
+to GNU Screen which runs on and can be programmed through lisp (clisp or sbcl).
+For those interested in trying and or configuring stumpwm, I suggest
+referring to <a href="http://www.mygooglest.com/fni/stumpwm.html">mygoolest</a> and <a href="http://www.xsteve.at/prg/stumpwm/">xsteve</a>.
+
+Anyway, the problem is, the StealthSwitch relied on crazy windows
+special keys and the the chip was permenantly flashed (probably
+because it is cheaper) preventing us from making this a practical
+solution. So, I decided to implement from scratch.
+
+Requirements
+------------
+
+This assumes you will be using a Linux based system with the aptitude
+package manager.
+
+0) Understanding USB
+
+https://www.youtube.com/watch?v=8BhjXqw9MqI
+
+The take-home message (what USB does) is at 7:36. The reason there are
+2 wires (other than ground and vcc) differential signaling
+
+https://www.youtube.com/watch?v=J8imfqsUGCk
+
+
+1) Acquire Hardware
+- <a href="http://www.cutedigi.com/breakout-board/ezusb-cy7c68014a-usb-2-0-development-board.html">EZ-USB&reg; Cypress FX2LP CY7C68014A board</a> (8051 intel core, 8 bit w/ 16bit addressing) for ~$50* <a href="http://www.cypress.com/?docID=48811">(spec)</a>
+- <a href="http://www.amazon.com/TRENDnet-USB-RS-232-Serial-Converter/dp/B0007T27H8">Serial to USB converter<a/> if your computer doesn't have serial (for debugging)
+
+*If you're on a tight budget, you can buy the <a href="http://www.amazon.com/EZ-USB-CY7C68013A-Development-Analyzer-EEPROM/dp/B009NR8ZY4">CY7C68013A</a>
+for $10, but it will not have serial (debugging must be done with USB,
+which requires requires the device to respond with a correct
+descriptor + it's limited + weird).
+
+2) Download <a href="http://sdcc.sourceforge.net/">SDCC</a>, the Small Device C Compiler
+
+    $ sudo apt-get install sdcc
+
+3) Acquire FX2 Library routines from <a href="https://github.com/djmuhlestein/fx2lib">https://github.com/djmuhlestein/fx2lib</a>.
+- Fx2lib essentially provides macros and variable bindings for the Cypress FX2 registers via SDCC.
+
+    # Install + Load
+    $ git clone https://github.com/djmuhlestein/fx2lib.git
+    $ cd fx2lib/examples/bulkloop
+    $ make #compile
+    $ cycfx2prog #load
+    Using ID XXXX:XXXX on XXX.XXX. 
+    
+    # Run the example/demo:
+    $ sudo cycfx2prog prg:build/bulkloop.ihx run
+
+4) Start with using the fx2lib <a href="https://github.com/djmuhlestein/fx2lib/tree/master/examples/bulkloop">"bulkloop" example</a>.
+
+5) Implement <a href="https://en.wikipedia.org/wiki/USB_human_interface_device_class">HID</a> (Human Interface Device Device Class) USB class device descriptors 
+- Modify the bulkloop project's Intel 8051 (MCS-51) assembly descriptor file, <a href="https://github.com/djmuhlestein/fx2lib/blob/master/examples/bulkloop/dscr.a51">dscr.a51</a>, to correctly identify device as HID[<a href="http://www.usb.org/developers/hidpage/HID1_11.pdf">1</a>].
+
+
+Device Class Definition for Human Interface Devices (HID), Firmware Specification—6/27/01 Version 1.11 
+
+6) Compile + Use cycfx2prog or fxload to load your compiled SDCC code onto the FX2
+
+    $ sudo apt-get install cycfx2prog fxload
+
+7) Verified (6) using:
+
+    $ lsusb -v
+
+8) Implement the corresponding logic for each promise we made in (a) to the kernel, as required by your ideas.
+
+9) Debugging: Re-run step (6) and then test your device using GNU Screen 
+
+    Installation:
+    $ sudo apt-get install screen
+
+    Connecting to device (using serial):
+    # Assuming you're using serial to USB
+    $ screen /dev/ttyUSB0 57600
+
+    # Assuming you're using vanilla serial
+    $ screen /dev/ttyS0 57600
+
+10) Develop client applications + Share your code
+- In our case, the reason for making a USB HID is we are developing an emacs food-pedal called STOMP to.
+
+Thanks
+------
+
+Thanks to <a href="https://github.com/diamondman">@diamondman</a>, the <a href="https://github.com/diamondman/Adapt">Adapt</a> Master, for his collaboration in organizing this curriculum.
+
+Notes
+-----
+
+- Add a function to the code, bulkload.c:
+add a case toBOOL handle_vendorcommand(BYTE cmd) {
+
+import usb1;con = usb1.USBContext();beard = con.openByVendorIDAndProductID(0x04b4, 0x1004);beard.controlWrite(0x40, 0xb2, 0, 0, b'')
+
+
+</pre>

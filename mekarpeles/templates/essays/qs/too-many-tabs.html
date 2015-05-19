@@ -1,0 +1,151 @@
+<h1>PROBLEM: I have too many browser tabs open! [SOLVED]</h1>
+<h2>Let's apply the 5 Why's</h2>
+
+<ol>
+  <li>
+    <h3>Why do I have too many browser tabs?</h3>
+    <p>Because I want to keep them spatially and temporally local; they are relevant to what I am doing and/or my current interests.</p>
+  </li>
+  <li>
+    <h3>Why do I want to keep them open? Why not just read them?</h3>
+    <p>
+      Because I don't have time to read them now and I figure keeping
+      them open will lead to a higher likely-hood of them being
+      read. Consider: When does misuse of "cache" effectively become
+      RAM, become the same as disk storage/access, etc.
+    </p>
+  </li>
+  <li>
+    <h3>Surely if I don't have time to read them now, that would mean I must have time to read them later, right? After all, I have time to consume some media (Q.E.D - as is being demonstrated). Why don't the tabs get consumed and then garbage collected?</h3>
+    <p>
+      Because I don't want to say no, because I don't have a framework
+      for evaluating media holistically against each other. Because
+      there's no friction preventing, or significant consequences to,
+      opening of new tabs. Because I as a human being cannot keep a
+      model in my head for sometimes hundreds of pieces of content,
+      their importance, their topics, or the date they were discovered
+      -- and thus cannot effectively make decisions on how to address
+      the overwhelming tab monster.
+    </p>
+  </li>
+  <li>
+    <h3>Would a centralized system with slightly more friction, structure, and inter-contextual relevance help? Why not bookmarks?</h3>
+    <p>Yeah, probably. What are you playing at ... ?</p>
+    <p>
+      Bookmarks are a black hole. They simply offers a slightly
+      greater promise (and a smaller, albeit still unmaintainable
+      search space) of finding a resource again than searching the web
+      directly. Most context (other than page title and an optional
+      category) is lost. For instance, there is semantic value encoded
+      in having multiple tabs open -- their mutual existence can add
+      value to the equation, as a reference. For instance, imagine
+      translating a Chinese document and having a "dictionary" tab, a
+      "stroke-order" tab, a "pronunciation" tab (not all resources are
+      best at all 3 tasks). A bookmark does not sufficiently encode
+      these relationships or their co-related value.
+    </p>
+  </li>
+  <li>
+    <h3>Why isn't there something better than bookmarks? What would it look like and why haven't you tried this?</h3>
+    <p>
+      Because browsers are victorious by competing on standards and
+      performance, foremost, and providing the best experience to the
+      most users. Some features (like a directed graph of your entire
+      browser history) may require fundamental changes to the browser's
+      internals and negatively affect performance. It's unfortunate,
+      because browsers impact a lot of people, but (disregarding the
+      audience multiplier and assuming building-for-self), designing
+      browser features has a low return compared to the time investment
+      and the programmer has to address tangential concerns. It's like
+      disassembling a car to install a new engine, and running
+      diagnostics on all the other components to ensure there's no oil
+      leak, versus installing NOS (yeah, it can leak, there are
+      occasional fires, and sometimes catastrophes, but ZOOM
+      ZOOM!). Besides, NOS allows you to more quickly achieve and
+      compare speed (analogy: approaches) and get a feel before having
+      to choose an engine design. So, this is why I'm not starting with
+      the browser (although I do have a side project for prototyping
+      these ideas within an unperformant webpage, rather than through
+      the browser, proper). That said, the correct minimal solution
+      shouldn't depend on an architecture (will only be enhanced by it),
+      so we should be able to prototype it elsewhere (in a less-friction
+      environment, lower development-cost environment).
+    </p>
+    <p>
+      Minimally, it would look like a simple, centralized google
+      spreadsheet with a list of links, their titles, a rating, and the
+      date completed. I would thus sort them according to my
+      interest. If manually adding a link + desc to the list is too much
+      friction, the resource likely isn't work it.
+    </p>
+    <blockquote>
+      <a href="https://docs.google.com/spreadsheets/d/1k-zl-Ya4OAU7Lp8DsPGy7mSJVCeXSPqK673Wiq8ndt8/edit#gid=295740832"></a>
+    </blockquote>
+  </li>
+  <li>
+    <h3><underline>Here's a bonus question:</underline> Why read
+    everything on your queue? Is all of it good? Now that you are
+    testing a legitimate system for queuing up media. How can you
+    improve this?</h3>
+    <p>
+      Chances are I don't want to read everything on my list. By
+      making the document public + shared and asking others I respect
+      what media on my list I should skip, or by asking for
+      recommendations for alternative, superior resources on the same
+      topic, I can achieve a superior outcome.
+    </p>
+  </li>
+</ol>
+
+<hr/>
+
+<h2>Tab Groups</h2>
+<p>
+  Mozilla Firefox
+  has <a href="https://support.mozilla.org/en-US/kb/tab-groups-organize-tabs">tab
+    groups</a> which I utilize (despite their implementation being
+  graphical and frustrating).
+</p>
+
+<p>I use tab groups as workspaces to manage collections of tabs that I actually do need open.</p>
+
+<h3>Collections</h3>
+<p>I have 3 sets of tab groups --</p>
+<ul>
+  <li>For Learning: (Chinese, AI/ML, Math, Music)</li>
+  <li>For Projects: one for each project on my plate (math.mx, pypc, bestbookon, etc)</li>
+  <li>For Living: for my blog + meta-organization + work</li>
+</ul>
+
+<div>
+  <p>Image 1: a screen capture of the above tabgroup collections</p>
+  <img alt="tagroups screenshot" src="/static/imgs/tabgroups.jpg"/>
+</div>
+
+<h3>Rules</h3>
+<p>I do not have more than 10 tabs open in a workspace.</p>
+
+<h3>Caveats</h3>
+<p>
+  I use <entity>stumpwm</entity> a tiling window manager. The
+  following image illustrates why I dislike Mozilla's graphical
+  implementation of tab-groups and wish that tab-groups were just a
+  second tier of tabs (tabs containing tabs). The following result
+  occurs every time my window manager gets split (horizontally or
+  vertically):
+</p>
+<div>
+  <p>Image 2: a screen capture of tabgroups overlapping and in chaotic order</p>
+  <img alt="tagroups screenshot" src="/static/imgs/tabgroups-disaster.jpg"/>
+</div>
+
+<h2>Pinning</h2>
+<p>Finally, I have one instance of chrome open where I have the following applications always pinned:</p>
+<ol>
+  <li>calendar</li>
+  <li>quantified self spreadsheet</li>
+  <li>trello daily goals</li>
+  <li>gmail work</li>
+  <li>gmail personal</li>
+  <li>and unpinned, occasionally facebook</li>
+</ol>

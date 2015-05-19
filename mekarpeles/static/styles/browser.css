@@ -1,0 +1,477 @@
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    color: #222;
+    font-size: 1em;
+    font-family: arial;
+    line-height: 1.4;
+}
+
+body {
+    position: relative;
+    margin: 0px;
+    height: 100%;
+    width: 100%;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers:
+ * http://juicystudio.com/article/screen-readers-display-none.php
+ */
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+       (-o-min-device-pixel-ratio: 5/4),
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   http://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster:
+                                   http://www.sanbeiji.com/archives/953 */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    /*
+     * Printing Tables:
+     * http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
+
+#collections {
+    
+}
+
+header {
+    background: #3a96ea; /* Old browsers */
+    background: -moz-linear-gradient(top, #3a96ea 0%, #2989d8 42%, #207cca 62%, #0b74a8 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#3a96ea), color-stop(42%,#2989d8), color-stop(62%,#207cca), color-stop(100%,#0b74a8)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #3a96ea 0%,#2989d8 42%,#207cca 62%,#0b74a8 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #3a96ea 0%,#2989d8 42%,#207cca 62%,#0b74a8 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #3a96ea 0%,#2989d8 42%,#207cca 62%,#0b74a8 100%); /* IE10+ */
+    background: linear-gradient(to bottom, #3a96ea 0%,#2989d8 42%,#207cca 62%,#0b74a8 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3a96ea', endColorstr='#0b74a8',GradientType=0 ); /* IE6-9 */
+    position: fixed;
+    height: 73px;
+    width: 100%;
+    padding: 0px;
+}
+
+#collections-bar {
+
+}
+
+ul#collections {
+    margin: 5px 0px 0px 10px;
+    padding: 0px;
+    list-style-type: none;
+}
+
+ul#collections li {
+    font-size: .9em;
+    color: #000;
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    margin: 0px 10px 0px 0px;
+    z-index: -1;
+    padding: 5px 8px;
+    background-color: #ADCEED;
+    border-top: #343434 1px solid;
+    border-bottom: #343434 1px solid;
+}
+
+ul#collections li a {    
+    color: #000;
+    text-decoration: none;
+}
+
+ul#collections li.selected {
+    z-index: 1;
+    border-bottom: #EDEDED 1px solid;
+    background-color: #EDEDED;
+}
+
+ul#collections li::before {
+    border-left: 1px solid #343434;
+    content: '';
+    height: 29px;
+    width: 11px;
+    background-color: #ADCEED;
+    position: absolute;
+    top: 0;
+    left: 0px;
+    transform: skewX(-20deg);
+    transform-origin: top;
+    -webkit-transform: skewX(-20deg);
+    -webkit-transform-origin: 0 0;
+}
+
+ul#collections li::after {
+    border-right: 1px solid #343434;
+    content: '';
+    height: 30px;
+    width: 11px;
+    background-color: #ADCEED;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: auto;
+    transform: skewX(20deg);
+    transform-origin: top;
+    -webkit-transform: skewX(20deg);
+    -webkit-transform-origin: 0 0;
+}
+
+ul#collections li.selected::before {
+    background-color: #EDEDED;
+    border-bottom: 1px solid #EDEDED;
+}
+ul#collections li.selected::after {
+    background-color: #EDEDED;
+    border-bottom: 1px solid #EDEDED;
+}
+#resources-bar {
+    border-top: 1px solid #343434;
+    background-color: #EDEDED;
+    border-bottom: #DDD 1px solid;
+}
+
+ul#resources {
+    margin: 5px 5px 0px 10px;
+    list-style-type: none;
+    padding: 0px;
+}
+
+ul#resources li {
+    padding: 0px 0px 8px 5px;
+    display: inline-block;
+}
+
+#canvas {
+    position: absolute;
+    top: 73px;
+    box-sizing: border-box;
+    bottom: 50px;
+    height: 80%;
+    width: 100%;
+}
+
+.window {
+
+}
+
+footer {
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    background-color: #EDEDED;
+}
+
+#cli {
+    border-top: 1px solid #EDEDED;
+    background-color: #fff;
+}
+
+#workspaces {
+
+}
+
+.bubble {
+    font-size: .7em;
+    padding: 3px 5px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px; /* future proofing */
+    -khtml-border-radius: 4px; /* for old Konqueror browsers */
+}
+
+.hotkey {
+    border: 1px solid #EAC03A;
+    background-color: #EAE83A;
+}
+
+.hotkey-prefix {
+    background-color: #EA8A3A;
+}
+
+.count {
+    border: 1px solid #EDEDED;
+    background-color: #3A9AEA;
+    color: #fff;
+}
+
+.layout-slot {
+    border: 2px solid #999;
+    position: absolute;
+    overflow: hidden;
+    background-color: #EEE;
+}
+
+.selected {
+    background-color: #FFF;
+    border: 2px solid yellow;
+}
+
+.workspace-container {
+    width: 100%;
+    height: 100%;
+}
+
+input#omnibox {
+    width: 100%;
+    padding: 8px;
+    border: none;
+}
