@@ -24,12 +24,12 @@ urls = (
 app = router(Flask(__name__), urls)
 
 def titler():
-    title = request.path[1:].rsplit(".", 1)[0]
+    title = request.path.split("/")[-1].rsplit(".", 1)[0]
     if title == "index":
-        title = request.script_root.split("/")[1:]
+        title = request.script_root.split("/")[-1]
     if not title.strip():
         title = "Home"
-    return title
+    return title.replace("-", " ").capitalize()
 
 app.jinja_env.globals.update(titler=titler)
 
