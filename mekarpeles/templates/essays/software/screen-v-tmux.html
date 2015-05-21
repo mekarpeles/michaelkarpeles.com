@@ -1,0 +1,46 @@
+<h1>GNU Screen v. Tmux: Battle of the Multiplexors</h1>
+
+<p>
+  GNU Screen is a magical thing. Even after trying tmux, I prefer its
+  interface. It's screen splitting behaves as I would expect -- easily
+  allowing the split-portion to cycle through other open buffers (tmux
+  treats split windows differently than "windows" and it sucks. And
+  more/most importantly, if you were sharing your terminal with a
+  partner, screen didn't force you and your connected partners to be
+  locked into the same synchronized view -- you were free to navigate
+  windows independently (as the GNU lords intended), while sharing the
+  underlying session as a whole. It allowed concurrent, collaborative
+  workflows (as seems to *not* be the case with tmux).
+</p>
+
+<p>
+  Tmux does have a major advantage, which was enough for me (to my
+  chagrin) to switch. When your screen session itself becomes (not
+  disconnected, but) corrupted *or* if you accidentally kill the
+  terminal which was running screen (which I do constantly because I am
+  an idiot) -- you then lose any windows and buffers associated with
+  it. No ability to attach, just gone.
+</p>
+
+<p>
+  Tmux, follows daemon approach (like emacs-as-a-daemon) wherein a
+  server runs in the background and multiple sessions can be
+  maintained. I like to think of this approach as analogous to "chrome"
+  which maintains tabs as separate processes (i.e. the analogy of tabs
+  to tmux sessions as isolated containers). So long as the tmux program
+  doesn't become corrupted (i.e. the daemon stops running due to
+  segfault or pkill, etc) you will be able to reattach to the session.
+</p>
+
+<p>
+  I am also pretty sure tmux (like emacs/vim) can have these features
+  from GNU screen I want, I just need to invest the time scripting
+  them[2] or submitting a pull request (as if I don't have enough
+  projects) whose investment will no doubt be greater than the time
+  savings and learnings.
+</p>
+
+<ul>
+  <li>[1] <a href="http://www.emacswiki.org/emacs/EmacsAsDaemon">http://www.emacswiki.org/emacs/EmacsAsDaemon</a></li>
+  <li>[2] <a href="http://blog.htbaa.com/news/tmux-scripting">http://blog.htbaa.com/news/tmux-scripting</a></li>
+</ul>

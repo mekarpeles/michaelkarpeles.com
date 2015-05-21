@@ -11,14 +11,17 @@
 """
 
 import json
-from flask import render_template, Response
+from flask import render_template, Response, redirect
 from flask.views import MethodView
 from werkzeug import wrappers
 from configs import approot
 
 class Base(MethodView):
     def get(self, uri=None):
-        return render_template('base.html', template='index.html')
+        try:
+            return render_template('base.html', template='index.html')
+        except:
+            return redirect('/')
 
 class Partial(MethodView):
     def get(self, partial):
@@ -26,14 +29,13 @@ class Partial(MethodView):
 
 class Section(MethodView):
     def get(self, resource=None):
-        layout = resource.replace(".html", "")
+        layout = resource#.replace(".html", "")
         if not resource or resource[-1] == '/':
             layout = resource + "index"
         try:
-            return render_template("%s" % layout)
-        except:
+            return render_template('base.html', template="%s.html" % layout)
+        except:            
             return render_template('base.html', template='%s/index.html' % layout)
-
 
 def rest_api(f):
     """Decorator to allow routes to return json"""

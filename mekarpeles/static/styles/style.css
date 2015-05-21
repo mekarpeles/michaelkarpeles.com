@@ -22,3 +22,7 @@ ol li:before {
 ol li.sec:before{
     font-size: 1.5em;
 }
+
+ol li.sec2:before{
+    font-size: 1.1em;
+}
