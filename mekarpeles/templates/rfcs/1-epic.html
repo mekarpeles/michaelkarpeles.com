@@ -1,7 +1,7 @@
 <pre>
 
 An Ecosystem for Literate Research
-Request for Comment: ?
+Request for Comments: ?
 
 Status of this Memo
 
@@ -21,7 +21,7 @@ resources, modular and reusable components.
 
 For example, imagine being in a (webpage) resource and clicking a
 block to execute its underlying routine / dependencies (run within the
-context of your client or perhaps the resource optoinally
+rcontext of your client or perhaps the resource optoinally
 provides/points to a VM for this purpose). Trying an alternative
 approach to an existing "research paper" could be as simple as forking
 or linking to their "resource" (perhaps each resource has a git repo
@@ -37,6 +37,29 @@ computation (which makes more sense).  The whole thing is fuzzy and
 just proof of concept, not genuinely a recommendation of a specific
 implementation.
 
+The first step is to follow in the footprints of Bashky et al. in
+"EXPOSURE TO IDEOLOGICALLY DIVERSE NEWS AND OPINION ON FACEBOOK" by
+organizing, maintaining, and releasing all the components and
+resources used to reproducibly achieve their results.
+
+https://solomonmessing.wordpress.com/2015/05/24/exposure-to-ideologically-diverse-news-and-opinion-future-research/
+https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi%3A10.7910%2FDVN%2FLDJ7MS
+
+The next step towards achieving reproducible research is by providing
+a different compiler than LaTeX and requiring minimal change to
+author's existing flow and markup process. Authors should remain
+researches and not spend the majority of their time formatting.
+
+I think the way this can be made mainstream (steppable, reproducible,
+and interactive research) while not causing additional work to the
+authors, would be to provide some sort of replacement compiler to
+LaTeX which is able to generate both a static paper as well as a rich
+step-through-able web page which can be executed sequentially and
+piece wise (like mathematica) using a backend like http://sandstorm.io
+or http://terminal.io. Of course the paper could also have interactive
+graphics, similar to the one included in thumbnail, which can be
+generated using default d3-like templates (without requiring
+programming/markup beyond what is already required for LaTeX.
 
 Ahmed El-Hassany This idea reminds me of the work of Richard Taylor's
 group at UC Irvine: here is one paper and you can easily track the
