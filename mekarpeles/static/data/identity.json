@@ -13,8 +13,8 @@
    "gpg": "/static/keys/mek.public.gpg-key"   
  },
  "anthropometry": {
-   "height": 173,
-   "weight": 143
+   "height": "173 (cm)",
+   "weight": "65 (kg)"
  },
  "contact": {
    "email": "michael.karpeles@gmail.com",

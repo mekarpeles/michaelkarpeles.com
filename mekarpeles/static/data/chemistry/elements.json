@@ -1,0 +1,1957 @@
+{
+  "schema": {
+    "index": {
+      "type": "Integer",
+      "range": [1, 118],
+      "nullable": false,
+      "desc": "In periodic table of elements, Integer range(1, 118)",
+    },
+    "symbol": {
+      "type": "String",
+      "range": [1, 3],
+      "nullable": false,
+      "desc": "The abbreviation for the element in the Periodic Table"
+    },
+    "synmbol": {
+      "type": "String",
+      "range": null,
+      "nullable": false,
+      "desc": "The given name of the element in the Periodic Table [https://en.wikipedia.org/wiki/Chemical_element]"
+    },
+    "etymology": {
+      "type": "String",
+      "range": null,
+      "nullable": true,
+      "desc": "The origin of the element's name."
+    },
+    "group": {
+      "type": "Integer",
+      "range": [1, 18],
+      "nullable": true,
+      "desc": "The column in which the element appears in the Periodic Table"
+    },
+    "period": {
+      "type": "Integer"
+      "range": [1, 7],
+      "nullable": false,
+      "desc": "The row in which the element appears in the Periodic Table [https://en.wikipedia.org/wiki/Period_(periodic_table)]"
+    },
+    "moles": {
+      "type": "Demical",
+      "range": [1, 300],
+      "nullable": false,
+      "desc": "The molar mass, atomic weight, or relative atomic mass, is the ratio of the average mass of atoms of an element. [https://en.wikipedia.org/wiki/Relative_atomic_mass]"
+    },
+    "density": {
+      "type": "Decimal",
+      "range": [0, 25],
+      "nullable": true,
+      "desc": "Density of the element in g/cm^3 [https://en.wikipedia.org/wiki/Gram, https://en.wikipedia.org/wiki/Metre]"
+    },
+    "melt": {
+      "type": "Decimal",
+      "range": [0, 4000],
+      "desc": "Melting point in Kelvin [https://en.wikipedia.org/wiki/Kelvin]"
+    },
+    "boil": {
+      "type": "",
+      "nullable": true,
+      "range": [0, 4500],
+      "desc": "Boiling point in K [https://en.wikipedia.org/wiki/Kelvin]"
+    },
+    "heat": {
+      "type": "",
+      "range": [],
+      "nullable": true,
+      "desc": "Heat in J/g·K [https://en.wikipedia.org/wiki/Joule, https://en.wikipedia.org/wiki/Gram, https://en.wikipedia.org/wiki/Kelvin]"
+    },
+    "electronegativity": {
+      "type": "",
+      "range": [],
+      "nullable": true,
+      "desc": "Electronegativity in electronvolts, Allen scale [https://en.wikipedia.org/wiki/Electronegativity]"
+    },
+    "abundance": {
+      "type": "Decimal",
+      "range": [0, 500000],
+      "nullable": false,
+      "desc": "Abundance [https://en.wikipedia.org/wiki/Abundance_of_elements_in_Earth%27s_crust] of this element in mg/kg [https://en.wikipedia.org/wiki/Gram]"
+    },
+    "wiki": {
+      "type": "Url",
+      "range": null,
+      "nullable": false,
+      "desc": "The wikipedia article for this element"
+    },
+    "class": {
+      "type": "Enum",
+      "range": null,
+      "nullable": true,
+      "enums": ["Alkali metal", "Alkaline earth metal", "Lanthanide", "Actinide", "Transition metal",
+                "Post-transition metal", "Metalloid", "Polyatomic nonmetal", "Diatomic nonmetal", "Noble gas"],
+      "desc": "The enumerated set of different known classes of elements in the Periodic Table"
+    },
+  },
+  "elements": {
+      "pronounciation": "/ˈhaɪdrədʒən/",
+      "wiki": "https://en.wikipedia.org/wiki/Hydrogen",
+      "image": "https://d2jmvrsizmvf4x.cloudfront.net/Jti2TThQQ2xmOMK3o0NN_hell-001-hydrogen-no-label.svg"
+      "molar": 1.00794,
+      "electrons": [
+        1
+      ]
+  },
+
+
+
+
+
+
+
+
+
+
+
+
+
+  "helium": {
+
+    "period"
+
+    "class": "Element Noble p",
+    "group": 17,
+    "name": "Helium",
+    "index": 2,
+    "symbol": "He",
+    "molar": 4.002602,
+    "electrons": [
+      2
+    ]
+ } ,
+    {
+      "wiki": "http://en.wikipedia.org/wiki/Period%202%20element",
+      "elements": [
+	{
+	  "class": "Element Alkali s",
+	  "group": 0,
+	  "name": "Lithium",
+	  "index": 3,
+	  "symbol": "Li",
+	  "molar": 6.941,
+	  "electrons": [
+	    2,
+	    1
+	  ]
+	},
+	{
+	  "class": "Element Alkaline s",
+	  "group": 1,
+	  "name": "Beryllium",
+	  "index": 4,
+	  "symbol": "Be",
+	  "molar": 9.012182,
+	  "electrons": [
+	    2,
+	    2
+	  ]
+	},
+	{
+	  "class": "Element Metalloid Boron p",
+	  "group": 12,
+	  "name": "Boron",
+	  "index": 5,
+	  "symbol": "B",
+	  "molar": 10.811,
+	  "electrons": [
+	    2,
+	    3
+	  ]
+	},
+	{
+	  "class": "Element Nonmetal Carbon p",
+	  "group": 13,
+	  "name": "Carbon",
+	  "index": 6,
+	  "symbol": "C",
+	  "molar": 12.0107,
+	  "electrons": [
+	    2,
+	    4
+	  ]
+	},
+	{
+	  "class": "Element Nonmetal Pnictogen p",
+	  "group": 14,
+	  "name": "Nitrogen",
+	  "index": 7,
+	  "symbol": "N",
+	  "molar": 14.0067,
+	  "electrons": [
+	    2,
+	    5
+	  ]
+	},
+	{
+	  "class": "Element Nonmetal Chalcogen p",
+	  "group": 15,
+	  "name": "Oxygen",
+	  "index": 8,
+	  "symbol": "O",
+	  "molar": 15.9994,
+	  "electrons": [
+	    2,
+	    6
+	  ]
+	},
+	{
+	  "class": "Element Halogen p",
+	  "group": 16,
+	  "name": "Fluorine",
+	  "index": 9,
+	  "symbol": "F",
+	  "molar": 18.998404,
+	  "electrons": [
+	    2,
+	    7
+	  ]
+	},
+	{
+	  "class": "Element Noble p",
+	  "group": 17,
+	  "name": "Neon",
+	  "index": 10,
+	  "symbol": "Ne",
+	  "molar": 20.1797,
+	  "electrons": [
+	    2,
+	    8
+	  ]
+	}
+      ]
+    },
+    {
+      "wiki": "http://en.wikipedia.org/wiki/Period%203%20element",
+      "elements": [
+	{
+	  "class": "Element Alkali s",
+	  "group": 0,
+	  "name": "Sodium",
+	  "index": 11,
+	  "symbol": "Na",
+	  "molar": 22.989769,
+	  "electrons": [
+	    2,
+	    8,
+	    1
+	  ]
+	},
+	{
+	  "class": "Element Alkaline s",
+	  "group": 1,
+	  "name": "Magnesium",
+	  "index": 12,
+	  "symbol": "Mg",
+	  "molar": 24.305,
+	  "electrons": [
+	    2,
+	    8,
+	    2
+	  ]
+	},
+	{
+	  "class": "Element Poor Boron p",
+	  "group": 12,
+	  "name": "Aluminium",
+	  "index": 13,
+	  "symbol": "Al",
+	  "molar": 26.981539,
+	  "electrons": [
+	    2,
+	    8,
+	    3
+	  ]
+	},
+	{
+	  "class": "Element Metalloid Carbon p",
+	  "group": 13,
+	  "name": "Silicon",
+	  "index": 14,
+	  "symbol": "Si",
+	  "molar": 28.0855,
+	  "electrons": [
+	    2,
+	    8,
+	    4
+	  ]
+	},
+	{
+	  "class": "Element Nonmetal Pnictogen p",
+	  "group": 14,
+	  "name": "Phosphorus",
+	  "index": 15,
+	  "symbol": "P",
+	  "molar": 30.973763,
+	  "electrons": [
+	    2,
+	    8,
+	    5
+	  ]
+	},
+	{
+	  "class": "Element Nonmetal Chalcogen p",
+	  "group": 15,
+	  "name": "Sulfur",
+	  "index": 16,
+	  "symbol": "S",
+	  "molar": 32.065,
+	  "electrons": [
+	    2,
+	    8,
+	    6
+	  ]
+	},
+	{
+	  "class": "Element Halogen p",
+	  "group": 16,
+	  "name": "Chlorine",
+	  "index": 17,
+	  "symbol": "Cl",
+	  "molar": 35.453,
+	  "electrons": [
+	    2,
+	    8,
+	    7
+	  ]
+	},
+	{
+	  "class": "Element Noble p",
+	  "group": 17,
+	  "name": "Argon",
+	  "index": 18,
+	  "symbol": "Ar",
+	  "molar": 39.948,
+	  "electrons": [
+	    2,
+	    8,
+	    8
+	  ]
+	}
+      ]
+    },
+    {
+      "wiki": "http://en.wikipedia.org/wiki/Period%204%20element",
+      "elements": [
+	{
+	  "class": "Element Alkali s",
+	  "group": 0,
+	  "name": "Potassium",
+	  "index": 19,
+	  "symbol": "K",
+	  "molar": 39.0983,
+	  "electrons": [
+	    2,
+	    8,
+	    8,
+	    1
+	  ]
+	},
+	{
+	  "class": "Element Alkaline s",
+	  "group": 1,
+	  "name": "Calcium",
+	  "index": 20,
+	  "symbol": "Ca",
+	  "molar": 40.078,
+	  "electrons": [
+	    2,
+	    8,
+	    8,
+	    2
+	  ]
+	},
+	{
+	  "class": "Element Transition d",
+	  "group": 2,
+	  "name": "Scandium",
+	  "index": 21,
+	  "symbol": "Sc",
+	  "molar": 44.955914,
+	  "electrons": [
+	    2,
+	    8,
+	    9,
+	    2
+	  ]
+	},
+	{
+	  "class": "Element Transition d",
+	  "group": 3,
+	  "name": "Titanium",
+	  "index": 22,
+	  "symbol": "Ti",
+	  "molar": 47.867,
+	  "electrons": [
+	    2,
+	    8,
+	    10,
+	    2
+	  ]
+	},
+	{
+	  "class": "Element Transition d",
+	  "group": 4,
+	  "name": "Vanadium",
+	  "index": 23,
+	  "symbol": "V",
+	  "molar": 50.9415,
+	  "electrons": [
+	    2,
+	    8,
+	    11,
+	    2
+	  ]
+	},
+	{
+	  "class": "Element Transition d",
+	  "group": 5,
+	  "name": "Chromium",
+	  "index": 24,
+	  "symbol": "Cr",
+	  "molar": 51.9961,
+	  "electrons": [
+	    2,
+	    8,
+	    13,
+	    1
+	  ]
+	},
+	{
+	  "class": "Element Transition d",
+	  "group": 6,
+	  "name": "Manganese",
+	  "index": 25,
+	  "symbol": "Mn",
+	  "molar": 54.938046,
+	  "electrons": [
+	    2,
+	    8,
+	    13,
+	    2
+	  ]
+	},
+	{
+	  "class": "Element Transition d",
+	  "group": 7,
+	  "name": "Iron",
+	  "index": 26,
+	  "symbol": "Fe",
+	  "molar": 55.845,
+	  "electrons": [
+	    2,
+	    8,
+	    14,
+	    2
+	  ]
+	},
+	{
+	  "class": "Element Transition d",
+	  "group": 8,
+	  "name": "Cobalt",
+	  "index": 27,
+	  "symbol": "Co",
+	  "molar": 58.933193,
+	  "electrons": [
+	    2,
+	    8,
+	    15,
+	    2
+	  ]
+	},
+	{
+	  "class": "Element Transition d",
+	  "group": 9,
+	  "name": "Nickel",
+	  "index": 28,
+	  "symbol": "Ni",
+	  "molar": 58.6934,
+	  "electrons": [
+	    2,
+	    8,
+	    16,
+	    2
+	  ]
+	},
+	{
+	  "class": "Element Transition d",
+	  "group": 10,
+	  "name": "Copper",
+	  "index": 29,
+	  "symbol": "Cu",
+	  "molar": 63.546,
+	  "electrons": [
+	    2,
+	    8,
+	    18,
+	    1
+	  ]
+	},
+	{
+	  "class": "Element Transition d",
+	  "group": 11,
+	  "name": "Zinc",
+	  "index": 30,
+	  "symbol": "Zn",
+	  "molar": 65.38,
+	  "electrons": [
+	    2,
+	    8,
+	    18,
+	    2
+	  ]
+	},
+	{
+	  "class": "Element Poor Boron p",
+	  "group": 12,
+	  "name": "Gallium",
+	  "index": 31,
+	  "symbol": "Ga",
+	  "molar": 69.723,
+	  "electrons": [
+	    2,
+	    8,
+	    18,
+	    3
+	  ]
+	},
+	{
+	  "class": "Element Metalloid Carbon p",
+	  "group": 13,
+	  "name": "Germanium",
+	  "index": 32,
+	  "symbol": "Ge",
+	  "molar": 72.63,
+	  "electrons": [
+	    2,
+	    8,
+	    18,
+	    4
+	  ]
+	},
+	{
+	  "class": "Element Metalloid Pnictogen p",
+	  "group": 14,
+	  "name": "Arsenic",
+	  "index": 33,
+	  "symbol": "As",
+	  "molar": 74.9216,
+	  "electrons": [
+	    2,
+	    8,
+	    18,
+	    5
+	  ]
+	},
+	{
+	  "class": "Element Nonmetal Chalcogen p",
+	  "group": 15,
+	  "name": "Selenium",
+	  "index": 34,
+	  "symbol": "Se",
+	  "molar": 78.96,
+	  "electrons": [
+	    2,
+	    8,
+	    18,
+	    6
+	  ]
+	},
+	{
+	  "class": "Element Halogen p",
+	  "group": 16,
+	  "name": "Bromine",
+	  "index": 35,
+	  "symbol": "Br",
+	  "molar": 79.904,
+	  "electrons": [
+	    2,
+	    8,
+	    18,
+	    7
+	  ]
+	},
+	{
+	  "class": "Element Noble p",
+	  "group": 17,
+	  "name": "Krypton",
+	  "index": 36,
+	  "symbol": "Kr",
+	  "molar": 83.798,
+	  "electrons": [
+	    2,
+	    8,
+	    18,
+	    8
+	  ]
+	}
+      ]
+    },
+    {
+      "wiki": "http://en.wikipedia.org/wiki/Period%205%20element",
+      "elements": [
+	{
+	  "class": "Element Alkali s",
+	  "group": 0,
+	  "name": "Rubidium",
+	  "index": 37,
+	  "symbol": "Rb",
+	  "molar": 85.4678,
+	  "electrons": [
+	    2,
+	    8,
+	    18,
+	    8,
+	    1
+	  ]
+	},
+	{
+	  "class": "Element Alkaline s",
+	  "group": 1,
+	  "name": "Strontium",
+	  "index": 38,
+	  "symbol": "Sr",
+	  "molar": 87.62,
+	  "electrons": [
+	    2,
+	    8,
+	    18,
+	    8,
+	    2
+	  ]
+	},
+	{
+	  "class": "Element Transition d",
+	  "group": 2,
+	  "name": "Yttrium",
+	  "index": 39,
+	  "symbol": "Y",
+	  "molar": 88.90585,
+	  "electrons": [
+	    2,
+	    8,
+	    18,
+	    9,
+	    2
+	  ]
+	},
+	{
+	  "class": "Element Transition d",
+	  "group": 3,
+	  "name": "Zirconium",
+	  "index": 40,
+	  "symbol": "Zr",
+	  "molar": 91.224,
+	  "electrons": [
+	    2,
+	    8,
+	    18,
+	    10,
+	    2
+	  ]
+	},
+	{
+	  "class": "Element Transition d",
+	  "group": 4,
+	  "name": "Niobium",
+	  "index": 41,
+	  "symbol": "Nb",
+	  "molar": 92.90638,
+	  "electrons": [
+	    2,
+	    8,
+	    18,
+	    12,
+	    1
+	  ]
+	},
+	{
+	  "class": "Element Transition d",
+	  "group": 5,
+	  "name": "Molybdenum",
+	  "index": 42,
+	  "symbol": "Mo",
+	  "molar": 95.96,
+	  "electrons": [
+	    2,
+	    8,
+	    18,
+	    13,
+	    1
+	  ]
+	},
+	{
+	  "class": "Element Transition d",
+	  "group": 6,
+	  "name": "Technetium",
+	  "index": 43,
+	  "symbol": "Tc",
+	  "molar": 98,
+	  "electrons": [
+	    2,
+	    8,
+	    18,
+	    13,
+	    2
+	  ]
+	},
+	{
+	  "class": "Element Transition d",
+	  "group": 7,
+	  "name": "Ruthenium",
+	  "index": 44,
+	  "symbol": "Ru",
+	  "molar": 101.07,
+	  "electrons": [
+	    2,
+	    8,
+	    18,
+	    15,
+	    1
+	  ]
+	},
+	{
+	  "class": "Element Transition d",
+	  "group": 8,
+	  "name": "Rhodium",
+	  "index": 45,
+	  "symbol": "Rh",
+	  "molar": 102.9055,
+	  "electrons": [
+	    2,
+	    8,
+	    18,
+	    16,
+	    1
+	  ]
+	},
+	{
+	  "class": "Element Transition d",
+	  "group": 9,
+	  "name": "Palladium",
+	  "index": 46,
+	  "symbol": "Pd",
+	  "molar": 106.42,
+	  "electrons": [
+	    2,
+	    8,
+	    18,
+	    18
+	  ]
+	},
+	{
+	  "class": "Element Transition d",
+	  "group": 10,
+	  "name": "Silver",
+	  "index": 47,
+	  "symbol": "Ag",
+	  "molar": 107.8682,
+	  "electrons": [
+	    2,
+	    8,
+	    18,
+	    18,
+	    1
+	  ]
+	},
+	{
+	  "class": "Element Transition d",
+	  "group": 11,
+	  "name": "Cadmium",
+	  "index": 48,
+	  "symbol": "Cd",
+	  "molar": 112.411,
+	  "electrons": [
+	    2,
+	    8,
+	    18,
+	    18,
+	    2
+	  ]
+	},
+	{
+	  "class": "Element Poor Boron p",
+	  "group": 12,
+	  "name": "Indium",
+	  "index": 49,
+	  "symbol": "In",
+	  "molar": 114.818,
+	  "electrons": [
+	    2,
+	    8,
+	    18,
+	    18,
+	    3
+	  ]
+	},
+	{
+	  "class": "Element Poor Carbon p",
+	  "group": 13,
+	  "name": "Tin",
+	  "index": 50,
+	  "symbol": "Sn",
+	  "molar": 118.71,
+	  "electrons": [
+	    2,
+	    8,
+	    18,
+	    18,
+	    4
+	  ]
+	},
+	{
+	  "class": "Element Metalloid Pnictogen p",
+	  "group": 14,
+	  "name": "Antimony",
+	  "index": 51,
+	  "symbol": "Sb",
+	  "molar": 121.76,
+	  "electrons": [
+	    2,
+	    8,
+	    18,
+	    18,
+	    5
+	  ]
+	},
+	{
+	  "class": "Element Metalloid Chalcogen p",
+	  "group": 15,
+	  "name": "Tellurium",
+	  "index": 52,
+	  "symbol": "Te",
+	  "molar": 127.6,
+	  "electrons": [
+	    2,
+	    8,
+	    18,
+	    18,
+	    6
+	  ]
+	},
+	{
+	  "class": "Element Halogen p",
+	  "group": 16,
+	  "name": "Iodine",
+	  "index": 53,
+	  "symbol": "I",
+	  "molar": 126.90447,
+	  "electrons": [
+	    2,
+	    8,
+	    18,
+	    18,
+	    7
+	  ]
+	},
+	{
+	  "class": "Element Noble p",
+	  "group": 17,
+	  "name": "Xenon",
+	  "index": 54,
+	  "symbol": "Xe",
+	  "molar": 131.293,
+	  "electrons": [
+	    2,
+	    8,
+	    18,
+	    18,
+	    8
+	  ]
+	}
+      ]
+    },
+    {
+      "wiki": "http://en.wikipedia.org/wiki/Period%206%20element",
+      "elements": [
+	{
+	  "class": "Element Alkali s",
+	  "group": 0,
+	  "name": "Caesium",
+	  "index": 55,
+	  "symbol": "Cs",
+	  "molar": 132.90546,
+	  "electrons": [
+	    2,
+	    8,
+	    18,
+	    18,
+	    8,
+	    1
+	  ]
+	},
+	{
+	  "class": "Element Alkaline s",
+	  "group": 1,
+	  "name": "Barium",
+	  "index": 56,
+	  "symbol": "Ba",
+	  "molar": 137.327,
+	  "electrons": [
+	    2,
+	    8,
+	    18,
+	    18,
+	    8,
+	    2
+	  ]
+	},
+	{
+	  "class": "Lanthanoid InnerBorder BlueLeft BlueTop BlueRight",
+	  "group": 2,
+	  "name": "",
+	  "index": "",
+	  "symbol": "57-71"
+	},
+	{
+	  "class": "Element Transition d",
+	  "group": 3,
+	  "name": "Hafnium",
+	  "index": 72,
+	  "symbol": "Hf",
+	  "molar": 178.49,
+	  "electrons": [
+	    2,
+	    8,
+	    18,
+	    32,
+	    10,
+	    2
+	  ]
+	},
+	{
+	  "class": "Element Transition d",
+	  "group": 4,
+	  "name": "Tantalum",
+	  "index": 73,
+	  "symbol": "Ta",
+	  "molar": 180.94788,
+	  "electrons": [
+	    2,
+	    8,
+	    18,
+	    32,
+	    11,
+	    2
+	  ]
+	},
+	{
+	  "class": "Element Transition d",
+	  "group": 5,
+	  "name": "Tungsten",
+	  "index": 74,
+	  "symbol": "W",
+	  "molar": 183.84,
+	  "electrons": [
+	    2,
+	    8,
+	    18,
+	    32,
+	    12,
+	    2
+	  ]
+	},
+	{
+	  "class": "Element Transition d",
+	  "group": 6,
+	  "name": "Rhenium",
+	  "index": 75,
+	  "symbol": "Re",
+	  "molar": 186.207,
+	  "electrons": [
+	    2,
+	    8,
+	    18,
+	    32,
+	    13,
+	    2
+	  ]
+	},
+	{
+	  "class": "Element Transition d",
+	  "group": 7,
+	  "name": "Osmium",
+	  "index": 76,
+	  "symbol": "Os",
+	  "molar": 190.23,
+	  "electrons": [
+	    2,
+	    8,
+	    18,
+	    32,
+	    14,
+	    2
+	  ]
+	},
+	{
+	  "class": "Element Transition d",
+	  "group": 8,
+	  "name": "Iridium",
+	  "index": 77,
+	  "symbol": "Ir",
+	  "molar": 192.217,
+	  "electrons": [
+	    2,
+	    8,
+	    18,
+	    32,
+	    15,
+	    2
+	  ]
+	},
+	{
+	  "class": "Element Transition d",
+	  "group": 9,
+	  "name": "Platinum",
+	  "index": 78,
+	  "symbol": "Pt",
+	  "molar": 195.084,
+	  "electrons": [
+	    2,
+	    8,
+	    18,
+	    32,
+	    17,
+	    1
+	  ]
+	},
+	{
+	  "class": "Element Transition d",
+	  "group": 10,
+	  "name": "Gold",
+	  "index": 79,
+	  "symbol": "Au",
+	  "molar": 196.96657,
+	  "electrons": [
+	    2,
+	    8,
+	    18,
+	    32,
+	    18,
+	    1
+	  ]
+	},
+	{
+	  "class": "Element Transition d",
+	  "group": 11,
+	  "name": "Mercury",
+	  "index": 80,
+	  "symbol": "Hg",
+	  "molar": 200.59,
+	  "electrons": [
+	    2,
+	    8,
+	    18,
+	    32,
+	    18,
+	    2
+	  ]
+	},
+	{
+	  "class": "Element Poor Boron p",
+	  "group": 12,
+	  "name": "Thallium",
+	  "index": 81,
+	  "symbol": "Tl",
+	  "molar": 204.3833,
+	  "electrons": [
+	    2,
+	    8,
+	    18,
+	    32,
+	    18,
+	    3
+	  ]
+	},
+	{
+	  "class": "Element Poor Carbon p",
+	  "group": 13,
+	  "name": "Lead",
+	  "index": 82,
+	  "symbol": "Pb",
+	  "molar": 207.2,
+	  "electrons": [
+	    2,
+	    8,
+	    18,
+	    32,
+	    18,
+	    4
+	  ]
+	},
+	{
+	  "class": "Element Poor Pnictogen p",
+	  "group": 14,
+	  "name": "Bismuth",
+	  "index": 83,
+	  "symbol": "Bi",
+	  "molar": 208.9804,
+	  "electrons": [
+	    2,
+	    8,
+	    18,
+	    32,
+	    18,
+	    5
+	  ]
+	},
+	{
+	  "class": "Element Metalloid Chalcogen p",
+	  "group": 15,
+	  "name": "Polonium",
+	  "index": 84,
+	  "symbol": "Po",
+	  "molar": 209,
+	  "electrons": [
+	    2,
+	    8,
+	    18,
+	    32,
+	    18,
+	    6
+	  ]
+	},
+	{
+	  "class": "Element Halogen p",
+	  "group": 16,
+	  "name": "Astatine",
+	  "index": 85,
+	  "symbol": "At",
+	  "molar": 210,
+	  "electrons": [
+	    2,
+	    8,
+	    18,
+	    32,
+	    18,
+	    7
+	  ]
+	},
+	{
+	  "class": "Element Noble p",
+	  "group": 17,
+	  "name": "Radon",
+	  "index": 86,
+	  "symbol": "Rn",
+	  "molar": 222,
+	  "electrons": [
+	    2,
+	    8,
+	    18,
+	    32,
+	    18,
+	    8
+	  ]
+	}
+      ]
+    },
+    {
+      "wiki": "http://en.wikipedia.org/wiki/Period%207%20element",
+      "elements": [
+	{
+	  "class": "Element Alkali s",
+	  "group": 0,
+	  "name": "Francium",
+	  "index": 87,
+	  "symbol": "Fr",
+	  "molar": 223,
+	  "electrons": [
+	    2,
+	    8,
+	    18,
+	    32,
+	    18,
+	    8,
+	    1
+	  ]
+	},
+	{
+	  "class": "Element Alkaline s",
+	  "group": 1,
+	  "name": "Radium",
+	  "index": 88,
+	  "symbol": "Ra",
+	  "molar": 226,
+	  "electrons": [
+	    2,
+	    8,
+	    18,
+	    32,
+	    18,
+	    8,
+	    2
+	  ]
+	},
+	{
+	  "class": "Actinoid InnerBorder BlueLeft BlueRight",
+	  "group": 2,
+	  "name": "",
+	  "index": "",
+	  "symbol": "89-103"
+	},
+	{
+	  "class": "Element Transition d",
+	  "group": 3,
+	  "name": "Rutherfordium",
+	  "index": 104,
+	  "symbol": "Rf",
+	  "molar": 267,
+	  "electrons": [
+	    2,
+	    8,
+	    18,
+	    32,
+	    32,
+	    10,
+	    2
+	  ]
+	},
+	{
+	  "class": "Element Transition d",
+	  "group": 4,
+	  "name": "Dubnium",
+	  "index": 105,
+	  "symbol": "Db",
+	  "molar": 268,
+	  "electrons": [
+	    2,
+	    8,
+	    18,
+	    32,
+	    32,
+	    11,
+	    2
+	  ]
+	},
+	{
+	  "class": "Element Transition d",
+	  "group": 5,
+	  "name": "Seaborgium",
+	  "index": 106,
+	  "symbol": "Sg",
+	  "molar": 271,
+	  "electrons": [
+	    2,
+	    8,
+	    18,
+	    32,
+	    32,
+	    12,
+	    2
+	  ]
+	},
+	{
+	  "class": "Element Transition d",
+	  "group": 6,
+	  "name": "Bohrium",
+	  "index": 107,
+	  "symbol": "Bh",
+	  "molar": 272,
+	  "electrons": [
+	    2,
+	    8,
+	    18,
+	    32,
+	    32,
+	    13,
+	    2
+	  ]
+	},
+	{
+	  "class": "Element Transition d",
+	  "group": 7,
+	  "name": "Hassium",
+	  "index": 108,
+	  "symbol": "Hs",
+	  "molar": 270,
+	  "electrons": [
+	    2,
+	    8,
+	    18,
+	    32,
+	    32,
+	    14,
+	    2
+	  ]
+	},
+	{
+	  "class": "Element Transition d",
+	  "group": 8,
+	  "name": "Meitnerium",
+	  "index": 109,
+	  "symbol": "Mt",
+	  "molar": 276,
+	  "electrons": [
+	    2,
+	    8,
+	    18,
+	    32,
+	    32,
+	    15,
+	    2
+	  ]
+	},
+	{
+	  "class": "Element Transition d",
+	  "group": 9,
+	  "name": "Darmstadtium",
+	  "index": 110,
+	  "symbol": "Ds",
+	  "molar": 281,
+	  "electrons": [
+	    2,
+	    8,
+	    18,
+	    32,
+	    32,
+	    17,
+	    1
+	  ]
+	},
+	{
+	  "class": "Element Transition d",
+	  "group": 10,
+	  "name": "Roentgenium",
+	  "index": 111,
+	  "symbol": "Rg",
+	  "molar": 280,
+	  "electrons": [
+	    2,
+	    8,
+	    18,
+	    32,
+	    32,
+	    18,
+	    1
+	  ]
+	},
+	{
+	  "class": "Element Transition d",
+	  "group": 11,
+	  "name": "Copernicium",
+	  "index": 112,
+	  "symbol": "Cn",
+	  "molar": 285,
+	  "electrons": [
+	    2,
+	    8,
+	    18,
+	    32,
+	    32,
+	    18,
+	    2
+	  ]
+	},
+	{
+	  "class": "Element Poor Boron p",
+	  "group": 12,
+	  "name": "Ununtrium",
+	  "index": 113,
+	  "symbol": "Uut",
+	  "molar": 284,
+	  "electrons": [
+	    2,
+	    8,
+	    18,
+	    32,
+	    32,
+	    18,
+	    3
+	  ]
+	},
+	{
+	  "class": "Element Poor Carbon p",
+	  "group": 13,
+	  "name": "Flerovium",
+	  "index": 114,
+	  "symbol": "Fl",
+	  "molar": 289,
+	  "electrons": [
+	    2,
+	    8,
+	    18,
+	    32,
+	    32,
+	    18,
+	    4
+	  ]
+	},
+	{
+	  "class": "Element Poor Pnictogen p",
+	  "group": 14,
+	  "name": "Ununpentium",
+	  "index": 115,
+	  "symbol": "Uup",
+	  "molar": 288,
+	  "electrons": [
+	    2,
+	    8,
+	    18,
+	    32,
+	    32,
+	    18,
+	    5
+	  ]
+	},
+	{
+	  "class": "Element Poor Chalcogen p",
+	  "group": 15,
+	  "name": "Livermorium",
+	  "index": 116,
+	  "symbol": "Lv",
+	  "molar": 293,
+	  "electrons": [
+	    2,
+	    8,
+	    18,
+	    32,
+	    32,
+	    18,
+	    6
+	  ]
+	},
+	{
+	  "class": "Element Halogen p",
+	  "group": 16,
+	  "name": "Ununseptium",
+	  "index": 117,
+	  "symbol": "Uus",
+	  "molar": 294,
+	  "electrons": [
+	    2,
+	    8,
+	    18,
+	    32,
+	    32,
+	    18,
+	    7
+	  ]
+	},
+	{
+	  "class": "Element Noble p",
+	  "group": 17,
+	  "name": "Ununoctium",
+	  "index": 118,
+	  "symbol": "Uuo",
+	  "molar": 294,
+	  "electrons": [
+	    2,
+	    8,
+	    18,
+	    32,
+	    32,
+	    18,
+	    8
+	  ]
+	}
+      ]
+    }
+  ],
+  "lanthanoids": [
+    {
+      "class": "Element Lanthanoid f",
+      "group": 2,
+      "name": "Lanthanum",
+      "index": 57,
+      "symbol": "La",
+      "molar": 138.90547,
+      "electrons": [
+	2,
+	8,
+	18,
+	18,
+	9,
+	2
+      ]
+    },
+    {
+      "class": "Element Lanthanoid f",
+      "group": 3,
+      "name": "Cerium",
+      "index": 58,
+      "symbol": "Ce",
+      "molar": 140.116,
+      "electrons": [
+	2,
+	8,
+	18,
+	19,
+	9,
+	2
+      ]
+    },
+    {
+      "class": "Element Lanthanoid f",
+      "group": 4,
+      "name": "Praseodymium",
+      "index": 59,
+      "symbol": "Pr",
+      "molar": 140.90765,
+      "electrons": [
+	2,
+	8,
+	18,
+	21,
+	8,
+	2
+      ]
+    },
+    {
+      "class": "Element Lanthanoid f",
+      "group": 5,
+      "name": "Neodymium",
+      "index": 60,
+      "symbol": "Nd",
+      "molar": 144.242,
+      "electrons": [
+	2,
+	8,
+	18,
+	22,
+	8,
+	2
+      ]
+    },
+    {
+      "class": "Element Lanthanoid f",
+      "group": 6,
+      "name": "Promethium",
+      "index": 61,
+      "symbol": "Pm",
+      "molar": 145,
+      "electrons": [
+	2,
+	8,
+	18,
+	23,
+	8,
+	2
+      ]
+    },
+    {
+      "class": "Element Lanthanoid f",
+      "group": 7,
+      "name": "Samarium",
+      "index": 62,
+      "symbol": "Sm",
+      "molar": 150.36,
+      "electrons": [
+	2,
+	8,
+	18,
+	24,
+	8,
+	2
+      ]
+    },
+    {
+      "class": "Element Lanthanoid f",
+      "group": 8,
+      "name": "Europium",
+      "index": 63,
+      "symbol": "Eu",
+      "molar": 151.964,
+      "electrons": [
+	2,
+	8,
+	18,
+	25,
+	8,
+	2
+      ]
+    },
+    {
+      "class": "Element Lanthanoid f",
+      "group": 9,
+      "name": "Gadolinium",
+      "index": 64,
+      "symbol": "Gd",
+      "molar": 157.25,
+      "electrons": [
+	2,
+	8,
+	18,
+	25,
+	9,
+	2
+      ]
+    },
+    {
+      "class": "Element Lanthanoid f",
+      "group": 10,
+      "name": "Terbium",
+      "index": 65,
+      "symbol": "Tb",
+      "molar": 158.92535,
+      "electrons": [
+	2,
+	8,
+	18,
+	27,
+	8,
+	2
+      ]
+    },
+    {
+      "class": "Element Lanthanoid f",
+      "group": 11,
+      "name": "Dysprosium",
+      "index": 66,
+      "symbol": "Dy",
+      "molar": 162.5,
+      "electrons": [
+	2,
+	8,
+	18,
+	28,
+	8,
+	2
+      ]
+    },
+    {
+      "class": "Element Lanthanoid f",
+      "group": 12,
+      "name": "Holmium",
+      "index": 67,
+      "symbol": "Ho",
+      "molar": 164.93031,
+      "electrons": [
+	2,
+	8,
+	18,
+	29,
+	8,
+	2
+      ]
+    },
+    {
+      "class": "Element Lanthanoid f",
+      "group": 13,
+      "name": "Erbium",
+      "index": 68,
+      "symbol": "Er",
+      "molar": 167.259,
+      "electrons": [
+	2,
+	8,
+	18,
+	30,
+	8,
+	2
+      ]
+    },
+    {
+      "class": "Element Lanthanoid f",
+      "group": 14,
+      "name": "Thulium",
+      "index": 69,
+      "symbol": "Tm",
+      "molar": 168.9342,
+      "electrons": [
+	2,
+	8,
+	18,
+	31,
+	8,
+	2
+      ]
+    },
+    {
+      "class": "Element Lanthanoid f",
+      "group": 15,
+      "name": "Ytterbium",
+      "index": 70,
+      "symbol": "Yb",
+      "molar": 173.054,
+      "electrons": [
+	2,
+	8,
+	18,
+	32,
+	8,
+	2
+      ]
+    },
+    {
+      "class": "Element Lanthanoid d",
+      "group": 16,
+      "name": "Lutetium",
+      "index": 71,
+      "symbol": "Lu",
+      "molar": 174.9668,
+      "electrons": [
+	2,
+	8,
+	18,
+	32,
+	9,
+	2
+      ]
+    }
+  ],
+  "actinoids": [
+    {
+      "class": "Element Actinoid f",
+      "group": 2,
+      "name": "Actinium",
+      "index": 89,
+      "symbol": "Ac",
+      "molar": 227,
+      "electrons": [
+	2,
+	8,
+	18,
+	32,
+	18,
+	9,
+	2
+      ]
+    },
+    {
+      "class": "Element Actinoid f",
+      "group": 3,
+      "name": "Thorium",
+      "index": 90,
+      "symbol": "Th",
+      "molar": 232.03806,
+      "electrons": [
+	2,
+	8,
+	18,
+	32,
+	18,
+	10,
+	2
+      ]
+    },
+    {
+      "class": "Element Actinoid f",
+      "group": 4,
+      "name": "Protactinium",
+      "index": 91,
+      "symbol": "Pa",
+      "molar": 231.03587,
+      "electrons": [
+	2,
+	8,
+	18,
+	32,
+	20,
+	9,
+	2
+      ]
+    },
+    {
+      "class": "Element Actinoid f",
+      "group": 5,
+      "name": "Uranium",
+      "index": 92,
+      "symbol": "U",
+      "molar": 238.02892,
+      "electrons": [
+	2,
+	8,
+	18,
+	32,
+	21,
+	9,
+	2
+      ]
+    },
+    {
+      "class": "Element Actinoid f",
+      "group": 6,
+      "name": "Neptunium",
+      "index": 93,
+      "symbol": "Np",
+      "molar": 237,
+      "electrons": [
+	2,
+	8,
+	18,
+	32,
+	22,
+	9,
+	2
+      ]
+    },
+    {
+      "class": "Element Actinoid f",
+      "group": 7,
+      "name": "Plutonium",
+      "index": 94,
+      "symbol": "Pu",
+      "molar": 244,
+      "electrons": [
+	2,
+	8,
+	18,
+	32,
+	24,
+	8,
+	2
+      ]
+    },
+    {
+      "class": "Element Actinoid f",
+      "group": 8,
+      "name": "Americium",
+      "index": 95,
+      "symbol": "Am",
+      "molar": 243,
+      "electrons": [
+	2,
+	8,
+	18,
+	32,
+	25,
+	8,
+	2
+      ]
+    },
+    {
+      "class": "Element Actinoid f",
+      "group": 9,
+      "name": "Curium",
+      "index": 96,
+      "symbol": "Cm",
+      "molar": 247,
+      "electrons": [
+	2,
+	8,
+	18,
+	32,
+	25,
+	9,
+	2
+      ]
+    },
+    {
+      "class": "Element Actinoid f",
+      "group": 10,
+      "name": "Berkelium",
+      "index": 97,
+      "symbol": "Bk",
+      "molar": 247,
+      "electrons": [
+	2,
+	8,
+	18,
+	32,
+	27,
+	8,
+	2
+      ]
+    },
+    {
+      "class": "Element Actinoid f",
+      "group": 11,
+      "name": "Californium",
+      "index": 98,
+      "symbol": "Cf",
+      "molar": 251,
+      "electrons": [
+	2,
+	8,
+	18,
+	32,
+	28,
+	8,
+	2
+      ]
+    },
+    {
+      "class": "Element Actinoid f",
+      "group": 12,
+      "name": "Einsteinium",
+      "index": 99,
+      "symbol": "Es",
+      "molar": 252,
+      "electrons": [
+	2,
+	8,
+	18,
+	32,
+	29,
+	8,
+	2
+      ]
+    },
+    {
+      "class": "Element Actinoid f",
+      "group": 13,
+      "name": "Fermium",
+      "index": 100,
+      "symbol": "Fm",
+      "molar": 257,
+      "electrons": [
+	2,
+	8,
+	18,
+	32,
+	30,
+	8,
+	2
+      ]
+    },
+    {
+      "class": "Element Actinoid f",
+      "group": 14,
+      "name": "Mendelevium",
+      "index": 101,
+      "symbol": "Md",
+      "molar": 258,
+      "electrons": [
+	2,
+	8,
+	18,
+	32,
+	31,
+	8,
+	2
+      ]
+    },
+    {
+      "class": "Element Actinoid f",
+      "group": 15,
+      "name": "Nobelium",
+      "index": 102,
+      "symbol": "No",
+      "molar": 259,
+      "electrons": [
+	2,
+	8,
+	18,
+	32,
+	32,
+	8,
+	2
+      ]
+    },
+    {
+      "class": "Element Actinoid d",
+      "group": 16,
+      "name": "Lawrencium",
+      "index": 103,
+      "symbol": "Lr",
+      "molar": 262,
+      "electrons": [
+	2,
+	8,
+	18,
+	32,
+	32,
+	8,
+	3
+      ]
+    }
+  ]
+}
