@@ -1,0 +1,195 @@
+<h1>Exploring "equivalence" of Biology and Boolean Logic</h1>
+
+<p>
+  What can we learn by attempting to implement biologies systems using
+  symbolic logic, and what improvements can be made in our
+  implementations of symbolic logic through the study of biology? That
+  is the purpose of this exploration.
+</p>
+
+<h2>Preface</h2>
+<p>
+  The reason pure math "works" (i.e. has the property of being
+  proveable and internally consistent) is because it is abstract and
+  symbolic. That is, it exists in a theoretical domain which is not
+  subject to the physics of the universe and its complex variables and
+  their uncertainties over time. Within the static, unchanging context
+  of the symbolic domain, we can freely test axioms and their
+  consequences, control the construction and scope of a problem,
+  examine properties of expressions using different approaches, and
+  prove the consistency, correctness, and properties of theorems.
+</p>
+
+<p>
+  While these properties of the symbolic domain convenience us to make
+  deep promises about the integrity, inferences, and comparison of
+  purely symbolic mathematical systems, it doesn't eliminate the
+  reality that many of the systems we care about are subject to the
+  chaotic laws of our physical universe. In such physical domains, we
+  have less luxury of controlling our axioms. We may eliminate some
+  variables by controlling our environment, even manipulate the powers
+  of physics within reason of our technical capabilities
+  (e.g. <a href="https://www.youtube.com/watch?v=1RpLOKqTcSk">Bose-Einstein
+  Conensate</a> or the
+  world's <a href="https://www.youtube.com/watch?v=E43-CfukEgs">biggest
+  vacuum chamber</a>), but we cannot change that the universe is made
+  of quarks -- a confounding constraint pure mathematics can ignore.
+</p>
+
+<p>
+  The need for symbolic systems is necessitated by the complexity of
+  our physical world. It seems there is always something more we do
+  not know, in which every other computation depends:
+
+  <blockquote>
+    "For centuries [people] lived in the belief that truth was slim and
+    elusive and that once [it was] found [...], the troubles of [our]kind
+    would be over. [One] of knowledge in our time is bowed down under a
+    burden [one] never imagined [one] would ever have: The
+    overproduction of truth that cannot be consumed."
+    <br/> -- <cite>The Denial of Death</cite> (page xviii, paragraph 1) by <cite>Ernest Becker</cite>
+  </blockquote>
+
+  To fully understand the physical world in its entirety requires that
+  it be exhaustively, deterministically computable, and fully
+  observable. At the quantum level, this "unfolding of the layers of
+  the onion" requires creativity and finese as objects become so small
+  that even observing them changes their behaviour. Instead of hedging
+  all of our bets on speculatation on whether we will someday be able
+  to compute what happened before the big bang, or the exact location
+  of an electron with full confidence without relying on heisenberg
+  uncertainty principle, for instance, there's reason to create
+  incrementally better (more accurate) tools and systems for
+  approximating these answers (or function).
+</p>
+
+<p>
+  Fortunately, our universe is sufficiently complex as to support
+  physical systems (made of matter and subject to the laws of physics)
+  capable of faithfully emulating isolatable symbolic domains at high
+  (albeit finite) accuracy. A computer is one example of a
+  "sub-universe" we can create whose axioms are those of symbolic
+  logic, a subset of symbolic mathematics. In later sections, it will
+  be explored how the ingenuity of electronic design and engineering
+  has enabled computers to uphold such a promise; to achieve
+  resiliance and robustness to the seemingly untamable chaos and
+  stochasticism of physics. The importance of the computer is that it
+  provides a medium for integrating symbolic systems into our physical
+  lives; as a frictionless translation layer between the physical and
+  the symbolic.
+</p>
+
+<p>
+  Why is important to be able to engineer faithfully symbolic systems
+  from within our physical reality? First, it affords us
+  interoperability; the ability for observations to be taken directly
+  from the physical word and then analyzed within a controllable,
+  symbolic environment. Second, we benefit from one the standard
+  features of symbolic systems, which is that they are fully
+  observable; they allow us to simulate and test complex interactions
+  while maintaining full control over the environment's variables and
+  axioms, giving us insights into the workings of the physical
+  world. Most importantly, as "implementations" of symbolic logic,
+  they provide us with a extensible, evolvable framework for
+  performing repeatable computation (executing algorithms).
+</p>
+
+<p>
+  How much can we trust a computer proof?
+  See: <a href="https://en.wikipedia.org/wiki/Curry–Howard_correspondence">Curry-Howard
+  Correspondence</a>. Is the computer the only viable approach of
+  implementing symbolic systems?
+</p>
+
+<p>
+  The dichotomy of pure symbolic mathematics and the physical universe
+  means that we can make progress in either domain/direction. Towards
+  a perfect understanding of the physical universe, or in advancing
+  discrete tools and systems for solving certain problems in
+  isolation. But so too can we discuss the dichotomy of different
+  systems. Boolean logic is not the only implementable system for
+  computation. We also have biology, an evolutionary system which
+  evolved independently and from different axioms than boolean
+  logic. Because biology is a physical system and boolean logic a
+  symbolic one, perhaps the same dichotomy exists as does at the
+  higher level comparison of the physical universe and symbolic math
+  (in their totality).
+</p>
+
+<p>
+  What can we learn by attempting to implement biology's systems using
+  symbolic logic, and what improvements can be made in our
+  implementations of symbolic logic through the study of biology? How
+  and where will the brain and the transistor "meet in the middle"?
+  And can it be demonstrated that computationally they are equivalent?
+  That is the purpose of this exploration.
+</p>
+
+<h2>A mess of unintelligable notes:</h2>
+<pre>
+** Electrical engineering, avoiding inaccuracies in electrical current
+capacitors (integrate input of noisy buttons, for instance -- debouncer) or
+Schmitt trigger as detector
+
+*** Schmitt triggers
+
+"When the necessity rises to determine which of the two signals is
+stronger or to determine which of the two signals reaches a specified
+value a comparitor is used."
+https://www.youtube.com/watch?v=5lUS8uTN6aI
+
+https://www.youtube.com/watch?v=TfnP--hEPms
+
+* Inspiration
+schrodener - "what is life" (recommended by Drew Winget)
+http://whatislife.stanford.edu/LoCo_files/What-is-Life.pdf
+Acting on 1st principles, determining boundaries between the supervening fields
+
+deductions based on 1st principles
+- size constraints
+- electromagnetic bonds / type
+
+* 2 directions:
+  1. boolean logic using/from biological components
+  http://www.extremetech.com/extreme/152074-stanford-creates-biological-transistors-the-final-step-towards-computers-inside-living-cells
+
+  2. biological components using boolean logic (electronics)
+
+* What are the axiomatic components of biology (the simplest units made only of the elements)
+
+* What are the axiomatic components of boolean logic and electronics?
+NAND gates, etc.
+
+* Do computers make "errors"?
+https://www.youtube.com/watch?v=enBllfqkMEw
+
+** Error Prevention, Safeguards, Guardbands
+
+MPE (Manchester Encoding)
+Checksums
+
+** Types of errors
+http://stackoverflow.com/questions/20923413/how-often-do-computers-make-mistakes
+1. Floating point errors; deterministic inaccuracies in calculation due to hardware limitation
+https://www.youtube.com/watch?v=ywiJEcpIgXM
+
+2. Design mistakes (e.g. CPU); formal methods can be used to verify correctness
+
+3. Environmental Corruption and Hardware error: radiation from cosmic rays, electrical noise or spikes (e.g. electrostatic discharge)
+- https://en.wikipedia.org/wiki/Engineering_tolerance#Electrical_component_tolerance
+- https://en.wikipedia.org/wiki/Allowance_(engineering)
+- https://en.wikipedia.org/wiki/Allowance_(engineering)#Confounding_of_the_engineering_concepts_of_allowance_and_tolerance
+
+** Error correction
+https://www.youtube.com/watch?v=5sskbSvha9M error correction
+
+* How do the brain's mistakes differ from those of Von Neumann computers?
+The difficulties of executing simple algorithms: why brains make mistakes computers don't.
+http://www.ncbi.nlm.nih.gov/pubmed/24156803
+
+* Heisenberg's uncertainty principle & Schrödinger equation
+
+* Previous works
+http://www.irisa.fr/dyliss/public/asiegel/Articles/SchaubSiegelVidela.pdf
+https://books.google.com/books?id=qGREBAAAQBAJ&pg=PT60&lpg=PT60&dq=equivalence+of+boolean+logic+and+biology&source=bl&ots=A3erNXBCxB&sig=MICDGNmyE-Tcgp631qOYBODYhYk&hl=en&sa=X&ei=sn6MVfPzI4r6sAWliJmYDQ&ved=0CB4Q6AEwAA#v=onepage&q=equivalence%20of%20boolean%20logic%20and%20biology&f=false
+</pre>
