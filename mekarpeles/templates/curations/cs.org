@@ -1,0 +1,54 @@
+
+
+
+
+
+
+
+
+* First Steps
+Why?
+
+* First Language
+The theorist. My emphasis is on theory, mathematics and the
+fundamentals of computation and data structures. I don't want the
+programming language I use to distract me from these core
+concepts. See: Scheme & https://mitpress.mit.edu/sicp/
+
+The tinkerer. I am interested in low level mechanics, understanding
+how computers speak to hardware, having full control of a computer
+program, and finding efficient ways to structure data. I want to learn
+the art of programing as much as I want to create something
+useful. C + ASM The C Programming Language
+
+The industrialist. I want to make the move into a specific industry
+and apply best practices using a language which is battle tested,
+robust, and performant. I want to learn a language whose focus is
+allowing many people to safely collaborate. I recognize the need for
+solving a very specific, mission critical challenging problem
+involving data and enterprise systems, like video streaming, high
+concurrency, telephony.  Go, scala, erlang, ocaml
+
+The system designer. I want to design elegant systems and
+specifications which communicate seamlessly with one another.
+Go, c++.
+
+The applier. I like to move extremely quickly. I want to build
+something useful as fast as possible: python, ruby, node.js.
+http://learnpythonthehardway.org/
+
+The webmaster. I want to build websites, web services and want to have
+a full understanding of the full software stack, from server to
+design.
+
+I want to build apps.
+
+* Life Changes
+The Unix Programming Environment.
+
+* Services
+https://github.com/ripienaar/free-for-dev
+
+* Where to get help
+Stackoverflow
+IRC

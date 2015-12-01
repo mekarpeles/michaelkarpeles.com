@@ -11,10 +11,12 @@
 """
 
 import json
-from flask import render_template, Response, redirect
+import requests
+from flask import render_template, Response, redirect, jsonify
 from flask.views import MethodView
 from werkzeug import wrappers
 from configs import approot
+
 
 class Base(MethodView):
     def get(self, uri=None):
@@ -23,9 +25,11 @@ class Base(MethodView):
         except:
             return redirect('/')
 
+
 class Partial(MethodView):
     def get(self, partial):
         return render_template('partials/%s.html' % partial)
+
 
 class Section(MethodView):
     def get(self, resource=None):
@@ -36,6 +40,7 @@ class Section(MethodView):
             return render_template('base.html', template="%s.html" % layout)
         except:            
             return render_template('base.html', template='%s/index.html' % layout)
+
 
 def rest_api(f):
     """Decorator to allow routes to return json"""
@@ -57,6 +62,7 @@ def rest_api(f):
             pass
     return inner
 
+
 class Api(MethodView):
     @rest_api
     def get(self, resource=None):
@@ -64,3 +70,12 @@ class Api(MethodView):
         with open(path) as f:
             return json.load(f)
 
+
+class QSApi(MethodView):
+
+    def get(self):
+        uri = "https://spreadsheets.google.com/feeds/list"
+        sid = "1k-zl-Ya4OAU7Lp8DsPGy7mSJVCeXSPqK673Wiq8ndt8"
+        gid = "oauobz3"
+        url = "%s/%s/%s/public/values?alt=json" % (uri, sid, gid)
+        return jsonify(requests.get(url).json())

@@ -16,6 +16,7 @@ import views
 from configs import options
 
 urls = (
+    '/api/v1/quantified-self', views.QSApi,
     '/api/v1/<path:resource>', views.Api,
     '/<path:resource>', views.Section,
     '/<path:uri>', views.Section,

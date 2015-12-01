@@ -1,0 +1,64 @@
+* An interface on graph.global to input new entity nodes
+
+* Miley
+
+* The Foundation Graph
+
+
+* Processes 
+** Insulating Wire (https://www.youtube.com/watch?v=dKOe_FfiDuk)
+
+
+
+
+*** History
+https://www.youtube.com/watch?v=8X6pgSA5rJk
+
+
+** Drawing Copper Wire (https://www.youtube.com/watch?v=qddgvxsfE5U)
+
+
+* Generator
+** Magnet
+
+
+* Master Index:
+
+** Molecules
+*** Polyisoprene (C5H8) aka Latex, Natural Rubber
+**** Where it is found
+https://en.wikipedia.org/wiki/Hevea_brasiliensis hevea brasiliensis
+http://www.britannica.com/technology/gutta-percha gutta-percha
+http://phys.org/news/2015-04-rubber-dandelions-scientists-key-components.html dandelions
+**** Chemical composition
+http://ecoport.org/ep?SearchType=earticleView&earticleId=187&page=2468
+**** How it is harvested
+https://www.youtube.com/watch?v=OYyjzF6PteE 8yr tapping, 1/2 cut per day, 32 years - first 7 immature
+**** How it is processed
+https://www.youtube.com/watch?v=CKq42J7SaWw
+I think sulfur can be used as a substitute coagulate for formic acid (check w/ Dr. Karpeles)
+
+https://www.youtube.com/watch?v=Rpu5mH5me1Y&t=1m41s to 2m05s
+Can candle dipping process be used with semi-coagulated latex (and formic acid) to insulate wires?
+
+*** Formic Acid  (CH2O2)
+https://www.youtube.com/watch?v=gYHeLd9e9Cc
+[[Glyceren]] and [[Oxalic Acid Dihydrate]]
+
+*** Titanium Oxiode (TiO2) (http://www.essentialchemicalindustry.org/chemicals/titanium-dioxide.html)
+**** Rutile
+**** Ilmenite 
+Most ilmenite ore production from Canada, South Africa and Norway is
+destined for titaniferous slag application. Carbon (anthracite)
+and energy are added in large electric arc smelting furnaces to
+convert the ilmenite into molten iron bath and slag rich in titanium
+dioxide. (https://en.wikipedia.org/wiki/Ilmenite#Processing_and_consumption)
+** Elements
+1. Copper
+2. Titanium
+3. Sulfur
+
+*** Availability (Geography) / Abundance
+http://mrdata.usgs.gov/catalog/
+http://geology.com/articles/rare-earth-elements/
+http://geology.com/usgs/ree-geology/

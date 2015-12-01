@@ -1,0 +1,398 @@
+Rebooting Society from Ground Up
+* The Foundation
+As human beings, our capabilities are limited by three factors: access
+to or possession of resources, information describing these resources,
+and the intelligence or mental faculties to use together these
+things. Theses three components thus define the boundaries of our
+freedom. The objective of this work is to discern low hanging fruit
+for affording people freedom in each of these three areas. Towards a
+resource which describes the necessity and procurement of raw
+materials, and how to build the simplest effectie forms of the
+world's most impactful technologies, such as paper, metallurgy and
+wire, magnets, electric generators, batteries, plastic, and glass. The
+importance of each of these components will be justified and each of
+their dependencies on other inventions will be recursively
+specified. The result of this work is a curriculum of co-dependent
+instructions, information, and resources for implementing from
+raw/naturally found materials the most significant technical
+achievements of humanity.
+
+** Inspiration
+This concept is loosely based on:
+1. [[https://en.wikipedia.org/wiki/Foundation_series][The Foundation Series]], a science fiction series by Isaac Asimov.
+2. [[https://www.youtube.com/watch?v=kS25vitrZ6g][Dr. Richard Feynman's talk on Electricity]]
+3. [[http://www.ted.com/talks/thomas_thwaites_how_i_built_a_toaster_from_scratch][Thomas Thwaites: "How I built a toaster — from scratch"]] (TEDSalon London 2010)
+5. [[http://opensourceecology.org/][Open Source Blueprints for Civilization]]
+6. [[https://class.coursera.org/nand2tetris1-001][From NAND to Tetris]] (Coursera)
+7. Tesla, Mendeleyeev, Voltaire, Maxwell, Farday, and others
+
+#+begin_quote "I saw in a dream a table where all the elements fell into place as required. Awakening, I immediately wrote it down on a piece of paper. Only in one place did a correction later seem necessary" -- <cite wd="Q9106">[[https://en.wikipedia.org/wiki/Dmitri_Mendeleev][Dmitri Mendeleev]]</cite>
+
+** On Method
+This section is an attempt to document the process by which this
+research experiment was conducted.
+
+** Index of Raw Materials
+As an aside, here's a neat map of the [[http://www.vanderkrogt.net/elements/][etymology of the elements]].
+
+|-------------+--------------------------------------+--------------------------------------------------------------------------------------------+--------------------------------------------|
+| Wikidata ID | Material                             | Recipes                                                                                    | Requires                                   |
+|-------------+--------------------------------------+--------------------------------------------------------------------------------------------+--------------------------------------------|
+| #Q753       | Copper (Cu)                          | [[Gather Malachite]], [[Smelt Ore]]                                                                | #Q479257, #Q164411, #Q40558                |
+| #Q677       | Iron (Fe)                            | [[https://en.wikipedia.org/wiki/Meteoric_iron][Gather Meteoric Iron]] or ([[Gather Iron Ore]], [[Smelt Ore]])                                       | #Q479257, #Q40558                          |
+| #Q663       | Aluminium (Al)                       | [[Gather Bauxite]], [[Smelt Ore]]                                                                  | #Q479257, #Q40558, #Q102078                |
+| #Q40558     | Forge                                | [[Build Forge]]                                                                                | #Q753, ...                                 |
+| #Q131877    | Polyisoprene [Natural Rubber] (C5H8) | [[Tap a Hevea brasiliensis]], [[http://www.intermediates.basf.com/chemicals/formic-acid/latex-coagulation][Coagulate using Formic Acid]], [[https://en.wikipedia.org/wiki/Vulcanization][Vulcanize using Sulfur]] ([[https://www.youtube.com/watch?v=dKOe_FfiDuk][cross-link]]) | #Q987767, #Q161233                         |
+| #Q987767    | Container                            | [[Build a Wood Container]]                                                                     | #Q753, #Q479257                            |
+| #Q102078    | Bauxite                              | [[Mine Bauxite]]                                                                               | #Q479257                                   |
+| #Q164411    | Malachite (Cu2CO3(OH)2)              | [[Mine Malachite]]                                                                             | #Q479257                                   |
+| #Q682       | Sulfur (S)                           | [[Mine Sulfur]]                                                                                | #Q479257                                   |
+| #Q1370714   | Lumber (Timber)                      | [[Harvest Lumber]]                                                                             | #Q479257                                   |
+| #Q479257    | Stone Tool                           | [[Gather Hard Rock]] [[Build a Stone Tool]]                                                        | #Q753 and ???                              |
+| #Q161233    | Formic Acid (CH202)                  | [[Extract Woodland Ant Acid]]                                                                  | #Q148769                                   |
+| #Q3196      | Fire                                 | [[Create Fire]]                                                                                | #Q4115364, #Q753                           |
+| #Q4115364   | Bow Drill                            | [[Create a Bow Drill]]                                                                         | #Q753, #Q2566155, #Q160066                 |
+| #Q2566155   | Rope (Cordage)                       | [[Cordify plant fibres]]                                                                       | #Q160066                                   |
+| #Q160066    | Straw                                | [[Make Straw]]                                                                                 | #Q11577                                    |
+| ???         | Hard Rock                            |                                                                                            | (#Q53754 / #Q237883 / #Q43338 / #Q1070438) |
+| #Q753       | Wood                                 | [[Gather Wood]]                                                                                |                                            |
+| #Q116269    | Silicon Dioxide                      | [[Gather Sand]]                                                                                |                                            |
+| #Q11577     | Hordeum vulgare ([[https://en.wikipedia.org/wiki/Barley][Barley]])             | [[Gather Barley]]                                                                              |                                            |
+|-------------+--------------------------------------+--------------------------------------------------------------------------------------------+--------------------------------------------|
+
+** Recipes
+
+*** DONE [[Gather Hard Rock]]
+|-------------+-------------------------------+-----------------------------------------------------|
+| Wikidata ID | Material                      | Location                                            |
+|-------------+-------------------------------+-----------------------------------------------------|
+| #Q43010     | Quarts (Si02)                 | https://en.wikipedia.org/wiki/Quartz#Occurrence     |
+| #Q53754     | Obsidian ~(SiO2 + MgO, Fe3O4) | https://en.wikipedia.org/wiki/Obsidian#Occurrence   |
+| #Q237883    | Quartzite                     | https://en.wikipedia.org/wiki/Quartzite#Occurrences |
+| #Q1070438   | Chert (Flint)                 | https://en.wikipedia.org/wiki/Chert#Occurrence      |
+| #Q43338     | Basalt                        | https://en.wikipedia.org/wiki/Basalt#Occurrence     |
+|-------------+-------------------------------+-----------------------------------------------------|
+
+*** DONE [[Mine Sulfur (S)]]
+Extreme Caution! Mining sulfur is often accompanied by the release of
+[[Sulfur Dioxide (SO2)]] in gas form, which is toxic, and the release of
+[[Hydrogen Sulfide (H2S)]], which is so toxic, very short exposure could cause
+death. See: [[https://www.youtube.com/watch?v=8UBk8f7Bgj0][BBC Documentary]].
+
+1. Sulfur (S) deposits are found naturally in areas
+around hot springs and in volcanic regions. It is also widely found in
+nature as iron pyrites (iron sulfide), galena (lead sulfide), gypsum
+(calcium sulfate), Epsom salts (magnesium sulfate) and many other
+minerals.
+
+https://www.youtube.com/watch?v=RN34_oQZN8A
+
+*** DONE [[Mine Bauxite]]
+[[https://en.wikipedia.org/wiki/Bauxite][Bauxite's Composition]] is gibbsite Al(OH)3, boehmite γ-AlO(OH) and
+diaspore α-AlO(OH), mixed with the two iron oxides goethite and
+haematite, the clay mineral kaolinite and small amounts of anatase
+TiO2. [[https://en.wikipedia.org/wiki/Bauxite#Production_trends][Locating Bauxite]] Can be found in Arkansas
+
+[[https://www.youtube.com/watch?v=WaSwimvCGA8][Aluminium Extraction]] Holyhead Wales, UK [[https://www.youtube.com/watch?v=fa6KEwWY9HU][How it's made]] - it comes from
+bauxite (in tropical countries) aluminium bonded to oxygen. Bonds
+broken by electrolosis.
+
+*** DONE [[Mine Iron Ore]]
+http://www.explainthatstuff.com/ironsteel.html
+http://quatr.us/chemistry/atoms/iron.htm
+Re: [[https://www.youtube.com/watch?v=F3rjjpuhCLI][Medieval Iron Production]]
+1. [[https://youtu.be/RuCnZClWwpQ?t=14m52s][Locating Iron Ore]]
+(Africa)
+. There are 3 main types: 
+   40-70% [[Iron (Fe)]] (difficult to find, best quality),
+    40-65% [[Iron (Fe)]] Brown Hematite, aka 
+   40-60% [[Iron (Fe)]] (easy to find). 
+
+
+|-------------+---------------------------------+----------------------------------------------------------------------------------------------+----------|
+| Wikidata ID | Material                        | Availability                                                                                 | Requires |
+|-------------+---------------------------------+----------------------------------------------------------------------------------------------+----------|
+| #Q181395    | Magnetite (Fe3O4) {Lodestone}   | https://en.wikipedia.org/wiki/Magnetite#Distribution_of_deposits, CA, NZ                     | #Q479257 |
+| #Q103223    | Hematite (Fe2O3)                | Often near hot springs; England, Switzerland, Italy, Australia, Brazil +  Lake Superior (MI) | #Q479257 |
+| #Q193565    | Limonite (Fe2O3NH2O) {Bog Iron} | Austria and England                                                                          | #Q479257 |
+|-------------+---------------------------------+----------------------------------------------------------------------------------------------+----------|
+See also [[https://en.wikipedia.org/wiki/Taconite][Taconite]], [[https://en.wikipedia.org/wiki/Pyrite][Pyrite]], or [[https://en.wikipedia.org/wiki/Siderite][Siderite]].
+
+*** DONE [[Mine Malachite]]
+The [[https://www.youtube.com/watch?v=RmaGh4g1JtY][History and Production of Copper]].
+
+1. Acquire [[Malachite (Cu2CO3(OH)2)]]
+(Copper carbonate hydroxide)
+https://www.youtube.com/watch?v=_OrBw4L490Y
+Location: Jordan
+
+1. [[http://www.copper.org/education/Kids/copperandkids_wheredoescopper.html][Locating Copper Ore]]: The largest copper mine is found in Utah
+   (Bingham Canyon). Other major mines are found in Arizona, Michigan,
+   New Mexico and Montana. In South America, Chile, the world's
+   largest producer, and Peru are both major producers of copper. It
+   can also be aquired from Malachite.
+2. [[https://www.youtube.com/watch?v=Qd8RKuKwwW0][Mine Copper Ore]]
+
+
+
+*** DONE [[Gather Fibrous Plants]]
+[[http://www.primitiveways.com/cordage_in_North_America.html][Many fibrous plants]] are candidates for making cordage, including:
+|-------------+------------------------|
+| Wikidata ID | Material               |
+|-------------+------------------------|
+| #Q145707    | [[https://en.wikipedia.org/wiki/Typha][Typha]] (Cattail Leaves) |
+| #Q145707    | [[https://en.wikipedia.org/wiki/Liriodendron_tulipifera][Tulip Poplar]] Bark      |
+| #Q2598218   | [[https://en.wikipedia.org/wiki/Apocynum_cannabinum][Dogbane]]                |
+|-------------+------------------------|
+
+*** DONE [[Cordify plant fibres]]
+https://en.wikipedia.org/wiki/Liriodendron_tulipifera
+https://www.youtube.com/watch?v=mQlXXeHs3wY
+
+1. Dampen the [[Bark]] or [[Leaf]] with [[Water]].
+2. Create a [[Cord]] using [[https://www.youtube.com/watch?v=It8Tg5gUT70&t=2m26s][Reverse wrap]] method.
+3. [[https://youtu.be/It8Tg5gUT70?t=4m38s][Combine]] 2 [[Cord]]s using [[https://www.youtube.com/watch?v=It8Tg5gUT70&t=2m26s][Reverse wrap]] method.
+4. Tie off the lose end of the completed [[Cord]].
+
+*** DONE [[Build a Stone Tool]]
+2. Shape an lithic stone flake #Q332028 (axe head) using other rocks as hammerstones
+3. Grind [[Stone]] against a wet rock
+4. Find suitable stick for handle
+5. Create [[Cordage]] for securing the [[Stone]] to the handle
+6. Follow [[https://www.youtube.com/watch?v=-JcWY0rjePU][Stone Adze]] or [[https://www.youtube.com/watch?v=BN-34JfUrHY][Stone Tool Axe]]
+
+
+
+*** DONE [[Tap a Hevea brasiliensis]]
+1. Harvest Polyisoprene (C5H8)
+
+
+[[Polyisoprene (C5H8)]] using [[Formic Acid (CH2O2)]]
+    
+*** DONE [[Gather Woodland Ants]] (Formica Rufa)
+https://www.youtube.com/watch?v=Sp8b1nQSY
+It is native to Europe and Anatolia but is also found in North America
+in both coniferous and broad-leaf broken woodland and parkland. See:
+southern Britain, North to Mid Europe, Pyrenees and Siberia.
+
+sources:
+http://www.iucnredlist.org/details/8645/0
+Robinson, William H. (2005). Urban Insects and Arachnids: A Handbook of Urban Entomology. Cambridge University Press. p. 247. ISBN 0521812534.
+http://antark.net/ant-species/wood-ant-formica-rufa/
+
+*** DONE [[Extract Woodland Ant Acid]]
+Formic acid was first extracted in 1671 by the English naturalist John
+Ray by distilling a large number of crushed ants of this species
+(Charles Earle Raven (1986). John Ray, naturalist : his life and
+works. Cambridge University Press. ISBN 0-521-31083-0.)
+[[http://www.henriettes-herb.com/eclectic/kings/acidum-form.html][The process is described here]].
+
+Alternately, you can get a some sort of absorbant material and
+aggitate the ants, forcing them to spit the formic acid on the
+material and then later extract the solution from the material by
+applying pressure / squeezing.
+   
+*** DONE [[Smelt Ore]] using a Forge/Furnace
+A Furnace / Foundry / Smelting pit is necessarily for extracting many
+elements from their ores.
+
+1. Break down / Grind material as finely as possible
+2. Fire up the furnace 
+3. Melt the material (refer to the [[http://www.engineeringtoolbox.com/melting-temperature-metals-d_860.html][melting point]] of your material for the time / temperature)
+4. Remove material while still red-hot (to shape) or as an ingot, once cooled
+
+*** DONE [[Gather Wood]]
+1. Locate a candidate [[Branch]] or [[Tree]]
+2. [[https://www.youtube.com/watch?v=-oHz8MHDtSs][Inspect wood for rot]]
+2. Build a [[Stone Tool]]
+3. Chop downc [[Tree]] using [[Stone Tool]].
+4. [[https://www.youtube.com/watch?v=yiGAu0ov25g][Harvesting Bark]] *(optional)*
+
+*** DONE [[Create a Bowd Dill]]
+1. Obtain a ~1.5ft bow shaped stick
+2. Obtain flat piece of dry [[Softwood]] tree-branch ~2"x4"x6"
+3. Make ~1ft of [[Cordage]]
+4. Follow [[https://www.youtube.com/watch?v=sNcYyUn38qY][Bowdrill Specification]]
+*** DONE [[Create Fire]]
+1. Make a [[Bowdrill]]
+2. Collect dry kindling (e.g. cedar bark)
+3. Collect small sticks and logs
+4. Prepare a [[https://www.youtube.com/watch?v=F_5f46VYmPc][Fire pit]] using the logs and small sticks
+5. [[https://www.youtube.com/watch?v=F_5f46VYmPc][Apply]] [[Bowdrill]] to produce an ember
+6. Carefully transfer the ember into the kindling
+7. Blow gently until kindling set aflame
+8. Place flaming kindling in [[Fire pit]] and feed fire using small sticks
+
+
+
+*** DONE [[Gather Barley]]
+Or any of several cereal plants (e.g. barley, oats, rice, rye and
+wheat) Because barley is such a highly adapted cereal grain it can be
+grown in climates that range from sub-Arctic to subtropical. The
+European Union-27 is the largest barley producer followed by Russia
+and Ukraine. The U.S. is recognized as the world's seventh largest
+barley producer. (http://www.barleyfoods.org/facts.html)
+
+*** DONE [[Make Straw]]
+http://www.primitiveways.com/cordage.html (using straw as cordage)
+[[https://en.wikipedia.org/wiki/Straw][Straw]] is the by-product, the dry stalks grain and chaff have been removed. 
+[[Straw]] is different from [[Hay]] -- here is [[https://web.archive.org/web/20131211115428/http://knowledgenuts.com/2013/12/11/the-difference-between-straw-and-hay/][how the two relate]] and [[https://web.archive.org/web/20150405053632/http://www.usaforage.org/products/straw-vs-hay][proof of the difference in classification]].
+[[https://www.youtube.com/watch?v=d3yUuAMFmEY][Separate Stalk from Barley]]
+
+*** TODO [[Build a Forge]] (Furnace)
+https://www.youtube.com/watch?v=8uHc4Hirexc
+
+1. [[https://www.youtube.com/watch?v=8uHc4Hirexc][Locate a safe area for a firepit]]
+2. Create [[Adobe Bricks]]
+3. Create a [[Bellow]]
+4. Create a [[Fire]]
+[[Foundry]] (furnace)
+
+
+
+** TODO
+
+*** [[https://en.wikipedia.org/wiki/Dynamo][Dynamo]] {Electric Generator} "Q131502"
+**** [[https://www.youtube.com/watch?v=Vmo7UUma1ko][Instructions]]
+1. Build Q987767 of Q753
+
+1. Build a [[Container of Wood  (Q287)]
+2. 2 [[Magnet (s "Q11421"
+3. [[Iron (Fe)]] spoke "Q677"
+4. [[Electroplating / Galvenizing]] of [[Iron (Fe)]] using [[Zinc (Zn)]]
+   to prevent [[Oxidation]], aka rust *(optional)*
+4. [[Copper]] "Q753" Spacers
+5. [[Inductor]]: wrap [[Copper (Cu)]] [[Insulated Wire]] around chasis (~300 coils)
+
+*** Wood Chassis
+https://www.youtube.com/watch?v=bdN65bzwDd4
+
+1. 4 x [[Wood Puzzle Piece]]
+
+*** Wood Puzzle Piece
+1. Cut down tree
+2. Stone Tool
+3. Follow [[file:/static/imgs/foundation/wood_puzzle_piece.png]["Wood Puzzle Piece"]]
+
+*** Magnet
+[[http://siarchives.si.edu/history/joseph-henry][Joseph Henry]] on [[http://www.princeton.edu/ssp/joseph-henry-project/permanent-magnet/]["Method of Making Magnets"]]
+[[http://rsnr.royalsocietypublishing.org/content/early/2011/05/30/rsnr.2011.0014][William Gilbert and ‘Magnetization by Percussion’]] *Deprecated by Electromagnetism*.
+
+The obective is to produce a slab or billet shaped [[Iron (Fe)]]
+[[http://physics.bu.edu/~duffy/PY106/MagMaterials.html][Ferromagnet]] ([[https://en.wikipedia.org/wiki/Ferrite_(magnet)#Hard_ferrites][hard ferrites]]).
+
+Barium ferrite, BaFe12O19 (BaO·6Fe2O3)
+
+https://www.youtube.com/watch?v=midVu1Xd2LY
+[[https://www.youtube.com/watch?v=zyisb2gb8E0][Backup Ground Battery]]
+[[Https://www.youtube.com/watch?v=aCCK132OIGA][Earth Battery Powers LED]]
+http://www.explainthatstuff.com/magnetism.html
+
+**** [[https://www.youtube.com/watch?v=noGGcyPHtdI][Instructions]]
+1. Calculate the desired magnet strength in [[https://en.wikipedia.org/wiki/Tesla_(unit)][Tesla units]] (a
+   refrigerator magnet is ~5mT)
+2. A [[Steel ()]] rod
+3. An [[Inductor]] consisting of [[Copper (Cu)]] [[Insulated Wire]] coiled around
+   the [[Steel ()]] core [[https://en.wikipedia.org/wiki/Ferrite_core][Ferrite Core]].
+4. A [[Battery]] capable of 12V, 200A
+
+*** Battery
+https://www.youtube.com/watch?v=aCCK132OIGA
+
+
+
+*** Inductor
+[[https://www.youtube.com/watch?v=NgwXkUt3XxQ][Inductor basics - What is an inductor?]] A passive analog component
+which temporarily generates a magnetic field (e.g. electromagnets)
+from electrical energy. Depending on the [[Core]] material (e.g. if it
+is steel) it may be turned into a permenant magnet. Otherwise, while
+there is current through the inductor, the [[Core]] will behave as an
+temporary electromagnet.
+
+1. Create [[Copper (Cu)]] [[Insulated Wire]] whose length and thickness is determined by
+   [[http://hyperphysics.phy-astr.gsu.edu/hbase/electric/indsol.html][Calculating inductance of solenoid]].
+2. [[https://www.youtube.com/watch?v=sDIWNHOoNh8][Coil]] [[Insulated Wire]] around a [[Slab]] shaped [[Steel ()]] [[Core]] according to
+   [[http://hyperphysics.phy-astr.gsu.edu/hbase/electric/indsol.html][Calculating inductance of solenoid]].
+
+*** Insulate Wire
+[[https://en.wikipedia.org/wiki/Insulator_(electricity)#Insulation_in_electrical_apparatus][In production]], "electrical wires [are] insulated with polyethylene,
+crosslinked polyethylene (either through electron beam processing or
+chemical crosslinking), PVC, Kapton, rubber-like polymers, oil
+impregnated paper, Teflon, silicone, or modified ethylene
+tetrafluoroethylene (ETFE). Larger power cables may use compressed
+inorganic powder, depending on the application".
+
+This process can be substituted with thermoplastics or rubber. This
+may include polypropylene, polyethylene, polyvinylchloride (PVC),
+Polyvinylidene Chloride (PVDC), polystyrene,
+polyethylenetheraphthalate and polycarbonate. Note: chloride degrades
+from electricity, not a great candidate for wire insulation. These
+options are complex to make, invovle carcinogen, and require
+catalysts. If you did have some something like polyvinyl chloride
+(saran wrap) you could follow [[https://www.youtube.com/watch?v=dKOe_FfiDuk][this tutorial]]. Otherwise, the best
+approach, in the wild, is using natural rubber:
+
+**** Steps
+1. Produce a [[Wire]] from the desired material.
+2. Between [[Natural Rubber]] steps 2 and 3, [[https://www.youtube.com/watch?v=Rpu5mH5me1Y&feature=youtu.be&t=1m40s][Coat]] wire with partially
+   coagulated [[Polyisoprene (C5H8)]]
+3. [[https://youtu.be/sDIWNHOoNh8?t=5m4s][Tin]] the leads (ends) of the [[Insulated Wire]] using [[Rubber-sandpaper]]
+   
+
+*** Wire
+1. Mine ore of desired [[Metal]]
+
+
+
+*** TODO Adobe Bricks
+https://www.youtube.com/watch?v=Q451eExJlfw
+[[https://www.youtube.com/watch?v=ILQ6UF1ELRQ][Homemade Bricks]]
+[[https://www.youtube.com/watch?v=SbKvhHzn4hQ][Commerical Production]]
+
+[[https://youtu.be/RuCnZClWwpQ?t=31m51s][Making Clay Brick]] in Africa
+
+1. Follow [[https://www.youtube.com/watch?v=ILQ6UF1ELRQ][Homemade Bricks]] to locate 7 parts sand [[Silicon Dioxide (SiO2)]]
+2. Follow [[https://www.youtube.com/watch?v=ILQ6UF1ELRQ][Homemade Bricks]] to locate 1 part [[https://en.wikipedia.org/wiki/Clay][Clay]].
+3. Add 2 parts Water [[Hydrogen Dioxide (H2O)]]
+3. Add [[Straw]] as a binding substitute in place of cement.
+
+
+** Experimental
+*** Electroplating / Galvenizing 
+[[https://www.youtube.com/watch?v=jimPImGKPy8][How to galvanize metal (for rust protection)]]
+**** TODO Thermite (Explosive)
+Explosives were considered as a mechanism for mining. This recipe is
+fairly unfeasible given it requires electrolysis of bauxite
+
+1. 22.5g of [[Silicon Dioxide]] (9 parts)
+2. 25g of [[Aluminium (Al)]] powder, 425 [[http://www.sigmaaldrich.com/chemistry/stockroom-reagents/learning-center/technical-library/particle-size-conversion.html][mesh]] (~.025mm - .03mm) (10 parts)
+3. 30g of [[Sulfur (S)]] "Q682" powder (12 parts
+
+
+**** Sulfur Dioxide (SO2)
+At standard atmosphere, it is a toxic gas with a pungent, irritating,
+and rotten smell.
+https://en.wikipedia.org/wiki/Sulfur_dioxide
+
+**** Hydrogen Sulfide (H2S)
+Toxic, very short exposure could cause death.
+https://en.wikipedia.org/wiki/Hydrogen_sulfide
+
+**** TODO Steel
+Reduce Iron Oxide Mix with carbon rich coal (coke) and limestone
+
+***** Industrial Production
+Industrially, magnets are composed of a smelted blend of the following elements:
+[[Copper (Cu)]], [[Cobalt (Co)]], [[Nickel (Ni)]], [[Sulfur (S) "Q682"]], [[Iron (Fe)]], [[aluminium (Al)]], [[titanium (Ti)]]
+
+***** Resources
+[[https://www.youtube.com/watch?v=QGytW_C6hR8][The strongest magnet in the world]]
+[[https://www.youtube.com/watch?v=Sb7VgWeZ4rI][Creating a magnet via electromagnets (pmh, vee)]]
+
+**** TODO Zinc
+Zinc is useful for galvenizing or electroplating iron, a process by
+which iron or other metals may be treated to prevent rusting.
+
+1. [[https://en.wikipedia.org/wiki/List_of_countries_by_zinc_production][Locating Zinc Ore]].
+
+

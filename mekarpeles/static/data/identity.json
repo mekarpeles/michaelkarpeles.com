@@ -12,10 +12,6 @@
    "ssh": "/static/keys/id_rsa.pub",
    "gpg": "/static/keys/mek.public.gpg-key"   
  },
- "anthropometry": {
-   "height": "173 (cm)",
-   "weight": "65 (kg)"
- },
  "contact": {
    "email": "michael.karpeles@gmail.com",
    "phone": "+1 (415) 690-8033"
@@ -41,7 +37,13 @@
  "appearance": {
    "hair": "brown",
    "eyes": "hazel",
-   "glasses": true
+   "glasses": true,
+   "anthropometry": {
+     "height": "168 (cm)",
+     "weight": "65 (kg)",
+     "wingspan": "170 (cm)",
+     "ape": "+.5"
+   }
  },
  "genealogy": "/static/data/genealogy.ged",
  "interests": {

@@ -1,0 +1,261 @@
+* Implications and Rules
+1. Don't be sarcastic https://www.psychologytoday.com/blog/think-well/201206/think-sarcasm-is-funny-think-again (Clifford N. Lazarus, Ph.D)
+
+* Summary of Brain Responsibilities
+** Components
+*** Hippocampus
+episodic or autobiographical memory
+*** Frontal Lobe
+Personality & behaviour, reasoned decisions, planning, organizing, self-evaluating/monitoring/correcting/improving.
+**** Premotor Cortex
+**** Broca's Area
+**** Prefrontal Cortex
+****
+*** Temporal Lobe
+*** Parietal Lobe
+*** Occipital Lobe
+Vision
+*** Hypothalamus
+Link the nervous system to the endocrine system (the collection of
+glands of an organism that secrete hormones directly into the
+circulatory system to be carried towards distant target organs) via
+the pituitary gland (hypophysis).
+*** Cerebellum
+"little brain"
+**** Flocculonodular Lobe
+Balance 
+*** Brainstem
+**** Pons (pontine nuclei)
+Learning & Remembering Muscle Movement
+
+*** Limbic System
+**** Cingulate Cortex
+**** Amygdala
+
+** Activities
+*** Movement & Motor Control
+*** Hearing
+
+*** Seeing
+*** Feeling
+
+*** Lying
+[[Prefrontal Cortex]]
+* Important Results
+
+** Lying
+http://www.brainfacts.org/in-society/in-society/articles/2013/the-truth-about-lies-the-science-of-deception/
+"[activity in the] prefrontal cortex increases when people lie. The prefrontal cortex,
+situated just behind the forehead, is a collection of regions
+responsible for executive control (the ability to regulate thoughts or
+actions to achieve goals). Executive control includes cognitive
+processes such as planning, problem solving, and attention — all
+important components of deception — so it’s no surprise the prefrontal
+cortex is active when we lie. Dishonesty requires the brain to work
+harder than honesty, and this effort is reflected by increased brain
+activity. Studies even show people take longer to respond when lying."
+
+*** Practicality of polygraph and fMRI
+
+http://www.brainfacts.org/in-society/in-society/articles/2013/the-truth-about-lies-the-science-of-deception/
+"Even without a clear ‘lying’ region, researchers can use fMRI to
+detect when a study participant is telling a lie in the laboratory
+with about 85 percent accuracy (polygraph tests, which measure changes
+in blood pressure, skin conductivity, and respiration during
+questioning, produce similar accuracy in the laboratory setting).
+
+How closely do laboratory paradigms model real-world lies? Not very
+closely, says Stanford University’s Anthony Wagner, who studies memory
+and has testified in court against the validity of fMRI lie
+detection. As Wagner explains, laboratory studies involve instruction
+to tell a low-stakes lie about an action they recently
+performed. However, in the real world, lies are self-generated, often
+high risk and emotionally charged, and lie detection may occur years
+after the event in question.
+
+Another issue that has not been adequately studied, Wagner says, is
+how countermeasures, such as small movements, changes in breathing, or
+altered cognitive processing, can affect the accuracy of fMRI lie
+detection. By using countermeasures, a person may be able to
+deliberately offset any brain changes associated with deception to
+defeat lie detection technology. A recent study found the accuracy of
+fMRI for lie detection dropped to a mere 33 percent when participants
+used countermeasures during questioning."
+
+** Inverse Relation Between Intelligence & Empathy
+
+[[http://www.davidrock.net/files/ManagingWBrainInMind.pdf][Managing with the Brain in Mind]]
+by David Rock
+source: strategy+business issue 56, Autumn 2009 (09206)
+"Matthew Lieberman's research suggests that high intelligence often
+corresponds with low self-awareness. The neural networks involved in
+information holding, planning, and cognitive problem solving reside in
+the lateral, or outer, portions of the brain, whereas the middle
+regions support self-awareness, social skills, and empathy. These
+regions are inversely correlated. As Lieberman notes, 'If you spend a
+lot of time in cognitive tasks, your ability to have empathy for
+people is reduced simply because that part of your circuitry doesn't
+get much use.'" (page 10)
+
+** Controlling/Optimizing your Brain through Training
+Understanding cause and effect of the brain
+
+*** Optical Illusions of the Mind
+1. Asking Favors
+2. Foot-in-the-door - https://www.uni-muenster.de/imperia/md/content/psyifp/aeechterhoff/wintersemester2011-12/vorlesungkommperskonflikt/freedman_fraser_footinthedoor_jpsp1966.pdf
+3. Hugs and oxytocin - https://www.youtube.com/watch?v=rFAdlU2ETjU
+
+*** Bias through Appearance
+http://www.workforce.com/articles/20242-you-biased-no-its-your-brain
+"The [[https://en.wikipedia.org/wiki/Amygdala][amygdala]], an almond-shaped set of neurons deep in the temporal
+lobe, has emerged as a key region in bias research. It is the part of
+the brain that reacts to fear and threat. Scientists have found a
+correlation between amygdala activity and implicit racial bias."
+
+Amodio and his colleagues also have found implicit stereotyping
+associated with the left temporal and frontal lobes. The left temporal
+lobe is important for storing general information about people and
+objects, and Amodio said this seems to be an important place for
+social stereotypes. The medial frontal cortex is important for forming
+impressions of others, empathy and various forms of reasoning.
+
+And a 2012 study by Columbia University psychologists G. Elliott
+Wimmer and Daphna Shohamy found that the hippocampus, which forms
+links between memories such as dates and facts, also subconsciously
+steers people toward choosing one option over another
+
+Amodio’s research has found that the brain is well-equipped for
+controlling unwanted biases — if the person detects their presence.
+
+The anterior cingulate cortex, which plays an important role in
+cognitive control, can detect the activation of implicit
+attitudes. This region appears to detect conflicts between a person’s
+overarching goal — such as being egalitarian — and automatic behaviors
+that conflict with it — such as prejudiced thoughts or intentions.
+
+The anterior cingulate then signals the dorsolateral frontal cortex,
+which is involved in making moral decisions, creating the possibility
+of overriding implicit biases."
+
+**** Case Studies
+https://en.wikipedia.org/wiki/Amygdala
+
+
+
+
+
+*** Emulating Neural Effects of Status & Rank via Self-Competition
+
+[[http://www.davidrock.net/files/ManagingWBrainInMind.pdf][Managing with the Brain in Mind]]
+by David Rock
+source: strategy+business issue 56, Autumn 2009 (09206)
+"A study [[[http://culturalneuro.psych.northwestern.edu/Chiao2004.pdf][Mental representations of social status]]] by [[http://wjh2.wjh.harvard.edu/~na/jchiao.html][Joan Chiao]] in
+2003 found that the neural circuitry that assesses [a person's social]
+status is similar to that which processes numbers; the circuitry
+operates even when the stakes are meaningless, which is why winning a
+board game or being the first off the mark at a green light feels so
+satisfying. Competing against ourselves in games like solitaire
+triggers the same circuitry [...]." (page 6)
+
+*** On the Need for & Expectations of Leaders
+
+[[http://culturalneuro.psych.northwestern.edu/Chiao2004.pdf][Mental representations of social status]]
+by Joan Y. Chiaoa, Andrew R. Bordeauxa, Nalini Ambady
+source: sciencedirect, July 22, 2003
+"low-rank individuals expect a certain degree of protection and care by those of
+higher rank (Fiske, 1992)."
+
+[[http://www.davidrock.net/files/ManagingWBrainInMind.pdf][Managing with the Brain in Mind]]
+by David Rock
+source: strategy+business issue 56, Autumn 2009 (09206)
+"John T. Cacioppo and William Patrick showed in 2008 that loneliness
+is itself a threat response to lack of social contact, activating the
+same neurochemicals that flood the system when one is subjected to
+physical pain." (page 8)
+
+Q: By championing these "Fiskian" expectations, does one preserve one's rank?
+
+*** Neurologically, Why We Crave Certainty
+
+[[http://www.davidrock.net/files/ManagingWBrainInMind.pdf][Managing with the Brain in Mind]]
+by David Rock
+source: strategy+business issue 56, Autumn 2009 (09206) 
+
+"Uncertainty registers (in a part of the brain called the anterior
+cigulate cortex) as an error, gap, or tension: something that must be
+corrected before one can feel comfortable again. This is why people
+crave certainty. [...] Mild uncertainty attracts interest and
+attention: New and challenging situations create a mild threat
+response, increasing levels of adrenalin and dopamine just enough to
+spark curiosity and energize people to solve problems." (page 6)
+
+Uncertainty is a complex spectrum which depends both on one's neural
+thresholds, experience and preference, and the nature of the
+uncertainty). In terms of experience in preference, people may have
+differe sentiments towards outcomes, i.e. whether one sees them as
+good or bad. One might be relieved to learn of the availability of an
+injection which can cure their illness while another may be upset by
+the prospects of an injection. There are other confounding factors,
+such as the probability associated with the uncertainty (which relates
+to our neural thresholds; how likely an event is to trigger a
+response). And, should the event occur, what is the severity and
+permenance of the outcome? For instance, I might be killed at any
+moment, but I don't worry about many of these possibilities I find
+determine their probability too low to merit concern.
+
+In the case of uncertainty attracting interest, perhaps the reasoning
+is that one sees the possibility of reward as sufficiently greater
+than the risk that it outweighs the fact that risks are weighted more
+heavily than rewards (according to David Rock, et al), or that the
+risk is nominal (e.g. not life threatening). Or, that ignoring the
+event will pose bigger risk. Another component yet perhaps is whether
+there are things we can do (autonomy, control) to affect the
+outcome. This relates to "The Autonomy Factor" in David Rock's
+article.
+
+These factors can probably be distilled into a relatively accurate SVM
+(support vector machine) classifier to approximate/determine ideal
+level of uncertainty for various populations under different
+constraints. [see 4 below]
+
+"Sharing business plans, rationales for change, and accurate maps of
+an organization's structure propotes [a perception of certainty to
+build confident and dedicated tems]. Transparent practices are the
+foundation on which the perception of certainty rests" (page 7)
+[see 4 below]
+
+Implications about how we build and arrange things?
+1. Changing interfaces people rely on
+2. Limiting options
+3. Transitioning between interface views
+4. Managers, use data to arrange teams to build confidence
+
+
+
+*** How our Mind Represents Trust
+[[http://www.davidrock.net/files/ManagingWBrainInMind.pdf][Managing with the Brain in Mind]]
+by David Rock
+source: strategy+business issue 56, Autumn 2009 (09206)
+
+"Once people make a stronger social connection, their brains begin to
+secrete a hormone called oxytocin in on another's presence. This
+chemical which has been linked with affection, maternal behavior,
+sexual arousal, and generosity, disarms the threat response and
+further activates the neural networks that permit us to perceive
+someone as 'just like [acceptable to] us'. Research by Michael Kosfeld
+et al. in 2005 shows that a shot of oxytocin delivered by means of a
+nasal spray decreases threat arousal." (page 8)
+
+*** The Logistic Complications of Diversity
+The word diverse comes from Latin "diversitatem", meaning
+contradiction or disagreement. While diverse ideas, entailing diverse
+people and culture, confer demonstrated benefits [1] [2], it can be
+difficult to establish trust between people who are different. Being
+surrounded by those who are different than us, whether in belief or in
+appearance, can make us feel cut off, misunderstood.
+
+[1] https://books.google.com/books/about/The_Diversity_Toolkit.html?id=Y7VudFd4mosC 
+[2] http://www.scientificamerican.com/article/how-diversity-makes-us-smarter/
+
+
+

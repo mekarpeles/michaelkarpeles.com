@@ -1,0 +1,192 @@
+
+<div id="fb-root"></div><script>(function(d, s, id) {  var js, fjs = d.getElementsByTagName(s)[0];  if (d.getElementById(id)) return;  js = d.createElement(s); js.id = id;  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.3";  fjs.parentNode.insertBefore(js, fjs);}(document, 'script', 'facebook-jssdk'));</script><div class="fb-post" data-href="https://www.facebook.com/michael.karpeles/posts/10102372411215770" data-width="500"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/michael.karpeles/posts/10102372411215770"><p>The problem with #todo services is, they are silo&#039;d. They&#039;re not interoperable with each other via an open standard....</p>Posted by <a href="https://www.facebook.com/michael.karpeles">Michael E Karpeles</a> on&nbsp;<a href="https://www.facebook.com/michael.karpeles/posts/10102372411215770">Monday, November 9, 2015</a></blockquote></div></div>
+
+
+<h1>Towards a Universal Todo List</h1>
+<pre>
+The problem with ‪#‎todo‬ services is, they are silo'd. They're not
+interoperable with each other via an open standard. They could be
+(there are standards like CardDAV + CalDAV, and work-arounds like
+IFTTT), but most services don't speak natively to each other, let
+alone know of each other (there's no mechanism for discovery). The
+consequences of this reality are substantial, and we've all
+experienced them.
+
+Nearly every organization (often even different *teams* within the
+same organization) uses a different set of tools for managing their
+todo items. Phabricator, Trello, Jira, Github Issues, Youtrack,
+Assembla, Aasana, oh my. These silos makes it impractical for the
+*individual* who, in order to be effective, requires a holistic
+picture of all the tasks on their plate. Working around the
+limitations imposed by these services requires technical proficiency
+(to discover or create a means of integration) or necessitates
+redundancy and inconsistency as folks attempt manual measures at
+synchronizing their tasks across platforms (and if they're anything
+like me, occasionally miss a task all together).
+
+I get it -- I understand the value of these different services. I love
+Phabricator. I use Trello. Github issues makes sense to me. Different
+interfaces are more effective at facilitating specific outcomes, at
+catering to different niches, at focusing and directing our efforts,
+and at looping in the right stakeholders at the right times. I don't
+get why the data models of many of these services needs to be unique;
+why their data can't all be exposed via an interoperable means. I can
+appreciate in some rare cases, a service's implementation requires
+divergence from an open spec, in order to accommodate some performance
+consideration, or to the needs of a specific community of users with
+edge-case behavior. But even in these cases, I find it hard to believe
+an attempt can't be made to preserve basic open spec
+compliance. Instead, customers are hurt by settling for "selective"
+integrations at the mercy of a company or 3rd party integration
+hack. I was excited by Trello's announcement[1] of integration with
+github. But dude, this should just be how services on the web natively
+work. All of these things come for free with compliance to an
+interoperable spec. Give the decision making power to the users (there
+was a great talk at the Internet Archive for the Aaron Swartz Day 2015
+- Evening Celebration of Hackers and Whistleblowers hackathon on
+2015-11-07 about privacy, I think the privacy badger tool, which made
+this same point w/ great examples. I will try to followup w/ a post to
+the video url if there is one).
+
+Yet businesses treat their implementations as some perverse type of
+"obfuscation", some "competitive advantage" through which they can
+purposefully coerce users into silos so the business can realize their
+fully-controllable monopoly. I think companies view this as their
+security policy for retaining users and slowing the competition -- I
+also think this train of thought is a misconception and they are
+actually hurting their users. Perhaps there is an element of
+competitive advantage in this strategy, but I think it's a
+‪#‎filibuster‬, a very short-sighted strategy in a long-term game of
+king of the hill, and one which is diametrically opposed to what their
+users show they want: ubiquitous platforms which don't limit how they
+can "become connected".
+
+Sam Altman expresses similar woes of this corporate mentality in the
+biotech space[2]:
+
+"[...] I think extreme secrecy is a bad sign in all startups. Very few
+startups die because they tell you exactly how their technology
+works. On the long list of startup killers, that’s pretty far
+down. Though on the list of entrepreneur fears, it’s pretty high."
+
+Interoperability is one of the ongoing core problems with our current
+world-wide web ecosystem (along with my belief that the web should be
+version controlled and distributed at the *protocol level*, but I'll
+leave this to Juan Batiz-Benet and IPFS; see: https://ipf.io). It's
+very related to open source / free software. If open source is the
+human right of the Internet's freedom of speech, then interoperability
+is the unalienable right to access and publish the information you
+want without unreasonable restriction.
+
+Thankfully, we're making a lot of important progress towards a more
+interoperable web. Aaronsw et al gave us RSS, which was an important
+first step in cerca '95. Rob Sanderson + company have made fantastic
+pushes over the last 5 years with ‪#‎IIIF‬ to make images
+interoperable between institutions (https://iiif.io). There's a ton of
+movement with w3c ‪#‎OpenAnnotation‬, as well. Maybe someday there
+will be an effort for greater adoption of an open spec like ‪#‎CalDAV‬
+to enable ubiquitous access to #todo items across
+services. Fortunately, I know this will be a reality, but selfishly,
+my life (and others') will be better if it becomes a reality sooner.
+
+What would this look like? How would a ‪#‎universal‬ #todo ‪#‎list‬
+like this work? I imagine something similar to Google "Circles". I
+should be able to find a todo item anywhere on the web and, with a
+mouse drag or key-press, add it to my person todo list. If the todo
+item is public, every other client on the web should be instantly
+informed and have access to it, programmatically. As an individual, I
+want a list of #todo items which spans all of my different projects,
+across service providers. I should be able to view a list (of circles)
+of all contexts within which a tasks lies, whether these contexts
+represent a group of friends, an activity, a company, or a team /
+product.
+
+Achieving this requires something greater than a 3rd party shim which
+will deteriorate from code rot and requires one-off integrate with
+services. It requires adherence to an open spec (like CalDAV) and a
+protocol (like IRC, XMPP). There also needs to be brave adopters
+(companies) and some *sane* authentication policy and interface
+whereby public information can be served.
+
+Where are we today? Even with open standards (like #CalDAV,
+‪#‎CardDav‬, etc), I feel we still don't have a seamless interface
+(something as ubiquitous as Paul Buchheit's "gmail", with the
+interoperability of Pidgin (software)) to keep track of and
+synchronize todo items across platforms. I believe Phabricator and
+Trello are uniquely positioned such that they could be the first
+systems to act on and realize such a dream (It looks like Evan
+Priestley has been advocating certain aspects of this philosophy for a
+while, see: [3]).
+
+What's next? To learn more. The world is a big place. I'd like to
+learn from how IRC lost some steam and was pushed aside by XMPP and
+concede that there's likely a lot more work on this topic of
+‪#‎interoperable‬ #universal #todo ‪#‎lists‬ than I know.
+
+I'd like to know: Who is working on this specific mission? Which
+working groups do you recommend for this topic? I'd be delighted to
+learn from them + contribute to their cause.
+
+- - -
+
+If you've made it this far, you may be interested in a tangentially
+related historical note about how interoperability and open standards
+affect other important technical problems. I currently think the most
+telling and important examples are *hardware* and *chat*.
+
+For the ‪#‎hardware‬ problem (the industry seems depressing), I'd like
+to ask Jessy Exum to offer his opinion (having reverse engineered
+several ‪#‎fpgas‬ to accomplish his open source goals). I'm sure
+Sowjanya Mudunuri and others can also offer some hardware horror
+stories.
+
+Chat is relevant because I view #todo lists (and the web as a whole)
+as subsets and special cases of chat and, more generally,
+communication mediums. Chat systems are also a really neat case study
+in computer software because they've been around for a while
+(Talkomatic, 1973[4]), they are full of drama and politics, and are
+the subject of interesting development patterns we can learn from.
+
+The history of ‪#‎chat‬ and open standards is like riding a sine wave;
+a constant tug-of-war within an expanding and collapsing universe of
+bits and politics.
+
+Let's start by being fair and conceding, it's hard to create an open
+standard for something new, especially since you don't know what users
+want yet. And as you learn what users want, you want to build it
+quickly and be first to market, so its understandable that open
+specifications take a while. This was reflected by many popular chat
+systems of the 90's, such as AOL and Yahoo who were pioneering
+mainstream group chat via their own protocols, like AOL's TOC (Talk to
+OSCAR) in '97 and Yahoo (YM) in '98. Impressively (or depressingly
+that it happened 15 years after Talkomatic), some of us had already
+spent 4 years toying with open specifications like RFC 1459 (1993) and
+RFC 2812 for the Internet Relay Chat (irc) Protocol. It only took an
+additional 20 years for technology and our souls to become mature
+enough for ‪#‎Slack‬ to provide the "world" (i.e. wide scale,
+ubiquitous adoption) with a usable interface for this protocol (hey, I
+like ‪#‎irssi‬, but to each their own). It's ironic and worth noting
+that that Microsoft was one of the few to adopt irc with msn, in a
+bastardized agglomeration called ircx.
+
+Needless to say, in 2004[5] something magical happened. The community
+(retroactively, we can say to "mixed" community approval[6]) decided
+to re-imagine a mechanism for hacking together chat systems via XML as
+an interchange format. And it mostly took off. And the world become
+blessed with semi-usable service-spanning applications, like
+‪#‎pidgin‬.  And of course, we're just now seeing a resurgence; a
+second generation of applications (like skype, wechat) which make such
+integration extremely challenging (even when they are based on open
+standards, under the hood).
+
+Sources:
+[1] http://blog.trello.com/github-and-trello-integrate-your-com… 
+[2] http://www.wired.com/…/y-combinator-sam-altman-interview-o…/ 
+[3] https://secure.phabricator.com/T7929
+[4] https://en.wikipedia.org/wiki/Online_chat
+[5] https://www.ietf.org/rfc/rfc3921.txt
+[6] https://news.ycombinator.com/item?id=2069810
+
+Mentions: Mark P Xu Neyer, Drew Winget, Ozzie Gooen, Jan Paul Posma,
+Monica Anderson, TS Ramakrishnan
+</pre>

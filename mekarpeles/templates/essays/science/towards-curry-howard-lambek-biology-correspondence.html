@@ -7,6 +7,43 @@
   is the purpose of this exploration.
 </p>
 
+<h2>Forward</h2>
+<p>
+  I've been considering the dichotomy of "symbolic" systems, such as
+  pure math (which exists in the theoretical domain, not subject to
+  the effects of physics), and "physical" systems (which are subject
+  to hidden variables and uncertainty, e.g. Heisenberg
+  uncertainty). I've attempted to document these raw thoughts in the
+  preface of the following essay.
+</p>
+
+<p>
+  This comparison (which can be oversimplified as physics v. theory)
+  and the role of "computers" as a medium for translation between
+  these two domains is ancillary to the essay's main objective: to
+  explore the implementations and properties of Biological computation
+  (how symbolic computation emerges "naturally" from biological,
+  physical systems) and Boolean Logic (Von Neumann architecture and
+  how present day computers implement symbolic logic over physical
+  matter).
+</p>
+
+<p>
+  Ideally, this comparison will evolve over time to examine the most
+  basic biological components and the most basic electronic
+  implementations of boolean logic gates from both directions
+  (creating boolean gates using these axiomatic biological components
+  and created the axiomatic biological components using
+  electronics). The outcome would be the ability to manipulate
+  physical systems (using techniques and components like schmitt
+  trigger triggers in electronics to enable circuits to be robust
+  against the uncertainty of physics) to construct playgrounds where
+  we can make promises about deduction about the equivalence of
+  biology and computer programs (like the Curry-Howard correspondence,
+  but including isomorphism to biological systems)
+</p>
+
+
 <h2>Preface</h2>
 <p>
   The reason pure math "works" (i.e. has the property of being
@@ -189,7 +226,143 @@ http://www.ncbi.nlm.nih.gov/pubmed/24156803
 
 * Heisenberg's uncertainty principle & Schrödinger equation
 
-* Previous works
+* Synthetic Biology (applying engineering principles to nature)
+Designing *Input* module, *Response* module, and *Output* module 
+Creating Life - The Ultimate Engineering Challenge. (Synthetic Biology documentary)
+https://www.youtube.com/watch?v=ushmgPM7HT8
+https://www.youtube.com/watch?v=VhuiMRIn6GM Labster - Synthetic Biology Virtual Lab Simulation
+
+** Designing an Apoptotic Biological Circuit
+*** electroporation
+Electropermeabilization, is a molecular biology technique in which an electrical field is applied to cells in order to increase the permeability of the cell membrane, allowing chemicals, drugs, or DNA to be introduced into the cell.
+
+*** pasmid isolation (http://vlab.amrita.edu/?sub=3&brch=77&sim=314&cnt=1)
+
+*** gel electrophoresis
+
+! systems biology
+
+<h2> Previous works</h2>
 http://www.irisa.fr/dyliss/public/asiegel/Articles/SchaubSiegelVidela.pdf
 https://books.google.com/books?id=qGREBAAAQBAJ&pg=PT60&lpg=PT60&dq=equivalence+of+boolean+logic+and+biology&source=bl&ots=A3erNXBCxB&sig=MICDGNmyE-Tcgp631qOYBODYhYk&hl=en&sa=X&ei=sn6MVfPzI4r6sAWliJmYDQ&ved=0CB4Q6AEwAA#v=onepage&q=equivalence%20of%20boolean%20logic%20and%20biology&f=false
+</pre>
+
+<h2>Tangent (Essay)</h2>
+<p>Conceptually, <a href="https://www.youtube.com/watch?v=VhuiMRIn6GM">"Labster"</a>
+(MIT virtual science laboratory) is an amazing technology and resource
+for anyone interested in practicing Synthetic Biology</p>
+
+<h3>Provenance Trail</h3>
+<p>
+  The past few days I've gone down a rabbit hole involving biology and
+  computational theory. I became particularly interested in the
+  relationship between electric circuits (physically engineered
+  implementations of boolean logic) and biological systems. What might
+  be, or has been, learned about their comparative computational
+  abilities or properties, and how might understanding one inform
+  advances within the other? While my journey has just begun, I've
+  recorded breadcrumbs of my findings[1] to organize myself and others
+  interested in the topic.</p>
+<p>
+  This whole spiral started in a very "Mark P Xu Neyerian" kind of
+  way, by thinking about Curry-Howard Correspondence (Isomorphism),
+  which demonstrates computational equivalence between mathematics and
+  computer programs (i.e. boolean logic). I wondered if a similar
+  correspondence might exist between biological systems and boolean
+  logic. I admit this question is more than slightly naive (it is
+  in-concrete what "equivalence" means in this context), given biology
+  is built of the chemical elements and on top physics, both of which
+  are subject to measurement uncertainty. If a loose correspondence
+  can be demonstrated and we are able to determine both (a) mappings
+  between biological systems and boolean logic, as well as (b)
+  determine the chemical and thus mathematical thresholds under which
+  these biological systems predictably operate equivalently (in the
+  same way a Schmitt trigger is used in electronics to make electrical
+  circuits robust against uncertainty and variability in electrical
+  flow), this may expand the way we can use computers to cheaply and
+  accurately test, evolve, or even prove biological and medical
+  results.
+</p>
+
+<p>
+  I also must admit, if this question of Curry-Howard-Biology
+  correspondence is new, it's only because it hasn't been phrased
+  "exactly" as such and because it's implications are mostly
+  philosophical and don't contribute to the underlying sciences and
+  experiments -- both which are anything but new and have been around
+  for many years. Systems Biology, for instance, attempts to
+  understand and emulate biological components, and vice versa through
+  computational models[2]. The field of Biocomputing attempts to
+  achieve some of the same learnings from the opposite direction, by
+  creating physical boolean logic gates and other computational
+  systems from biological material[3]. There is yet another field,
+  Synthetic Biology, which constitutes the interaction of engineering
+  practices and biology to design and synthesize biological components
+  for specific applications.
+</p>
+
+<p>
+  In order to connect the dots and make headway in any of these
+  directions towards my goal, I needed a better understanding of what
+  the simplest units of biology are. I had to consider, what is below
+  the "cell"? What are the simplest biological constructs (molecules,
+  systems) made only of the elements (which rise only from chemistry)?
+  This question too has two directions. One, we can deduce the
+  structure and components of the "cell" (from the cell down to its
+  lowest level constituent parts) or two, we can inductively determine
+  the arrangement of chemicals and circumstances required for
+  biological, organic matter and simple biological systems to emerge
+  from pure chemistry (abiogenesis/biopoiesis -- see Miller-Urey
+  experiment)[4].
+</p>
+
+<p>
+  Synthetic biology may be the answer to "Schmitt trigger" analogy I
+  previously entertained, as a medium for controlling the uncertainty
+  effects of biological variables, determine attribution/consequences
+  of variables, and in retroactively verifying results. Which made me
+  wonder, how does synthetic biology work? I first watched this
+  video[5] which followed a team of new biology researchers in a
+  project to create bacterial capable of changing color within
+  parasite infested water. The video is very practical and also
+  follows environment consequences and implications, design
+  considerations, and the reality of experimentation (regression
+  testing), and team/lab dynamics. While the video was quite
+  understandable, what the video didn't outline was any sort of
+  terminology for contextualizing or reproducing the different
+  experimental steps. I found myself wanting to know what processes
+  the scientists were running and how. That's when I saw Labster[6]
+  and was sufficiently impressed by the idea. Even in the video, the
+  steps of Synthetic Biological are demystified. The best part is, the
+  program seems like an amazingly safe, fast, scalable and accessible
+  alternative to laboratories and hazardous material.
+</p>
+
+<p>
+  In the interest in time-boxing this tangent, my next step is to
+  continue exploring the simplest systems within biology, as well as
+  how they may be functionally emulated through boolean logic. Updates
+  soon!
+</p>
+
+
+<pre>
+Notes:
+http://pdbwiki.org/wiki/Biological_unit
+
+green chemistry artificial evolution
+https://www.youtube.com/watch?v=ptqPJGTsIoM&t=15m23s
+Stanford karl deisseroth
+
+
+Sources:
+[1] Exploring "equivalence" of Biology and Boolean Logic
+https://michaelkarpeles.com/…/towards-curry-howard-lambek-b…
+[2] An Introduction to Systems Biology: Design Principles of Biological Circuits
+https://books.google.com/books?hl=en&lr=&id=tcxCkIxzCO4C
+[3] Synthesizing Biomolecule-based Boolean Logic Gates http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3603578/ 
+[4] Miller–Urey Experiment https://en.wikipedia.org/wiki/Miller%E2%80%93Urey_experiment
+[5] Creating Life - The Ultimate Engineering Challenge. (Synthetic Biology documentary)
+https://www.youtube.com/watch?v=ushmgPM7HT8
+[6] Labster - Synthetic Biology Virtual Lab Simulation https://www.youtube.com/watch?v=VhuiMRIn6GM
 </pre>
