@@ -1,56 +1,112 @@
 Organizing Life
+This is a work in progress
+* Resources
+1. [[http://jamesclear.com/marginal-gains][Marginal Gains]] Dave Brailsford
+2. [[https://www.youtube.com/watch?v=a1zDuOPkMSw][You and Your Research]] Dr. Richard Hamming
+3. [[https://youtu.be/CDokMxVtB3k?t=57m13s][All Questions Answered]] Dr. Donald Knuth
+4. [[https://www.youtube.com/watch?v=zWH_9VRWn8Y&feature=youtu.be&t=49s][We're all headed towards certain death]], why let that stop you from trying?
+5. [[https://youtu.be/EKWGGDXe5MA?t=4m39s][Heuristics]] (Inspiration for Living Life) Dr. Richard Feynman
+6. [[http://www.dailyom.com/library/000/001/000001511.html][Don't criticize, condemn or complain]] _How to Win Friends and Influence People_, Dale Carnegie
+7. [[https://archive.org/details/autobiographybe00frangoog][Ben Franklin's Autobiography]] Benjamin Franklin
+8. [[https://www.youtube.com/watch?v=irornIAQzQY?t=7m15s][Epicurus on Happiness]] Alain de Botton
+9. [[https://michaelkarpeles.com/essays/qs/amplifying-productivity-through-environment][Amplifying Productivity through Environment]] by Mek Karpeles
+10. [[http://papers.ssrn.com/sol3/papers.cfm?abstract_id=1592027][Benign Violations: Making Immoral Behavior Funny]] A. Peter McGraw & Caleb Warren 
 
-* Good Reads
-1. [[http://jamesclear.com/marginal-gains][Marginal Gains]]
-2. 
-
-
-* Experiment
-1. Schedule a meeting with someone "impossible" to connect with to
-   discussion your and their mutual passion once a month (researchers,
-   entrepreneurs, artists)
-2. Have a room in your house dedicated to a language or behaviour. (spatial locality)
-
-* Life Learnings
-- Protocols are Key.
-- It's easy to get a no, if you want a yes, first achieve a related accomplishment which one would be irresponsible to turn down.
+* Life Learnings & Agreeable Principles
+- Protocols are Key. Implementing a patch or shim simply means there
+  is resistence to protocol.
+- It's easy to get a no, if you want a yes, first achieve a related
+  accomplishment which one would be irresponsible to turn down.[4]
 - Systems should be designed which give users the power of choice, not the service provider.
-- Effective procrastination is key -- taking breaks and shifting contexts is important, but if you differentiate between work and play, something is wrong.
+- Effective procrastination is key -- taking breaks and shifting
+  contexts is important, but if you differentiate between work and
+  play, something is wrong.
 - Recaputlate and re-integrate often
-- Life favors the prepared (paraphrasing Louis Pasteur @Q529)
-- Have multiple projects you've thought about, even if you can't work on them all. Think about who can work on them.
-- maintain a list of `n` people who are worth helping / investing in
-- publishing your belief, early, on an topic is a good way to figure out if you're wrong and who cares about the issue being right.
-- Before you complain about equity in a project, figure out if you would be doing a project even if your partners weren't
-- 80/20 engineering may be good enough to create something valuable and working, but remember the remaining 20% often includes a strategy for adoption
-** 1% Optimizations (Organization: Storage & Retrieval)
-1. Require everything have a place. You'll spend less time searching for your phone, wallet or purse.
-2. When you're loading a dishwasher, place all similar cuttlery together. It's a
-   constant time insertion and will be a constant time retrieval, versus a linear retrieval
-3. Put your socks, underware, and shirts in separate mesh nets when washing and
-   drying to reduce time separating your items.
-4. Buy all of the same white socks.
-5. If you want to do something more, make it spatially and temporally
-   local. For instance, leave your guitar out of its case and in your
-   way. The same is true of documents or tabs in your browser. The
-   same is true for negative influences; reduce their spatial and
-   local presence.
+- Life favors the prepared (paraphrasing Louis Pasteur @Q529) and "it
+  is hard for an empty sack to stand upright" (Franklin)
+- Have multiple projects you've thought about, even if you can't work
+  on them all. Think about who can work on them.
+- maintain a list of `n` people who are worth supporting / helping /
+  investing in[8]
+- A closed mouth doesn't get fed, ask for help when you need it.
+- We are naturally coerced to act like those around us. Either by
+  necessity of a competitive spirit, to achieve higher status, or out
+  of desire to accommodate/oblige those around us."[9]
+- Encourage your friends to partner with you. Commit to aplifying your
+  combined efforts on areas you are mutually passionate. Do not get
+  greedy; consider your combined accountability and contributions
+  should more than double your individual effectiveness.
+- publishing your belief, early, on an topic is a good way to figure
+  out if you're wrong and who cares about the issue being right.
+- Before you complain about equity in a project, figure out if you
+  would be doing a project even if your partners weren't
+- 80/20 engineering may be good enough to create something valuable
+  and working, but remember the remaining 20% often includes a
+  strategy for adoption
+- "Speak not but what may benefit others or yourself; avoid trifling
+  conversation"[7]
+- Be honest, but know what to say, what not, how and when to say
+  it. In the words of Franklin, "Tricks and treachery are the practice
+  of fools, that don't have brains enough to be honest."
+- Freedom of speech can be equally as important as freedom from the thoughts of others.[8]
+- Avoid sarcasm unless it can be employed as method of non-hurtful
+  social encryption. The following is an except from [10]: McGraw and
+  Caleb Warren, a doctoral student, presented their elegantly simple
+  formulation in the August 2010 issue of the journal Psychological
+  Science. Their paper, “Benign Violations: Making Immoral Behavior
+  Funny,” cited scores of philosophers, psychologists, and
+  neuroscientists (as well as Mel Brooks and Carol Burnett). The
+  theory they lay out: “Laughter and amusement result from violations
+  that are simultaneously seen as benign.” That is, they perceive a
+  violation—”of personal dignity (e.g., slapstick, physical
+  deformities), linguistic norms (e.g., unusual accents,
+  malapropisms), social norms (e.g., eating from a sterile bedpan,
+  strange behaviors), and even moral norms (e.g., bestiality,
+  disrespectful behaviors)”—while simultaneously recognizing that the
+  violation doesn’t pose a threat to them or their worldview. The
+  theory is ludicrously, vaporously simple. But extensive field tests
+  revealed nuances, variables that determined exactly how funny a joke
+  was perceived to be.
+
+* 1% Optimizations (Organization: Storage & Retrieval)
+1. Require everything have a place. You'll spend less time searching
+   for your phone, wallet or purse. If things aren't required to have
+   a place, verifying tasks (involving many items) are complete can
+   explode combinatorially. The same is especially true for
+   thoughts. We have a lot of them, so keeping them organized is
+   important, otherwise, some computation becomes intractable. In the
+   words of Benjamin Franklin, "Let all your things have their
+   place"[7]
+2. When you're loading a dishwasher, place all similar cuttlery
+   together. It's a constant time insertion whether your insert a
+   utensil in the correct or an arbitrary bucket (the bucketing is
+   basically a hash, which means a marginal scalar factor added to the
+   expense of insertion), but if you front-load this computation, the
+   sort operation at retrieval time will be a constant, versus a
+   linear sort. Then the limiting factor becomes the size/bandwidth of
+   your hand. That's a problem for someone else to solve.
+3. Put your socks, underwear, and shirts in [[http://www.amazon.com/Laundry-Zipped-Washing-Underwear-Storage/dp/B013I3CEEK][separate mesh nets]] when
+   washing and drying to reduce time separating your items.
+4. Buy all of the same white socks to further reduce sorting complexity.
+5. If you want to perform an activity more, make the items it entails
+   spatially and temporally local. For instance, to practice guitar
+   more, leave the instrument out of its case and in your way. The
+   same is true of documents or tabs in your browser. The same is true
+   for negative influences; reduce their spatial and local presence.
 6. Pinned Tabs: My calendar, gmail, a Table of Contents of all my
    projects, a universal TODO list, chat systems
 
+* My Protocols
+** Conventions for Note Taking
+- Every document should have a date
+- Every file, section, blurb (ideally) has a unique tag (markup or numeric) which allows it to be indexed/searched/referenced.
+- Every note should (ideally) be semantically tagged
+- Every note should exist only once (single point of truth) and by symlinked by other things that need it
+- Todo items and notes should work the same way. Todo items are just actionable notes, thus: 
 
-
-* Philosophy
-If you don't have an answer to the following, then you're living life without thinking/considering these things:
-- If someone asks you for your biggest life learning, you should have some pre-meditated answer
-- If someone asks you for your favorite philosopher, you should have some
-  pre-meditated answer. A philosopher is simply one who is passionate about
-  something. Who cares about something, thinks about something, and develops
-  conventions and methodologies to address this something. The only reason not
-  to have a favourite is because you haven't found a "something" you care enough
-  about that you're willing to learn from others.
-- If someone asks you your life mission, or what you stand for, you should have some pre-meditated answer
-
+**** Open questions
+How can 
+autocomplete for tagged notes, as we're typing them?
 
 ** Universal Todo List UUID('f73de879-b51c-4ac3-b5f4-db4f0e37d021')
 I shall maintain a Universal TODO List which shows me all open tasks
@@ -60,33 +116,11 @@ and what is planned for a given day.
    file, website/service) unless it's a synched backup. One single point of
    truth, many symlinks.
 
-
 ** Universal Table of Contents
 1. Have a Table of Contents + Todo list for your learnings and questions
-
-* Building Systems
-1. Build systems which compound and value to each other (common infrastructure)
-2. Build systems which are isolatable (easy for people to setup and 
-3. Be weary of using bleeding edge tools which don't have some stand-in replacement
-4. Shims are nice to coalesce services into interoperability, but is O(n).
-   Constant time requires protocol level agreement (easier with distributed,
-   living protocols/systems, where features can be arbitrary incorporated into
-   each node's protocol and subsets of systems can choose to agree)
-
-* Conventions for Note Taking
-- Every document should have a date
-- Every file, section, blurb (ideally) has a unique tag (markup or numeric) which allows it to be indexed/searched/referenced.
-- Every note should (ideally) be semantically tagged
-- Every note should exist only once (single point of truth) and by symlinked by other things that need it
-- Todo items and notes should work the same way. Todo items are just actionable notes, thus: 
-
-*** Open questions
-How can 
-autocomplete for tagged notes, as we're typing them?
-
-
-
-* Rules for Projects (4-26-2015)
+** Quantified Self
+1. Maintain a spreadsheet to track important(?) metrics
+** Rules for Projects (4-26-2015)
 Maintain a list of problems which bother you and a Table of Contents of all projects you're working on.
 
 1. Every project should have a registered domain and a landing page
@@ -96,16 +130,41 @@ Maintain a list of problems which bother you and a Table of Contents of all proj
 5. Every project shall have a todo list #project tag in the universal TODO list
 6. Every project shall have a top-level table of contents (TOC) enumerating the aforementioned
 
-** Executive Summary
+*** Executive Summary
 1. A list of existing services
 2. Market research
 3. Simple roadmap of milestones to guage t
 4. Projections + business model for breaking even (based on roadmap)
 5. Unique stategy for customer acquisition
 
-* Accountability
-- Maintain a spreadsheet to track important(?) metrics
-- Have a gym partner
+
+* Philosophy
+- Have concrete, concise and well reasoned answers, be willing to
+  change them. Premeditate answers, ponder their context and
+  significance, and do so on your own time. Life favors the prepared
+  (paraphrasing Louis Pasteur @Q529). To understand and be capable of
+  articulating your stance is a competitive advantage and will help
+  you identify others who align.
+- If someone asks you for your biggest life learning, you should have
+  some pre-meditated answer
+- If someone asks you for your favorite philosopher, you should have
+  some pre-meditated answer. A philosopher is simply one who is
+  passionate about something. Who cares about something, thinks about
+  something, and develops conventions and methodologies to address
+  this something. The only reason not to have a favourite is because
+  you haven't found a "something" you care enough about that you're
+  willing to learn from others.
+- If someone asks you your life mission, or what you stand for, you
+  should have some pre-meditated answer
+
+* Notes on Engineering Systems
+1. Build systems which compound and value to each other (common infrastructure)
+2. Build systems which are isolatable (easy for people to setup and 
+3. Be weary of using bleeding edge tools which don't have some stand-in replacement
+4. Shims are nice to coalesce services into interoperability, but is O(n).
+   Constant time requires protocol level agreement (easier with distributed,
+   living protocols/systems, where features can be arbitrary incorporated into
+   each node's protocol and subsets of systems can choose to agree)
 
 * Provenance: Keep a trail
 1. Write everything down, record everything, always have access to these records; make it handy
@@ -114,14 +173,10 @@ Maintain a list of problems which bother you and a Table of Contents of all proj
 4. Use version control on everything you can
 5. Keep a common book where you evaluate what problems are important to you, why, they are important, 
 
-* Connect
-1. When you meet two people working on a similar problem, introduce them. And do
-   so in a way which proposes collaboration on an element on which they
-   complimentary, not competitive.
-
-* Research
+* Dealing With Others
 1. Research people before you connect. Look through their linkedin, understand
    who they know. Never ask if they "know someone". Do the work for them.
+2. Try your own ideas yourself before approaching others
 
 * Permenance
 This is a hard problem. Turning every computer in the world into an
@@ -129,13 +184,17 @@ equitable/fair network of distributed, secure, non-monopolizable storage where
 people can get paid to store files and ensure redundancy is a good step
 (Filecoin, IPFS)
 
-
 * Connect everything you can
-1. List the ways in which problems are or could be connected.
-2. Be an edge connector in research: Become an expert in a single field by becoming familiar
-   with the fields around it and its application (Knuth)
-3. Record observations and outcomes of (whether good or bad)
+1. When you meet two people working on a similar problem, introduce them. And do
+   so in a way which proposes collaboration on an element on which they
+   complimentary, not competitive.[3]
+2. List the ways in which problems are or could be connected.
+3. Be an edge connector in research: Become an expert in a single field by becoming familiar
+   with the fields around it and its application[3] (Knuth)
+4. Record observations and outcomes of (whether good or bad)
 
-* Dogfood
-1. Try your ideas yourself before approaching others
-2. 
+* Experiment
+1. Schedule a meeting with someone "impossible" to connect with to
+   discussion your and their mutual passion once a month (researchers,
+   entrepreneurs, artists)
+2. Have a room in your house dedicated to a language or behaviour. (spatial locality)

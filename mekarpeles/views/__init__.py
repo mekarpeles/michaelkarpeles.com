@@ -12,7 +12,7 @@
 
 import json
 import requests
-from flask import render_template, Response, redirect, jsonify
+from flask import render_template, Response, redirect, jsonify, request
 from flask.views import MethodView
 from werkzeug import wrappers
 from configs import approot
@@ -23,6 +23,14 @@ class Base(MethodView):
         try:
             return render_template('base.html', template='index.html')
         except:
+            return redirect('/')
+
+
+class Verbatim(MethodView):
+    def get(self):
+        try:
+            return render_template('%s.html' % request.path)
+        except Exception as e:
             return redirect('/')
 
 
