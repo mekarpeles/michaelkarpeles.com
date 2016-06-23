@@ -2,6 +2,8 @@ Archive.org Select Works
 https://en.wikipedia.org/wiki/List_of_important_publications_in_philosophy#Ancient_philosophy
 1. Have a compendium of each author's major works and a link to a archive.org item for each work
 
+Also, take a peek at https://archive.org/details/greatbooks
+
 * Science Fiction
 https://archive.org/details/sciencefiction
 
