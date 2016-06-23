@@ -1,0 +1,181 @@
+Archive.org Select Works
+https://en.wikipedia.org/wiki/List_of_important_publications_in_philosophy#Ancient_philosophy
+1. Have a compendium of each author's major works and a link to a archive.org item for each work
+
+* Science Fiction
+https://archive.org/details/sciencefiction
+
+1. [[https://archive.org/details/lostworld00doyluoft][The Lost World]]
+2. [[https://archive.org/details/flatlandromanceo00abbouoft][Flatland]]
+3. [[https://archive.org/details/aroundworldineig00vern][Around the World in 80 Days]]
+4. [[https://archive.org/details/ghostseer01schiuoft][Frankenstein]]
+5. [[https://archive.org/details/warofworlds00welluoft][War of the Worlds]]
+6. [[https://archive.org/details/twentythousandle00verniala][20,000 Leagues Under the Sea]]
+
+* History
+1. [[https://archive.org/details/outlineofhistory00wellrich][The outline of history, being a plain history of life and mankind]]
+
+* Literary Classics
+1. [[https://archive.org/details/farewelltoarms01hemi][A farewell to arms]]
+2. [[https://archive.org/details/aesopsfables00aeso][Aesop's Fables]]
+3. [[https://archive.org/details/storyofbeowulftr00kirt][The story of Beowulf]]
+4. [[https://archive.org/details/adventuresofhuck00twaiiala][The adventures of Huckleberry Finn]]
+5. [[https://archive.org/details/manwithoutacount00haleiala][The man without a country]]
+6. [[https://archive.org/details/copperfield00dickrich][David Copperfield]]
+7. [[https://archive.org/details/maloryshistoryof00maloiala][Malory's King Arthur]]
+8. [[https://archive.org/details/iliadofhomer00homeiala][The Iliad of Homer]]
+9. [[https://archive.org/details/historyofvalorou02cerviala][Don Quixote of the Mancha]]
+** Shakespeare
+*** Comedies
+1. [[https://archive.org/details/shake00spearestragshakrich][Hamlet]]
+2. [[https://archive.org/details/asyoulikeit00shakiala][As You Like It]]
+3. [[https://archive.org/details/Shakespearessonn01shak_201303][Sonnets]] ([[https://archive.org/details/shakespeare_sonnets_ch][audio]])
+4. [[https://archive.org/details/shakespearesmac06shakgoog][Macbeth]]
+5. [[https://archive.org/details/shakespearescome01shak][All's Well That Ends Well]]
+6. [[https://archive.org/details/comedyoferrors00shak][Comedy of Errors]]
+7. [[https://archive.org/details/shakespearescome00shakiala][Love's Labour's Lost]] ([[https://archive.org/details/loves_labours_lost_1008_librivox][audio]])
+8. [[https://archive.org/details/shakespearescome09shak][Measure for Measure]] ([[https://archive.org/details/measure_for_measure_1006_librivox][audio]])
+9. [[https://archive.org/details/merchantofvenrol00shakuoft][Merchant of Venice]], [[https://archive.org/details/shakespearesmerc02shak][Merchant of Venice]], [[https://archive.org/details/shakespearesmerch00shak][Merchant of Venice]]
+10. [[https://archive.org/details/shakespearesmer00greggoog][Merry Wives of Windsor]] ([[https://archive.org/details/merry_wives_windsor_1108_librivox][audio]])
+11. [[https://archive.org/details/shakespearesmids00shak][Midsummer Night's Dream]]
+12. [[https://archive.org/details/shakespearescome06shakesp][Much Ado about Nothing]]
+13. [[https://archive.org/details/tamingofshrew1898shak][Taming of the Shrew]]
+14. [[https://archive.org/details/shakspearestempe00shak][Tempest]] ([[https://archive.org/details/tempest_1002_librivox][audio]])
+15. [[https://archive.org/details/twelfthnight03shak][Twelfth Night]]
+16. [[https://archive.org/details/shakespearescome1910shak][Two Gentlemen of Verona]] ([[https://archive.org/details/twogentlemenofverona_1103_librivox][audio]])
+17. [[https://archive.org/details/winterstale00shakgoog][Winter's Tale]] ([[https://archive.org/details/thewinterstale_1008_librivox][audio]])
+*** Histories
+1. Henry IV, Part I
+2. [[https://archive.org/details/shakespeareshist02shak][Henry IV, Part II]]
+3. [[https://archive.org/details/shakespeareshist07shak][History of King Henry the Fifth]]
+4. Henry VI, Part I
+5. Henry VI, Part II
+6. Henry VI, Part III
+7. Henry VIII
+8. King John
+9. Pericles
+10. [[https://archive.org/details/lifedeathofkingr00shak][Richard II]]
+11. Richard III
+*** Tragedies
+[[https://archive.org/details/antonycleopatra00shak][Antony and Cleopatra]] ([[https://archive.org/details/antony_cleopatra_1109_librivox][audio]])
+Coriolanus
+Cymbeline
+Hamlet
+Julius Caesar
+King Lear
+Macbeth
+Othello
+Romeo and Juliet
+Timon of Athens
+Titus Andronicus
+Troilus and Cressida
+
+
+* Science
+1. [[https://archive.org/details/experimentalrese00faraiala][Experimental researches in electricity by Michael Faraday]]
+2. [[https://archive.org/details/theoryofspectraa00bohriala][The theory of spectra and atomic constitution by Neils Bohr]]
+3. [[https://archive.org/details/discourseonmetap00leib2][Discourse on metaphysics; Correspondence with Arnauld, and Monadology by Leibniz]]
+* Anchient Classics
+1. [[https://archive.org/details/basicteachingsof007419mbp][Basic Teachings Of The Great Philosophers A Survey Of Their Basic Idea]]
+
+** Plato
+[[https://archive.org/details/platofivegreatdi032940mbp][Five Great Dialogues]]
+1. [[https://archive.org/details/charmideslaches00newhgoog][Charmides]], [[https://archive.org/details/charmideslaches00newhgoog][Laches]] and [[https://archive.org/details/charmideslaches00newhgoog][Lysis]]
+2. [[https://archive.org/details/protagorasofplat00platuoft][Protagoras]]
+3. [[https://archive.org/details/euthydemus00plat_0][Euthydemus]]
+4. [[https://archive.org/download/cratylus01616gut/crtls10.txt][Cratylus]] ([[https://archive.org/details/platoniscratylus00plat][greek]]) ([[https://archive.org/details/cratylus_ge_1407_librivox][audio]])
+5. [[https://archive.org/details/phaedrusofplato00plat][Phaedrus]]
+6. [[https://archive.org/details/ion00plat_0][Ion]]
+7. [[https://archive.org/details/PlatosSymposium][Symposium]]
+8. [[https://archive.org/details/menostoc00platuoft][Meno]]
+9. [[https://archive.org/details/gorgiasss00platuoft][Gorgias]]
+10. [[https://archive.org/details/republicshorey01platuoft][The Republic]]
+11. [[https://archive.org/details/timaeusofplato00platiala][Timaeus]]
+12. [[https://archive.org/download/PlatosCritias/plato-critias.txt][Critias]] ([[https://archive.org/details/critias_1301_librivox][audio]])
+13. [[https://archive.org/details/parmenidesofplat00platiala][Parmenides]]
+14. [[https://archive.org/details/theaetetus00plat][Theaetetus]] and [[https://archive.org/details/platostheoryofkn00plat][Sophist]]
+15. [[https://archive.org/details/republicstatesma00plat_0][Statesman]]
+16. [[https://archive.org/details/philebusofplato00plat][Philebus]]
+17. [[https://archive.org/details/lawsofplato02plat][Laws]]
+18. [[https://archive.org/details/trialanddeathofs00platiala][The Trial and Death of Socrates]] ([[https://archive.org/details/platoseuthyphro00plat][Euthyphro]], [[https://archive.org/details/apologyofplato015552mbp][The Apology]] / [[https://archive.org/details/theapologyofsocr00socruoft][The Apology]], [[https://archive.org/details/critoofplato00plat][Crito]], [[https://archive.org/details/phaedoooooo00platuoft][Phaedo]])
+
+** Epicurus
+1. [[https://archive.org/details/epicurussmorals00descgoog][Epicurus's Morals]]
+** Immanuel Kant
+1. [[https://archive.org/details/immanuelkantscri02kant][Critique of Pure Reasons]] ([[https://archive.org/details/critique_pure_reason_0709_librivox][audio]])
+2. [[https://archive.org/details/fundamentalprin00kantgoog][Fundamental Principles of the Metaphysics of Ethics]] ([[https://archive.org/details/principles_metaphysic_morals_1109_librivox][audio]])
+** Karl Marx
+1. [[https://archive.org/details/KarlMarxTheCapital][The capital]]
+** Putarch
+[[https://archive.org/details/plutarchslives05plutuoft][Plutarch's Lives]]
+** Newton
+[[https://archive.org/details/newtonspmathema00newtrich][Newton's Principia]]
+** Thales
+1. [[https://archive.org/details/greekphilosophyt00burn][Thales to Plato]]
+** Bertrand Russel
+1. [[https://archive.org/details/TheImpactOfScienceOnSociety-B.Russell][The Impact of Science on Society]]
+
+** Archimedes
+1. [[https://archive.org/details/TheArchimedesPalimpsest][The Archimedes Palimpsest]]
+2. [[https://archive.org/details/cu31924005730563][The method of Archimedes]]
+
+** Aristotle
+1. [[https://archive.org/details/Physics_Aristotle][Physics]]
+2. [[https://archive.org/details/petersethics00arisrich][The Nicomachean ethics of Aristotle]]
+3. [[https://archive.org/details/artofrhetoric00arisuoft][The Art of Rhetoric]]
+4. [[https://archive.org/details/aristotlespoliti00aris][Politics]] or [[https://archive.org/details/politicsaristot08newmgoog][Politics]]
+5. [[https://archive.org/details/organoncooke01arisuoft][The Organon]]
+6. [[https://archive.org/details/aristotlescritic00watsuoft][Aristotle's Criticisms of Plato]]
+7. 
+
+** Euclid
+1. [[https://archive.org/details/JL_Heiberg___EUCLIDS_ELEMENTS_OF_GEOMETRY][Euclid's Elements of Geometry]], [[https://archive.org/details/tayloreuclid00euclrich][Euclid's Elements of Geometry]], [[https://archive.org/details/euclideselement00archgoog][Euclid's Elements; 15 books]]
+
+** Leonhard Euler
+1. [[https://archive.org/details/introductiontoel00eulerich][Euler's Elements of Algebra]]
+
+** Francis Bacon
+1. [[https://archive.org/details/baconsessayswisd00bacoiala][Bacon's essays and Wisdom of the ancients]]
+
+** Marcus Aurelius
+1. [[https://archive.org/details/meditations00marcuoft][Meditations]]
+
+** Rene Descartes
+1. [[https://archive.org/details/discourseonmetho1912desc][A discourse on method]]
+2. [[https://archive.org/details/TheGeometry][The Geometry]]
+
+** Michel De Montaigne
+[[https://archive.org/details/essaysmichaelde03montgoog][Essays by Michel De Montaigne]]
+** Ben Franklin
+[[https://archive.org/details/autobiographybe00frangoog][Ben Franklin's Autobiography]]
+** Sigmund Freud
+1. [[https://archive.org/details/generalintroduct00freuiala][A General Introduction To Psychoanalysis by Sigmund Freud]]
+** St. Thomas Aquinas
+1. [[https://archive.org/details/summatheologicao02thom][Summa theologica]]
+* Philosophical Curricula
+** Ideal commonwealths
+Plutarch's Lycurgus More's Utopia, Bacon's New Atlantis, Campanella's City of the sun and a fragment of Hall's Mundus alter et idem
+https://archive.org/details/idealcommonwealt00plutiala
+* Textbooks
+** Math
+*** Calculus
+1. [[https://archive.org/details/TheHistoryOfTheCalculusAndItsConceptualDevelopment][The History of the Calculus and its Conceptual Development]]
+
+** Electrical Engineering
+[[https://archive.org/details/hawkinselectrica06hawk][Hawkins electrical guide]]
+* Entertainment
+** [[https://archive.org/details/manga_library][The Manga Library]]
+
+*** Akame Ga Kiru
+[[https://archive.org/details/manga_AkameGaKiru-v01][Volume 1]], [[https://archive.org/details/manga_AkameGaKiru-v02][Volume 2]], [[https://archive.org/details/manga_AkameGaKiru-v03][Volume 3]], [[https://archive.org/details/manga_AkameGaKiru-v04][Volume 4]]
+
+*** Berserk
+[[https://archive.org/details/manga_Berserk-v1][Volume 1]], [[https://archive.org/details/manga_Berserk-v2][Volume 2]], [[https://archive.org/details/manga_Berserk-v3][Volume 3]], [[https://archive.org/details/manga_Berserk-v4][Volume 4]], [[https://archive.org/details/manga_Berserk-v5][Volume 5]], [[https://archive.org/details/manga_Berserk-v6][Volume 6]], [[https://archive.org/details/manga_Berserk-v7][Volume 7]], [[https://archive.org/details/manga_Berserk-v8][Volume 8]], [[https://archive.org/details/manga_Berserk-v9][Volume 9]], [[https://archive.org/details/manga_Berserk-v10][Volume 10]], [[https://archive.org/details/manga_Berserk-v11][Volume 11]], [[https://archive.org/details/manga_Berserk-v12][Volume 12]], [[https://archive.org/details/manga_Berserk-v13][Volume 13]], [[https://archive.org/details/manga_Berserk-v14][Volume 14]], [[https://archive.org/details/manga_Berserk-v15][Volume 15]], [[https://archive.org/details/manga_Berserk-v16][Volume 16]], [[https://archive.org/details/manga_Berserk-v17][Volume 17]], [[https://archive.org/details/manga_Berserk-v18][Volume 18]], [[https://archive.org/details/manga_Berserk-v19][Volu, e 19]]
+[[https://archive.org/details/manga_Berserk-v20][Volume 20]], [[https://archive.org/details/manga_Berserk-v21][Volume 21]], [[https://archive.org/details/manga_Berserk-v22][Volume 22]], [[https://archive.org/details/manga_Berserk-v23][Volume 23]], [[https://archive.org/details/manga_Berserk-v24][Volume 24]], [[https://archive.org/details/manga_Berserk-v25][Volume 25]], [[https://archive.org/details/manga_Berserk-v26][Volume 26]], [[https://archive.org/details/manga_Berserk-v27][Volume 27]], [[https://archive.org/details/manga_Berserk-v28][Volume 28]], [[https://archive.org/details/manga_Berserk-v29][Volume 29]], [[https://archive.org/details/manga_Berserk-v30][Volume 30]], [[https://archive.org/details/manga_Berserk-v31][Volume 31]], [[https://archive.org/details/manga_Berserk-v32][Volume 32]], [[https://archive.org/details/manga_Berserk-v33][Volume 33]], [[https://archive.org/details/manga_Berserk-v34][Volume 34]], [[https://archive.org/details/manga_Berserk-v35][Volume 35]], [[https://archive.org/details/manga_Berserk-v36][Volume 36]], [[https://archive.org/details/manga_Berserk-v37][Volume 37]]
+
+
+** Movies
+https://web.archive.org/web/20150320172355/http://tech.blorge.com/Structure:%20/2010/08/11/top-40-best-free-legal-movies-you-can-download-right-now/
+https://web.archive.org/web/20150316065030/http://tech.blorge.com/Structure:%20/2011/07/10/the-40-best-free-legal-movies-comedy-you-can-download-now/
+
+

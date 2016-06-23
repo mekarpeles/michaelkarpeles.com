@@ -1,0 +1,76 @@
+The Hitchhiker's Guide to Developing on the World Wide Web
+
+* Background
+** [[https://docs.webplatform.org/wiki/Beginners/the_beginning][A Survey of Topics (1st pass)]]
+** A Historical Perspective
+*** [[https://en.wikipedia.org/wiki/History_of_the_Internet][The History of the Internet]] (also [[https://en.wikipedia.org/wiki/History_of_the_World_Wide_Web][see]])
+*** [[https://docs.webplatform.org/w/index.php?title=concepts/Internet_and_Web/The_History_of_the_Web&redirect=no][The History of the Web]]
+*** [[https://en.wikipedia.org/wiki/History_of_the_web_browser][The History of the Web Browser]]
+** Technical Details on how the Web works
+*** [[https://docs.webplatform.org/wiki/concepts/Internet_and_Web/How_does_the_Internet_Work][How does the Internet work?]]
+*** [[http://www.html5rocks.com/en/tutorials/internals/howbrowserswork/][How does the modern Web Browser work?]] (also [[https://docs.webplatform.org/wiki/concepts/Internet_and_Web/how_browsers_work][see]])
+**** [[http://grosskurth.ca/papers/browser-refarch.pdf][Review a Reference Implementation]] [[[https://en.wikipedia.org/wiki/Reference_implementation][?]]]
+**** [[https://docs.webplatform.org/wiki/dom/tutorials/introduction][The Browser's DOM (Document Object Model)]]
+** The Fundamental Web Technologies
+*** [[https://docs.webplatform.org/wiki/html][HTML (HyperText Markup Language)]] and the [[https://docs.webplatform.org/wiki/dom/tutorials/introduction][Browser's DOM (Document Object Model)]]
+*** [[https://docs.webplatform.org/wiki/css][CSS (Cascading Style Sheets)]]
+*** [[https://docs.webplatform.org/wiki/javascript][JS (Javascript / ecmascript)]]
+
+* Getting Started
+This section offers a comprehensive tutorial on building, designing,
+and adding dynamic functionality to your website.
+** [[https://docs.webplatform.org/wiki/Beginners#Before_you_start][Prerequisites & Setup]]
+** [[https://docs.webplatform.org/wiki/Beginners/crash_course][Build a minimal website]]
+** Beginner's FAQs
+*** [[https://docs.webplatform.org/wiki/concepts/Internet_and_Web/The_Web_Standards_Model][Why are HTML, JS, and CSS separate things?]]
+*** [[http://programmers.stackexchange.com/questions/147451/whats-so-bad-about-the-dom][Is the DOM a practical data structure?]]
+
+** Hosting + Deploying minimal website (see How the Web + Internet works)
+** Professional considerations
+- [[https://docs.webplatform.org/wiki/concepts/cross_browser_techniques][Cross-Browser Compatiblity]]
+- [[https://docs.webplatform.org/wiki/concepts/accessibility][Website Accessibility]]
+- Accommodating device types & Mobile
+- SEO and discovery
+** Semantic Markup & SEO (RDF, Schema.org, HTML)
+** Adding functionality with JS Libraries
+https://www.quora.com/What-are-top-5-most-popular-JavaScript-libraries
+*** JQuery
+*** D3
+*** Backbone
+*** Underscore
+** Limitations of minimal website (Maintainability)
+** Boosting Design Productivity & Capability (Less, Sass, Scss)
+*** Overview of CSS Preprocessors
+http://www.awwwards.com/what-are-frameworks-22-best-responsive-css-frameworks-for-web-design.html
+*** [[http://sass-lang.com/guide][Installation & Setup]]
+** Instrumenting a rudamentary build chain / pipeline
+** Advancing to a Native Web (Single Page) Application
+https://blog.andyet.com/2015/01/22/native-web-apps/
+*** Overview of SPA Architectures (MVC, Flux, Redux)
+https://facebook.github.io/flux/docs/overview.html
+http://fluxxor.com/what-is-flux.html
+**** [[https://www.youtube.com/watch?list=PLb0IAmt7-GS188xDYE-u1ShQmFFGbrk0v&v=nYkdrAPrdcw][Flux & React]]
+***** [[https://github.com/facebook/flux/tree/master/examples/flux-todomvc/][Example: Todo Application]]
+**** [[https://egghead.io/lessons/javascript-redux-the-single-immutable-state-tree?series=getting-started-with-redux][Redux]]
+
+
+*** Comparison of Frameworks
+*** Learning a Framework
+http://www.reactstarterkit.com/ (https://github.com/kriasoft/react-starter-kit)
+
+*** Organizing your Project
+[[https://docs.webplatform.org/wiki/concepts/information_architecture/planning_a_website][I need help organizing my process]]
+
+*** Building a Pipeline
+*** Integrating with a Data Source (Server or Serverless)
+https://exploringdata.github.io/about/
+*** Creating visualizations
+
+
+* Programming Well
+Douglas Crawford's Javascript the good stuff
+https://github.com/dypsilon/frontend-dev-bookmarks
+
+* Other Resources
+http://www.frontendhandbook.com/practice/tech-employed-by-fd.html
+

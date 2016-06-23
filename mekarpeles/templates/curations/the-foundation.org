@@ -35,30 +35,58 @@ research experiment was conducted.
 ** Index of Raw Materials
 As an aside, here's a neat map of the [[http://www.vanderkrogt.net/elements/][etymology of the elements]].
 
-|-------------+--------------------------------------+--------------------------------------------------------------------------------------------+--------------------------------------------|
-| Wikidata ID | Material                             | Recipes                                                                                    | Requires                                   |
-|-------------+--------------------------------------+--------------------------------------------------------------------------------------------+--------------------------------------------|
-| #Q753       | Copper (Cu)                          | [[Gather Malachite]], [[Smelt Ore]]                                                                | #Q479257, #Q164411, #Q40558                |
-| #Q677       | Iron (Fe)                            | [[https://en.wikipedia.org/wiki/Meteoric_iron][Gather Meteoric Iron]] or ([[Gather Iron Ore]], [[Smelt Ore]])                                       | #Q479257, #Q40558                          |
-| #Q663       | Aluminium (Al)                       | [[Gather Bauxite]], [[Smelt Ore]]                                                                  | #Q479257, #Q40558, #Q102078                |
-| #Q40558     | Forge                                | [[Build Forge]]                                                                                | #Q753, ...                                 |
-| #Q131877    | Polyisoprene [Natural Rubber] (C5H8) | [[Tap a Hevea brasiliensis]], [[http://www.intermediates.basf.com/chemicals/formic-acid/latex-coagulation][Coagulate using Formic Acid]], [[https://en.wikipedia.org/wiki/Vulcanization][Vulcanize using Sulfur]] ([[https://www.youtube.com/watch?v=dKOe_FfiDuk][cross-link]]) | #Q987767, #Q161233                         |
-| #Q987767    | Container                            | [[Build a Wood Container]]                                                                     | #Q753, #Q479257                            |
-| #Q102078    | Bauxite                              | [[Mine Bauxite]]                                                                               | #Q479257                                   |
-| #Q164411    | Malachite (Cu2CO3(OH)2)              | [[Mine Malachite]]                                                                             | #Q479257                                   |
-| #Q682       | Sulfur (S)                           | [[Mine Sulfur]]                                                                                | #Q479257                                   |
-| #Q1370714   | Lumber (Timber)                      | [[Harvest Lumber]]                                                                             | #Q479257                                   |
-| #Q479257    | Stone Tool                           | [[Gather Hard Rock]] [[Build a Stone Tool]]                                                        | #Q753 and ???                              |
-| #Q161233    | Formic Acid (CH202)                  | [[Extract Woodland Ant Acid]]                                                                  | #Q148769                                   |
-| #Q3196      | Fire                                 | [[Create Fire]]                                                                                | #Q4115364, #Q753                           |
-| #Q4115364   | Bow Drill                            | [[Create a Bow Drill]]                                                                         | #Q753, #Q2566155, #Q160066                 |
-| #Q2566155   | Rope (Cordage)                       | [[Cordify plant fibres]]                                                                       | #Q160066                                   |
-| #Q160066    | Straw                                | [[Make Straw]]                                                                                 | #Q11577                                    |
-| ???         | Hard Rock                            |                                                                                            | (#Q53754 / #Q237883 / #Q43338 / #Q1070438) |
-| #Q753       | Wood                                 | [[Gather Wood]]                                                                                |                                            |
-| #Q116269    | Silicon Dioxide                      | [[Gather Sand]]                                                                                |                                            |
-| #Q11577     | Hordeum vulgare ([[https://en.wikipedia.org/wiki/Barley][Barley]])             | [[Gather Barley]]                                                                              |                                            |
-|-------------+--------------------------------------+--------------------------------------------------------------------------------------------+--------------------------------------------|
+|-------------+---------------------------------------+------------------------------------------------------------------+----------------------------------------|
+| Wikidata ID | Material                              | Recipes / Processes                                              | Requires                               |
+|-------------+---------------------------------------+------------------------------------------------------------------+----------------------------------------|
+| Q753        | Copper (Cu)                           | [[Gather Malachite]], [[Smelt Ore]]                                      | Q479257, Q164411, Q40558               |
+| Q677        | Iron (Fe)                             | [[https://en.wikipedia.org/wiki/Meteoric_iron][Gather Meteoric Iron]] or ([[Gather Iron Ore]], [[Smelt Ore]])             | Q479257, Q40558                        |
+| Q663        | Aluminium (Al)                        | [[Gather Bauxite]], [[Smelt Ore]]                                        | Q479257, Q40558, Q102078               |
+| Q40558      | Forge                                 | [[Build Forge]]                                                      | Q753, ...                              |
+| Q131877     | Polyisoprene [Natural Rubber] (C5H8)  | [[http://www.intermediates.basf.com/chemicals/formic-acid/latex-coagulation][Coagulate using Formic Acid]], [[Vulcanize using Sulfur]] ([[https://www.youtube.com/watch?v=dKOe_FfiDuk][cross-link]]) | Q987767, Q161233                       |
+| Q987767     | Container                             | [[Build a Wood Container]]                                           | Q753, Q479257                          |
+| Q102078     | Bauxite                               | [[Mine Bauxite]]                                                     | Q479257                                |
+| Q164411     | Malachite (Cu2CO3(OH)2)               | [[Mine Malachite]]                                                   | Q479257                                |
+| Q682        | Sulfur (S)                            | [[Mine Sulfur]]                                                      | Q479257                                |
+| Q1370714    | Lumber (Timber)                       | [[Harvest Lumber]]                                                   | Q479257                                |
+| Q479257     | Stone Tool                            | [[Gather Metamorphic (Hard) Rock]], [[Build a Stone Tool]]               | Q753                                   |
+| Q161233     | Formic Acid (CH202)                   | [[Extract Woodland Ant Acid]]                                        | Q148769                                |
+| Q3196       | Fire                                  | [[Create Fire]]                                                      | Q4115364, Q753                         |
+| Q4115364    | Bow Drill                             | [[Create a Bow Drill]]                                               | Q753, Q2566155, Q160066                |
+| Q2566155    | Rope (Cordage)                        | [[Cordify plant fibres]]                                             | Q160066                                |
+| Q160066     | Straw                                 | [[Make Straw]]                                                       | Q11577                                 |
+| Q103517     | [[https://en.wikipedia.org/wiki/Alpha_particle][Alpha Particle]]                        | [[Find Uranium]]                                                     | Q1098                                  |
+| Q47069      | Metamorphic (Hard) Rock               | [[Gather Metamorphic (Hard) Rock]]                                   | (Q53754 / Q237883 / Q43338 / Q1070438) |
+| Q753        | Wood                                  | [[Gather Wood]]                                                      |                                        |
+| Q116269     | Silicon Dioxide                       | [[Gather Sand]]                                                      |                                        |
+| Q11577      | Hordeum vulgare ([[https://en.wikipedia.org/wiki/Barley][Barley]])              | [[Harvesting]]                                                       |                                        |
+| Q40924      | [[https://www.boundless.com/physiology/textbooks/boundless-anatomy-and-physiology-textbook/the-urinary-system-25/urine-241/chemical-composition-of-urine-1177-2149/][Urine]]                                 | [[Urination]]                                                        |                                        |
+| Q674        | Phosphorus (P)                        |                                                                  |                                        |
+| Q1098       | [[https://geoinfo.nmt.edu/resources/uranium/where.html][Uranium]]                               |                                                                  |                                        |
+|-------------+---------------------------------------+------------------------------------------------------------------+----------------------------------------|
+| Q274988     | [[https://www.youtube.com/watch?v=JUmtgeGc_JA][Plaster]]                               |                                                                  | Q407258                                |
+| Q407258     | Calcium Sulfate (CaSO4)               |                                                                  |                                        |
+| Q208451     | Calcium Chloride (CaCl2)              |                                                                  |                                        |
+|-------------+---------------------------------------+------------------------------------------------------------------+----------------------------------------|
+| Q81727      | [[Glassware]]                             |                                                                  | Q11469                                 |
+| Q745127     | [[https://www.youtube.com/watch?v=IjNusHQOhTM][Soda-lime-silica Glass]]                |                                                                  | Q190227, Q23767, Q116269               |
+| Q190227     | [[https://en.wikipedia.org/wiki/Sodium_carbonate][Sodium Carbonate (Soda Ash)]] (Na2CO3)  |                                                                  | ...                                    |
+| Q23767      | [[https://en.wikipedia.org/wiki/Lime_(material)][Calcium Carbonate (Limestone)]] (CaCO₃) |                                                                  | ...                                    |
+| Q11469      | [[http://www.explainthatstuff.com/glass.html][Glass]]                                 |                                                                  | Q116269                                |
+|-------------+---------------------------------------+------------------------------------------------------------------+----------------------------------------|
+
+
+|-------------+----------------+---------+-----------------|
+| Wikidata ID | Process        | Recipes | Requires        |
+|-------------+----------------+---------+-----------------|
+| Q3595335    | [[Rubber Tapping]] |         |                 |
+| Q188631     | [[Vulcanization]]  |         |                 |
+| Q41716      | [[Boiling]]        |         | *               |
+| Q12185286   | [[Glassblowing]]   |         | Q116269, Q40558 |
+| Q1192478    | [[Firelighting]]   |         | Q4115364        |
+| Q105726     | [[Urination]]      |         |                 |
+| Q213753     | [[Harvesting]]     |         |                 |
+|-------------+----------------+---------+-----------------|
+
 
 ** Recipes
 
@@ -145,6 +173,10 @@ Location: Jordan
 | #Q2598218   | [[https://en.wikipedia.org/wiki/Apocynum_cannabinum][Dogbane]]                |
 |-------------+------------------------|
 
+*** [[Vulcanize using Sulfur]]
+https://en.wikipedia.org/wiki/Vulcanization
+http://www.rubbercal.com/industrial-rubber/Articles-2/how-to-vulcanize-rubber.html
+
 *** DONE [[Cordify plant fibres]]
 https://en.wikipedia.org/wiki/Liriodendron_tulipifera
 https://www.youtube.com/watch?v=mQlXXeHs3wY
@@ -163,12 +195,9 @@ https://www.youtube.com/watch?v=mQlXXeHs3wY
 
 
 
-*** DONE [[Tap a Hevea brasiliensis]]
+*** DONE [[Rubber Tapping]]
 1. Harvest Polyisoprene (C5H8)
-
-
-[[Polyisoprene (C5H8)]] using [[Formic Acid (CH2O2)]]
-    
+[[Polyisoprene (C5H8)]] using [[Formic Acid (CH2O2)]]   
 *** DONE [[Gather Woodland Ants]] (Formica Rufa)
 https://www.youtube.com/watch?v=Sp8b1nQSY
 It is native to Europe and Anatolia but is also found in North America
@@ -201,6 +230,8 @@ elements from their ores.
 3. Melt the material (refer to the [[http://www.engineeringtoolbox.com/melting-temperature-metals-d_860.html][melting point]] of your material for the time / temperature)
 4. Remove material while still red-hot (to shape) or as an ingot, once cooled
 
+*** DONE [[Gather Metamorphic (Hard) Rock]]
+**** [[http://facweb.bhc.edu/academics/science/Harwoodr/Geol101/labs/metamorf/index.htm][Identifying Metamorphic Rock]]
 *** DONE [[Gather Wood]]
 1. Locate a candidate [[Branch]] or [[Tree]]
 2. [[https://www.youtube.com/watch?v=-oHz8MHDtSs][Inspect wood for rot]]

@@ -1,0 +1,180 @@
+{"root": 1,
+ "whys": {
+    "1": {
+      "id": 1,
+      "question": "What is a <entity w2gid=147 def=1>Magnet</entity>?",
+      "answer": "A magnet is anything which is capable of producing a <entity w2gid=199 def=2>Magnetic Field</entity>. Permanent magnets typically refer to any <entity w2gid=196 def=11>Ferromagnet</entity>ic material capable of attracting other <entity w2gid=196 def=11>Ferromagnet</entity>ic material and of becoming <entity w2gid=218 def=2>Induced Magnetism</entity>. A magnet can also refer to <entity w2gid=206 def=21>Electrons</entity> and <entity w2gid=216 def=22>Protons</entity> whose spins naturally produce <entity w2gid=199 def=2>Magnetic Fields</entity>. Thus all atomic matter can be said to be types of magnets.",
+      "children": [2, 3, 11]
+    },
+    "2": {
+      "id": 2,
+      "question": "How does an object become magnetic via <entity w2gid=218 def=2>Induced Magnetism</entity>?",
+      "answer": "When a <entity w2gid=196 def=11>Ferromagnet</entity>ic material, i.e. an object which has an affinity for being magnetized, is heated to its <entity w2gid=214 def=19>Curie Temperature</entity> and then exposed to a strong <entity w2gid=199 def=4>Magnetic Field</entity>, <entity w2gid=213 def=18>Magnetic Domain</entity>s will form aligning with these fields. Once cooled below its <entity w2gid=214 def=19>Curie Temperature</entity>, the material's <entity w2gid=213 def=18>Magnetic Domain</entity>s will become reified and remain magnetized. This field will slowly become weaker over time until the material's natural magnetic properties returned",
+      "sources": ["https://www.le.ac.uk/se/centres/sci/selfstudy/mam6.htm", "https://www.le.ac.uk/se/centres/sci/selfstudy/mam9.htm"],
+      "children": [2, 11, 4, 19, 18]
+    },
+    "3": {
+      "id": 3,
+      "question": "What is a <entity w2gid=199 def=4>Magnetic Field</entity>?",
+      "answer": "A <entity w2gid=198 def=5>Vector Field</entity> which describes the directions and strength of forces which an object exerts upon any point in surrounding space. <a href='http://www.coolmagnetman.com/magfield.htm'>More here</a> and <a href='http://hyperphysics.phy-astr.gsu.edu/hbase/magnetic/magfor.html'>here</a>.",
+      "sources": ["https://www.le.ac.uk/se/centres/sci/selfstudy/mam3.htm"],
+      "children": [5]
+    },
+    "4": {
+      "id": 4,
+      "question": "What creates a <entity w2gid=199 def=4>Magnetic Field</entity>?",
+      "answer": "A magnetic field can be created with moving charges, such as a current-carrying wire. A magnetic field can also be created by the spin <entity w2gid=200 def=XXX>Magnetic Dipole Moment</entity>, and by the <entity w2gid=204 def=8>Orbital Magnetic Dipole Moment</entity> of an electron within an atom.",
+      "children": [8, 9]
+    },
+    "5": {
+      "id": 5,
+      "question": "What is a <entity w2gid=198>Vector Field</entity>",
+      "answer": "A set of <entity w2gid=201 def=6>Vector</entity>s which describes a property of each point in a space",
+      "children": [6]
+    },
+    "6": {
+      "id": 6,
+      "question": "What is a <entity w2gid=201>Vector</entity>",
+      "answer": "A vector is an arrow with <entity w2gid=202 def=7>Magnitude</entity> and direction",
+      "children": [7]
+    },
+    "7": {
+      "id": 7,
+      "question": "What is a <entity w2gid=202>Magnitude</entity>",
+      "answer": "A number representing the size or extent of a thing",
+      "children": []
+    },
+    "8": {
+      "id": 8,
+      "question": "What is an <entity w2gid=204>Orbital Magnetic Dipole Moment</entity>",
+      "answer": "The <entity w2gid=204 def=9>Magnetic Dipole Moment</entity> of an <entity w2gid=206>Electron</entity>",
+      "sources": ["http://hyperphysics.phy-astr.gsu.edu/hbase/quantum/orbmag.html"],
+      "children": [9]
+    },
+    "9": {
+      "id": 9,
+      "question": "What is a <entity w2gid=204>Magnetic Dipole Moment</entity>",
+      "answer": "The strength of a <entity w2gid=203 def=10>Magnetic Dipole</entity>, specifically the measure of a<entity w2gid=203 def=10>Magnetic Dipole</entity>'s ability to turn itself into alignment with a given external <entity w2gid=199 def=4>Magnetic Field</entity> (the force it can exert on eletric currents and the <entity w2gid=207 def=12>Torque</entity> that a magnetic field will exert on it).",
+      "sources": ["http://www.britannica.com/science/magnetic-dipole", "http://www.phys.ufl.edu/~acosta/phy2061/lectures/MagneticDipoles.pdf"],
+      "children": [10, 12]
+    },
+    "10": {
+      "id": 10,
+      "question": "What is a <entity w2gid=205>Magnetic Dipole</entity>",
+      "answer": "A fundamental observable unit of magnetism. Most intuitively, a <entity w2gid=209 def=13>Dipole</entity> ---. The interaction between these two charged monopoles generates a <entity w2gid=198 def=5>Vector Field</entity> of force in the surrounding area known as a magnetic field. a closed circulation of electric current. A simple example of this is a single loop of wire with some constant current through it",
+      "sources": ["http://www.wisegeek.com/what-is-a-magnetic-dipole.htm"],
+      "children": [14]
+    },
+    "11": {
+      "id": 11,
+      "question": "Which materials can become magnetized?",
+      "answer": "Anything made of atoms has some magnetic field. The fields of most atomic matter is so weak, it can only be detected by special instruments. <entity w2gid=196 def=11>Ferromagnets</entity> are a group of materials made from the alloys of the rare earth elements which have an affinity to become strong and permanent magnets.",
+      "source": ["http://physics.bu.edu/~duffy/py106/MagMaterials.html"],
+      "children": []
+    },
+    "12": {
+      "id": 12,
+      "question": "What is <entity w2gid=207>Torque</entity>",
+      "answer": "Also known as moment, or <entity w2gid=208>Moment of Force</entity>; The tendency of a force to rotate an object about an axis, fulcrum, or pivot. Just as a force is a push or a pull, a <entity w2gid=207>Torque</entity> can be thought of as a twist to an object.",
+      "children": []
+    },
+    "13": {
+      "id": 13,
+      "question": "What is a <entity w2gid=209>Dipole</entity>?",
+      "answer": "In physics and chemistry, an electromagnetic phenomenon where two <entity w2gid=210>Pole</entity>s, or opposite forces, exist in a given region.",
+      "sources": ["http://www.wisegeek.com/what-are-the-different-types-of-dipole.htm"],
+      "children": [14]
+    },
+    "14": {
+      "id": 14,
+      "question": "What is a <entity w2gid=211>Pole</entity>?",
+      "answer": "In Mathematics and complex analysis, a <entity w2gid=210 def=15>Singularity Point</entity> of a <entity w2gid=212 def=16>Complex Function</entity>.",
+      "sources": ["http://mathfaculty.fullerton.edu/mathews/c2003/SingularityZeroPoleMod.html", "http://mathworld.wolfram.com/Pole.html"],
+      "children": [15, 16]
+    },
+    "15": {
+      "id": 15,
+      "question": "What is a <entity w2gid=210>Singularity Point</entity>",
+      "answer": "A point at which a given mathematical object is not defined, or a point of an exceptional set where it fails to be well-behaved in some particular way, such as differentiability",
+      "sources": ["http://mathfaculty.fullerton.edu/mathews/c2003/SingularityZeroPoleMod.html", "https://en.wikipedia.org/wiki/Singularity_(mathematics)"],
+      "children": []
+    },
+    "16": {
+      "id": 16,
+      "question": "What is a <entity w2gid=212>Complex Function</entity>",
+      "answer": "Is a type of mathematical function in which the independent variable and the dependent variable are both complex numbers. More precisely, a complex function is a function whose domain and range are subsets of the complex plane.",
+      "sources": ["https://en.wikipedia.org/wiki/Complex_analysis#Complex_functions"],
+      "children": []
+    },
+    "17": {
+      "id": 17,
+      "question": "What happens to an object when it becomes magnetized?",
+      "answer": "When cooled below a temperature called the <entity w2gid=214 def=19>Curie temperature</entity>, the magnetization of a piece of <entity w2gid=196 def=11>Ferromagnet</entity>ic material spontaneously divides into many small regions called <entity w2gid=213 def=18>Magnetic Domain</entity>s. These structures are responsible for the unique magnetic behavior exhibited by <entity w2gid=196 def=11>Ferromagnet</entity>ic materials like iron, nickel, cobalt and their alloys, and ferrite.",
+      "sources": ["https://en.wikipedia.org/wiki/Magnetic_domain"],
+      "children": [18, 19]
+    },
+    "18": {
+      "id": 18,
+      "question": "What is a <entity w2gid=213 >Magnetic Domain</entity>",
+      "answer": "A region within a magnetic material in which the individual <entity w2gid=200 def=8>Magnetic Dipole Moment</entity>s (torques) of the material's atoms become aligned with one another and point in the same direction.",
+      "sources": ["https://en.wikipedia.org/wiki/Magnetic_domain", "https://www.le.ac.uk/se/centres/sci/selfstudy/mam5.htm"],
+      "children": []
+    },
+    "19": {
+      "id": 19,
+      "question": "What is the <entity w2gid=214>Curie Temperature</entity>?",
+      "answer": "The temperature at which certain materials lose their permanent magnetic properties, to be replaced by induced magnetism. The Curie temperature is named after Pierre Curie, who showed that magnetism was lost at a critical temperature.",
+      "sources": ["https://en.wikipedia.org/wiki/Curie_temperature"],
+      "children": []
+    },
+    "20": {
+      "id": 20,
+      "question": "Why does electron have magnetic properties?",
+      "answer": "",
+      "source": [],
+      "children": []
+    },
+    "21": {
+      "id": 21,
+      "question": "What is an <entity w2gid=206>Electron</entity>?",
+      "answer": "",
+      "source": [],
+      "children": []
+    },
+    "22": {
+      "id": 22,
+      "question": "What is a <entity w2gid=216>Proton</entity>?",
+      "answer": "",
+      "source": [],
+      "children": []
+    },
+    "23": {
+      "id": 23,
+      "question": "Why do <entity w2gid=206>Electron</entity>s and <entity w2gid=216>Proton</entity>s produce <entity w2gid=199 def=2>Magnetic Field</entity>s?",
+      "answer": "",
+      "source": ["http://hyperphysics.phy-astr.gsu.edu/hbase/spin.html"],
+      "children": []
+    },
+    "24": {
+      "id": 24,
+      "question": "What is <entity w2gid=217>Nuclear Spin</entity>?",
+      "answer": "",
+      "source": ["http://hyperphysics.phy-astr.gsu.edu/hbase/nuclear/nspin.html"],
+      "children": []
+    },
+    "25": {
+      "id": 25,
+      "question": "What types of <entity w2gid=147 def=1>Magnet</entity>s are there?",
+      "answer": "<entity>Permanant Magnet</entity>s, <entity>Electromagnet</entity>s, and <entity>Electromagnets</entity>",
+      "source": [],
+      "children": [1]
+    },
+    "26": {
+      "id": 26,
+      "question": "How can a magnetic item become <entity w2gid=219>Demagnetized</entity>?",
+      "answer": "Applying reduced <entity w2gid=>Alternating Current</entity> through a coil of wire wrapped around a magnet, heating a <entity w2gid=147 def=1>Magnet</entity> past its <entity w2gid=214 def=19>Curie Temperature</entity>, and applying force (by striking or vibration) will result in the destruction of a <entity w2gid=147 def=1>Magnet</entity>'s <entity w2gid=213 def=18>Magnetic Domain</entity>s",
+      "source": ["https://www.le.ac.uk/se/centres/sci/selfstudy/mam5.htm"],
+      "children": [1]
+    }
+  } 
+}

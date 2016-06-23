@@ -1,0 +1,547 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+               "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+lang="en" xml:lang="en">
+<head>
+<title>The Hitchhiker's Guide to Developing on the World Wide Web</title>
+<meta http-equiv="Content-Type" content="text/html;charset=iso-8859-1"/>
+<meta name="generator" content="Org-mode"/>
+<meta name="generated" content="2015-12-17 12:00:38 PST"/>
+<meta name="author" content="root"/>
+<meta name="description" content=""/>
+<meta name="keywords" content=""/>
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  html { font-family: Times, serif; font-size: 12pt; }
+  .title  { text-align: center; }
+  .todo   { color: red; }
+  .done   { color: green; }
+  .tag    { background-color: #add8e6; font-weight:normal }
+  .target { }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  p.verse { margin-left: 3% }
+  pre {
+	border: 1pt solid #AEBDCC;
+	background-color: #F3F5F7;
+	padding: 5pt;
+	font-family: courier, monospace;
+        font-size: 90%;
+        overflow:auto;
+  }
+  table { border-collapse: collapse; }
+  td, th { vertical-align: top; }
+  dt { font-weight: bold; }
+  div.figure { padding: 0.5em; }
+  div.figure p { text-align: center; }
+  .linenr { font-size:smaller }
+  .code-highlighted {background-color:#ffff00;}
+  .org-info-js_info-navigation { border-style:none; }
+  #org-info-js_console-label { font-size:10px; font-weight:bold;
+                               white-space:nowrap; }
+  .org-info-js_search-highlight {background-color:#ffff00; color:#000000;
+                                 font-weight:bold; }
+  /*]]>*/-->
+</style>
+<script type="text/javascript">
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+</head>
+<body>
+<div id="content">
+
+<h1 class="title">The Hitchhiker's Guide to Developing on the World Wide Web</h1>
+
+
+<div id="table-of-contents">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#sec-1">1 Background </a>
+<ul>
+<li><a href="#sec-1.1">1.1 A Survey of Topics (1st pass) </a></li>
+<li><a href="#sec-1.2">1.2 A Historical Perspective </a>
+<ul>
+<li><a href="#sec-1.2.1">1.2.1 The History of the Internet (also see) </a></li>
+<li><a href="#sec-1.2.2">1.2.2 The History of the Web </a></li>
+<li><a href="#sec-1.2.3">1.2.3 The History of the Web Browser </a></li>
+</ul>
+</li>
+<li><a href="#sec-1.3">1.3 Technical Details on how the Web works </a>
+<ul>
+<li><a href="#sec-1.3.1">1.3.1 How does the Internet work? </a></li>
+<li><a href="#sec-1.3.2">1.3.2 How does the modern Web Browser work? (also see) </a></li>
+</ul>
+</li>
+<li><a href="#sec-1.4">1.4 The Fundamental Web Technologies </a>
+<ul>
+<li><a href="#sec-1.4.1">1.4.1 HTML (HyperText Markup Language) and the Browser's DOM (Document Object Model) </a></li>
+<li><a href="#sec-1.4.2">1.4.2 CSS (Cascading Style Sheets) </a></li>
+<li><a href="#sec-1.4.3">1.4.3 JS (Javascript / ecmascript) </a></li>
+</ul></li>
+</ul>
+</li>
+<li><a href="#sec-2">2 Getting Started </a>
+<ul>
+<li><a href="#sec-2.1">2.1 Prerequisites &amp; Setup </a></li>
+<li><a href="#sec-2.2">2.2 Build a minimal website </a></li>
+<li><a href="#sec-2.3">2.3 Beginner's FAQs </a>
+<ul>
+<li><a href="#sec-2.3.1">2.3.1 Why are HTML, JS, and CSS separate things? </a></li>
+<li><a href="#sec-2.3.2">2.3.2 Is the DOM a practical data structure? </a></li>
+</ul>
+</li>
+<li><a href="#sec-2.4">2.4 Hosting + Deploying minimal website (see How the Web + Internet works) </a></li>
+<li><a href="#sec-2.5">2.5 Professional considerations </a></li>
+<li><a href="#sec-2.6">2.6 Semantic Markup &amp; SEO (RDF, Schema.org, HTML) </a></li>
+<li><a href="#sec-2.7">2.7 Adding functionality with JS Libraries </a>
+<ul>
+<li><a href="#sec-2.7.1">2.7.1 JQuery </a></li>
+<li><a href="#sec-2.7.2">2.7.2 D3 </a></li>
+<li><a href="#sec-2.7.3">2.7.3 Backbone </a></li>
+<li><a href="#sec-2.7.4">2.7.4 Underscore </a></li>
+</ul>
+</li>
+<li><a href="#sec-2.8">2.8 Limitations of minimal website (Maintainability) </a></li>
+<li><a href="#sec-2.9">2.9 Boosting Design Productivity &amp; Capability (Less, Sass, Scss) </a>
+<ul>
+<li><a href="#sec-2.9.1">2.9.1 Overview of CSS Preprocessors </a></li>
+<li><a href="#sec-2.9.2">2.9.2 Installation &amp; Setup </a></li>
+</ul>
+</li>
+<li><a href="#sec-2.10">2.10 Instrumenting a rudamentary build chain / pipeline </a></li>
+<li><a href="#sec-2.11">2.11 Advancing to a Native Web (Single Page) Application </a>
+<ul>
+<li><a href="#sec-2.11.1">2.11.1 Overview of SPA Architectures (MVC, Flux, Redux) </a></li>
+<li><a href="#sec-2.11.2">2.11.2 Comparison of Frameworks </a></li>
+<li><a href="#sec-2.11.3">2.11.3 Learning a Framework </a></li>
+<li><a href="#sec-2.11.4">2.11.4 Organizing your Project </a></li>
+<li><a href="#sec-2.11.5">2.11.5 Building a Pipeline </a></li>
+<li><a href="#sec-2.11.6">2.11.6 Integrating with a Data Source (Server or Serverless) </a></li>
+<li><a href="#sec-2.11.7">2.11.7 Creating visualizations </a></li>
+</ul></li>
+</ul>
+</li>
+<li><a href="#sec-3">3 Programming Well </a></li>
+<li><a href="#sec-4">4 Other Resources </a></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-1" class="outline-2">
+<h2 id="sec-1"><span class="section-number-2">1</span> Background </h2>
+<div class="outline-text-2" id="text-1">
+
+
+</div>
+
+<div id="outline-container-1.1" class="outline-3">
+<h3 id="sec-1.1"><span class="section-number-3">1.1</span> <a href="https://docs.webplatform.org/wiki/Beginners/the_beginning">A Survey of Topics (1st pass)</a> </h3>
+<div class="outline-text-3" id="text-1.1">
+
+</div>
+
+</div>
+
+<div id="outline-container-1.2" class="outline-3">
+<h3 id="sec-1.2"><span class="section-number-3">1.2</span> A Historical Perspective </h3>
+<div class="outline-text-3" id="text-1.2">
+
+
+</div>
+
+<div id="outline-container-1.2.1" class="outline-4">
+<h4 id="sec-1.2.1"><span class="section-number-4">1.2.1</span> <a href="https://en.wikipedia.org/wiki/History_of_the_Internet">The History of the Internet</a> (also <a href="https://en.wikipedia.org/wiki/History_of_the_World_Wide_Web">see</a>) </h4>
+<div class="outline-text-4" id="text-1.2.1">
+
+</div>
+
+</div>
+
+<div id="outline-container-1.2.2" class="outline-4">
+<h4 id="sec-1.2.2"><span class="section-number-4">1.2.2</span> <a href="https://docs.webplatform.org/w/index.php?title=concepts/Internet_and_Web/The_History_of_the_Web&amp;redirect=no">The History of the Web</a> </h4>
+<div class="outline-text-4" id="text-1.2.2">
+
+</div>
+
+</div>
+
+<div id="outline-container-1.2.3" class="outline-4">
+<h4 id="sec-1.2.3"><span class="section-number-4">1.2.3</span> <a href="https://en.wikipedia.org/wiki/History_of_the_web_browser">The History of the Web Browser</a> </h4>
+<div class="outline-text-4" id="text-1.2.3">
+
+</div>
+</div>
+
+</div>
+
+<div id="outline-container-1.3" class="outline-3">
+<h3 id="sec-1.3"><span class="section-number-3">1.3</span> Technical Details on how the Web works </h3>
+<div class="outline-text-3" id="text-1.3">
+
+
+</div>
+
+<div id="outline-container-1.3.1" class="outline-4">
+<h4 id="sec-1.3.1"><span class="section-number-4">1.3.1</span> <a href="https://docs.webplatform.org/wiki/concepts/Internet_and_Web/How_does_the_Internet_Work">How does the Internet work?</a> </h4>
+<div class="outline-text-4" id="text-1.3.1">
+
+</div>
+
+</div>
+
+<div id="outline-container-1.3.2" class="outline-4">
+<h4 id="sec-1.3.2"><span class="section-number-4">1.3.2</span> <a href="http://www.html5rocks.com/en/tutorials/internals/howbrowserswork/">How does the modern Web Browser work?</a> (also <a href="https://docs.webplatform.org/wiki/concepts/Internet_and_Web/how_browsers_work">see</a>) </h4>
+<div class="outline-text-4" id="text-1.3.2">
+
+<ul>
+<li id="sec-1.3.2.1"><a href="http://grosskurth.ca/papers/browser-refarch.pdf">Review a Reference Implementation</a> <a href="#[https://en.wikipedia.org/wiki/Reference_implementation">?</a>] <br/>
+</li>
+<li id="sec-1.3.2.2"><a href="https://docs.webplatform.org/wiki/dom/tutorials/introduction">The Browser's DOM (Document Object Model)</a> <br/>
+</li>
+</ul>
+</div>
+</div>
+
+</div>
+
+<div id="outline-container-1.4" class="outline-3">
+<h3 id="sec-1.4"><span class="section-number-3">1.4</span> The Fundamental Web Technologies </h3>
+<div class="outline-text-3" id="text-1.4">
+
+
+</div>
+
+<div id="outline-container-1.4.1" class="outline-4">
+<h4 id="sec-1.4.1"><span class="section-number-4">1.4.1</span> <a href="https://docs.webplatform.org/wiki/html">HTML (HyperText Markup Language)</a> and the <a href="https://docs.webplatform.org/wiki/dom/tutorials/introduction">Browser's DOM (Document Object Model)</a> </h4>
+<div class="outline-text-4" id="text-1.4.1">
+
+</div>
+
+</div>
+
+<div id="outline-container-1.4.2" class="outline-4">
+<h4 id="sec-1.4.2"><span class="section-number-4">1.4.2</span> <a href="https://docs.webplatform.org/wiki/css">CSS (Cascading Style Sheets)</a> </h4>
+<div class="outline-text-4" id="text-1.4.2">
+
+</div>
+
+</div>
+
+<div id="outline-container-1.4.3" class="outline-4">
+<h4 id="sec-1.4.3"><span class="section-number-4">1.4.3</span> <a href="https://docs.webplatform.org/wiki/javascript">JS (Javascript / ecmascript)</a> </h4>
+<div class="outline-text-4" id="text-1.4.3">
+
+
+</div>
+</div>
+</div>
+
+</div>
+
+<div id="outline-container-2" class="outline-2">
+<h2 id="sec-2"><span class="section-number-2">2</span> Getting Started </h2>
+<div class="outline-text-2" id="text-2">
+
+<p>This section offers a comprehensive tutorial on building, designing,
+and adding dynamic functionality to your website.
+</p>
+</div>
+
+<div id="outline-container-2.1" class="outline-3">
+<h3 id="sec-2.1"><span class="section-number-3">2.1</span> <a href="https://docs.webplatform.org/wiki/Beginners#Before_you_start">Prerequisites &amp; Setup</a> </h3>
+<div class="outline-text-3" id="text-2.1">
+
+</div>
+
+</div>
+
+<div id="outline-container-2.2" class="outline-3">
+<h3 id="sec-2.2"><span class="section-number-3">2.2</span> <a href="https://docs.webplatform.org/wiki/Beginners/crash_course">Build a minimal website</a> </h3>
+<div class="outline-text-3" id="text-2.2">
+
+</div>
+
+</div>
+
+<div id="outline-container-2.3" class="outline-3">
+<h3 id="sec-2.3"><span class="section-number-3">2.3</span> Beginner's FAQs </h3>
+<div class="outline-text-3" id="text-2.3">
+
+
+</div>
+
+<div id="outline-container-2.3.1" class="outline-4">
+<h4 id="sec-2.3.1"><span class="section-number-4">2.3.1</span> <a href="https://docs.webplatform.org/wiki/concepts/Internet_and_Web/The_Web_Standards_Model">Why are HTML, JS, and CSS separate things?</a> </h4>
+<div class="outline-text-4" id="text-2.3.1">
+
+</div>
+
+</div>
+
+<div id="outline-container-2.3.2" class="outline-4">
+<h4 id="sec-2.3.2"><span class="section-number-4">2.3.2</span> <a href="http://programmers.stackexchange.com/questions/147451/whats-so-bad-about-the-dom">Is the DOM a practical data structure?</a> </h4>
+<div class="outline-text-4" id="text-2.3.2">
+
+
+</div>
+</div>
+
+</div>
+
+<div id="outline-container-2.4" class="outline-3">
+<h3 id="sec-2.4"><span class="section-number-3">2.4</span> Hosting + Deploying minimal website (see How the Web + Internet works) </h3>
+<div class="outline-text-3" id="text-2.4">
+
+</div>
+
+</div>
+
+<div id="outline-container-2.5" class="outline-3">
+<h3 id="sec-2.5"><span class="section-number-3">2.5</span> Professional considerations </h3>
+<div class="outline-text-3" id="text-2.5">
+
+<ul>
+<li>
+<a href="https://docs.webplatform.org/wiki/concepts/cross_browser_techniques">Cross-Browser Compatiblity</a>
+</li>
+<li>
+<a href="https://docs.webplatform.org/wiki/concepts/accessibility">Website Accessibility</a>
+</li>
+<li>
+Accommodating device types &amp; Mobile
+</li>
+<li>
+SEO and discovery
+</li>
+</ul>
+</div>
+
+</div>
+
+<div id="outline-container-2.6" class="outline-3">
+<h3 id="sec-2.6"><span class="section-number-3">2.6</span> Semantic Markup &amp; SEO (RDF, Schema.org, HTML) </h3>
+<div class="outline-text-3" id="text-2.6">
+
+</div>
+
+</div>
+
+<div id="outline-container-2.7" class="outline-3">
+<h3 id="sec-2.7"><span class="section-number-3">2.7</span> Adding functionality with JS Libraries </h3>
+<div class="outline-text-3" id="text-2.7">
+
+<p><a href="https://www.quora.com/What-are-top-5-most-popular-JavaScript-libraries">https://www.quora.com/What-are-top-5-most-popular-JavaScript-libraries</a>
+</p>
+</div>
+
+<div id="outline-container-2.7.1" class="outline-4">
+<h4 id="sec-2.7.1"><span class="section-number-4">2.7.1</span> JQuery </h4>
+<div class="outline-text-4" id="text-2.7.1">
+
+</div>
+
+</div>
+
+<div id="outline-container-2.7.2" class="outline-4">
+<h4 id="sec-2.7.2"><span class="section-number-4">2.7.2</span> D3 </h4>
+<div class="outline-text-4" id="text-2.7.2">
+
+</div>
+
+</div>
+
+<div id="outline-container-2.7.3" class="outline-4">
+<h4 id="sec-2.7.3"><span class="section-number-4">2.7.3</span> Backbone </h4>
+<div class="outline-text-4" id="text-2.7.3">
+
+</div>
+
+</div>
+
+<div id="outline-container-2.7.4" class="outline-4">
+<h4 id="sec-2.7.4"><span class="section-number-4">2.7.4</span> Underscore </h4>
+<div class="outline-text-4" id="text-2.7.4">
+
+</div>
+</div>
+
+</div>
+
+<div id="outline-container-2.8" class="outline-3">
+<h3 id="sec-2.8"><span class="section-number-3">2.8</span> Limitations of minimal website (Maintainability) </h3>
+<div class="outline-text-3" id="text-2.8">
+
+</div>
+
+</div>
+
+<div id="outline-container-2.9" class="outline-3">
+<h3 id="sec-2.9"><span class="section-number-3">2.9</span> Boosting Design Productivity &amp; Capability (Less, Sass, Scss) </h3>
+<div class="outline-text-3" id="text-2.9">
+
+
+</div>
+
+<div id="outline-container-2.9.1" class="outline-4">
+<h4 id="sec-2.9.1"><span class="section-number-4">2.9.1</span> Overview of CSS Preprocessors </h4>
+<div class="outline-text-4" id="text-2.9.1">
+
+<p><a href="http://www.awwwards.com/what-are-frameworks-22-best-responsive-css-frameworks-for-web-design.html">http://www.awwwards.com/what-are-frameworks-22-best-responsive-css-frameworks-for-web-design.html</a>
+</p></div>
+
+</div>
+
+<div id="outline-container-2.9.2" class="outline-4">
+<h4 id="sec-2.9.2"><span class="section-number-4">2.9.2</span> <a href="http://sass-lang.com/guide">Installation &amp; Setup</a> </h4>
+<div class="outline-text-4" id="text-2.9.2">
+
+</div>
+</div>
+
+</div>
+
+<div id="outline-container-2.10" class="outline-3">
+<h3 id="sec-2.10"><span class="section-number-3">2.10</span> Instrumenting a rudamentary build chain / pipeline </h3>
+<div class="outline-text-3" id="text-2.10">
+
+</div>
+
+</div>
+
+<div id="outline-container-2.11" class="outline-3">
+<h3 id="sec-2.11"><span class="section-number-3">2.11</span> Advancing to a Native Web (Single Page) Application </h3>
+<div class="outline-text-3" id="text-2.11">
+
+<p><a href="https://blog.andyet.com/2015/01/22/native-web-apps/">https://blog.andyet.com/2015/01/22/native-web-apps/</a>
+</p>
+</div>
+
+<div id="outline-container-2.11.1" class="outline-4">
+<h4 id="sec-2.11.1"><span class="section-number-4">2.11.1</span> Overview of SPA Architectures (MVC, Flux, Redux) </h4>
+<div class="outline-text-4" id="text-2.11.1">
+
+<p><a href="https://facebook.github.io/flux/docs/overview.html">https://facebook.github.io/flux/docs/overview.html</a>
+<a href="http://fluxxor.com/what-is-flux.html">http://fluxxor.com/what-is-flux.html</a>
+</p><ul>
+<li id="sec-2.11.1.1"><a href="https://www.youtube.com/watch?list=PLb0IAmt7-GS188xDYE-u1ShQmFFGbrk0v&amp;v=nYkdrAPrdcw">Flux &amp; React</a> <br/>
+<ul>
+<li id="sec-2.11.1.1.1"><a href="https://github.com/facebook/flux/tree/master/examples/flux-todomvc/">Example: Todo Application</a> <br/>
+</li>
+</ul>
+</li>
+<li id="sec-2.11.1.2"><a href="https://egghead.io/lessons/javascript-redux-the-single-immutable-state-tree?series=getting-started-with-redux">Redux</a> <br/>
+
+
+</li>
+</ul>
+</div>
+
+</div>
+
+<div id="outline-container-2.11.2" class="outline-4">
+<h4 id="sec-2.11.2"><span class="section-number-4">2.11.2</span> Comparison of Frameworks </h4>
+<div class="outline-text-4" id="text-2.11.2">
+
+</div>
+
+</div>
+
+<div id="outline-container-2.11.3" class="outline-4">
+<h4 id="sec-2.11.3"><span class="section-number-4">2.11.3</span> Learning a Framework </h4>
+<div class="outline-text-4" id="text-2.11.3">
+
+<p><a href="http://www.reactstarterkit.com/">http://www.reactstarterkit.com/</a> (<a href="https://github.com/kriasoft/react-starter-kit">https://github.com/kriasoft/react-starter-kit</a>)
+</p>
+</div>
+
+</div>
+
+<div id="outline-container-2.11.4" class="outline-4">
+<h4 id="sec-2.11.4"><span class="section-number-4">2.11.4</span> Organizing your Project </h4>
+<div class="outline-text-4" id="text-2.11.4">
+
+<p><a href="https://docs.webplatform.org/wiki/concepts/information_architecture/planning_a_website">I need help organizing my process</a>
+</p>
+</div>
+
+</div>
+
+<div id="outline-container-2.11.5" class="outline-4">
+<h4 id="sec-2.11.5"><span class="section-number-4">2.11.5</span> Building a Pipeline </h4>
+<div class="outline-text-4" id="text-2.11.5">
+
+</div>
+
+</div>
+
+<div id="outline-container-2.11.6" class="outline-4">
+<h4 id="sec-2.11.6"><span class="section-number-4">2.11.6</span> Integrating with a Data Source (Server or Serverless) </h4>
+<div class="outline-text-4" id="text-2.11.6">
+
+<p><a href="https://exploringdata.github.io/about/">https://exploringdata.github.io/about/</a>
+</p></div>
+
+</div>
+
+<div id="outline-container-2.11.7" class="outline-4">
+<h4 id="sec-2.11.7"><span class="section-number-4">2.11.7</span> Creating visualizations </h4>
+<div class="outline-text-4" id="text-2.11.7">
+
+
+
+</div>
+</div>
+</div>
+
+</div>
+
+<div id="outline-container-3" class="outline-2">
+<h2 id="sec-3"><span class="section-number-2">3</span> Programming Well </h2>
+<div class="outline-text-2" id="text-3">
+
+<p>Douglas Crawford's Javascript the good stuff
+<a href="https://github.com/dypsilon/frontend-dev-bookmarks">https://github.com/dypsilon/frontend-dev-bookmarks</a>
+</p>
+</div>
+
+</div>
+
+<div id="outline-container-4" class="outline-2">
+<h2 id="sec-4"><span class="section-number-2">4</span> Other Resources </h2>
+<div class="outline-text-2" id="text-4">
+
+<p><a href="http://www.frontendhandbook.com/practice/tech-employed-by-fd.html">http://www.frontendhandbook.com/practice/tech-employed-by-fd.html</a>
+</p>
+</div>
+</div>
+<div id="postamble">
+<p class="author"> Author: root
+<a href="mailto:root@debian">&lt;root@debian&gt;</a>
+</p>
+<p class="date"> Date: 2015-12-17 12:00:38 PST</p>
+<p class="creator">HTML generated by org-mode 6.33x in emacs 23</p>
+</div>
+</div>
+</body>
+</html>

@@ -1,5 +1,5 @@
-Organizing Life
-This is a work in progress
+Life Lessons
+
 * Resources
 1. [[http://jamesclear.com/marginal-gains][Marginal Gains]] Dave Brailsford
 2. [[https://www.youtube.com/watch?v=a1zDuOPkMSw][You and Your Research]] Dr. Richard Hamming
@@ -11,10 +11,12 @@ This is a work in progress
 8. [[https://www.youtube.com/watch?v=irornIAQzQY?t=7m15s][Epicurus on Happiness]] Alain de Botton
 9. [[https://michaelkarpeles.com/essays/qs/amplifying-productivity-through-environment][Amplifying Productivity through Environment]] by Mek Karpeles
 10. [[http://papers.ssrn.com/sol3/papers.cfm?abstract_id=1592027][Benign Violations: Making Immoral Behavior Funny]] A. Peter McGraw & Caleb Warren 
+11. [[http://www.aaronsw.com/weblog/productivity][HOWTO: Be more productive (Productivity)]] by Aaron Swartz
 
 * Life Learnings & Agreeable Principles
 - Protocols are Key. Implementing a patch or shim simply means there
-  is resistence to protocol.
+  is resistence to protocol. (rule of thumb: protocols are constant or
+  linear, shims are quadratic in implementation)
 - It's easy to get a no, if you want a yes, first achieve a related
   accomplishment which one would be irresponsible to turn down.[4]
 - Systems should be designed which give users the power of choice, not the service provider.
@@ -50,23 +52,35 @@ This is a work in progress
   of fools, that don't have brains enough to be honest."
 - Freedom of speech can be equally as important as freedom from the thoughts of others.[8]
 - Avoid sarcasm unless it can be employed as method of non-hurtful
-  social encryption. The following is an except from [10]: McGraw and
-  Caleb Warren, a doctoral student, presented their elegantly simple
-  formulation in the August 2010 issue of the journal Psychological
-  Science. Their paper, “Benign Violations: Making Immoral Behavior
-  Funny,” cited scores of philosophers, psychologists, and
-  neuroscientists (as well as Mel Brooks and Carol Burnett). The
-  theory they lay out: “Laughter and amusement result from violations
-  that are simultaneously seen as benign.” That is, they perceive a
-  violation—”of personal dignity (e.g., slapstick, physical
-  deformities), linguistic norms (e.g., unusual accents,
-  malapropisms), social norms (e.g., eating from a sterile bedpan,
-  strange behaviors), and even moral norms (e.g., bestiality,
-  disrespectful behaviors)”—while simultaneously recognizing that the
-  violation doesn’t pose a threat to them or their worldview. The
-  theory is ludicrously, vaporously simple. But extensive field tests
-  revealed nuances, variables that determined exactly how funny a joke
-  was perceived to be.
+  social encryption (i.e. the information being encrypted by the
+  sarcasm function will not be hurtful to the audience if
+  exposed). The etymology of the word sarcasm, for what it's worth, is
+  the Greek word “sarkazein” which translated to "tear flesh". McGraw
+  and Caleb Warren, doctoral students, presented an elegantly simple
+  formulation of `humor` in the August 2010 issue of the journal
+  Psychological Science.[1] A reviewer (which I need to find) wrote
+  the following about their paper: Their paper, “Benign Violations:
+  Making Immoral Behavior Funny,” cited scores of philosophers,
+  psychologists, and neuroscientists (as well as Mel Brooks and Carol
+  Burnett). As background, they propose the theory that: “Laughter and
+  amusement result from violations that are simultaneously seen as
+  benign.” That is, they perceive a violation—”of personal dignity
+  (e.g., slapstick, physical deformities), linguistic norms (e.g.,
+  unusual accents, malapropisms), social norms (e.g., eating from a
+  sterile bedpan, strange behaviors), and even moral norms (e.g.,
+  bestiality, disrespectful behaviors)”—while simultaneously
+  recognizing that the violation doesn’t pose a threat to them or
+  their worldview. The theory is ludicrously, vaporously simple. But
+  extensive field tests revealed nuances, variables that determined
+  exactly how funny a joke was perceived to be. (end quote). Also, in
+  their paper, they write, "Sarcasm involves saying one thing but
+  meaning the opposite. Saying the opposite of what you mean violates
+  a common conversational norm (violation), but often the person
+  saying the sarcastic comment is able to communicate the intended
+  meaning through other cues like an obviously exaggerated tone
+  (benign). Sarcasm isn’t funny to people who don’t detect the
+  speaker’s true intention.  Nor is it funny to people who don’t
+  approve of the speaker’s true intention."
 
 * 1% Optimizations (Organization: Storage & Retrieval)
 1. Require everything have a place. You'll spend less time searching
@@ -166,6 +180,10 @@ Maintain a list of problems which bother you and a Table of Contents of all proj
    living protocols/systems, where features can be arbitrary incorporated into
    each node's protocol and subsets of systems can choose to agree)
 
+* Filter
+1. Every time I read a link (or at least for some class / category of
+resource) I should need to write a sentence as to why I am visiting
+the link, what it accomplishes. (I'm not good at this)
 * Provenance: Keep a trail
 1. Write everything down, record everything, always have access to these records; make it handy
 2. Maintain a table of contents for your life
@@ -174,8 +192,9 @@ Maintain a list of problems which bother you and a Table of Contents of all proj
 5. Keep a common book where you evaluate what problems are important to you, why, they are important, 
 
 * Dealing With Others
-1. Research people before you connect. Look through their linkedin, understand
-   who they know. Never ask if they "know someone". Do the work for them.
+1. Research people before you connect or meet. Look through their
+   linkedin, understand who they know. Never ask if they "know
+   someone". Do the work for them. (Oliver Yeh)
 2. Try your own ideas yourself before approaching others
 
 * Permenance
@@ -198,3 +217,9 @@ people can get paid to store files and ensure redundancy is a good step
    discussion your and their mutual passion once a month (researchers,
    entrepreneurs, artists)
 2. Have a room in your house dedicated to a language or behaviour. (spatial locality)
+* Sources
+[1] http://papers.ssrn.com/sol3/papers.cfm?abstract_id=2559414
+* Version History
+Version 1.0, 2015-12-26, Initial Release
+Version 1.1, 2016-01-05, Added Sources
+- Added Sources section (still missing many footnotes, must have been from a previous essay)
