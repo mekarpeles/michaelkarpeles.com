@@ -28,9 +28,18 @@ This concept is loosely based on:
 
 #+begin_quote "I saw in a dream a table where all the elements fell into place as required. Awakening, I immediately wrote it down on a piece of paper. Only in one place did a correction later seem necessary" -- <cite wd="Q9106">[[https://en.wikipedia.org/wiki/Dmitri_Mendeleev][Dmitri Mendeleev]]</cite>
 
+
+** Catastrophe
+How likely is a catastrophic event?
+http://global-catastrophic-risks.com/docs/global-catastrophic-risks.pdf
+
+** Applications
+Sustainable Energy: http://withouthotair.com/ (download at: http://withouthotair.com/download.html)
+
 ** On Method
 This section is an attempt to document the process by which this
 research experiment was conducted.
+
 
 ** Index of Raw Materials
 As an aside, here's a neat map of the [[http://www.vanderkrogt.net/elements/][etymology of the elements]].
@@ -38,6 +47,7 @@ As an aside, here's a neat map of the [[http://www.vanderkrogt.net/elements/][et
 |-------------+---------------------------------------+------------------------------------------------------------------+----------------------------------------|
 | Wikidata ID | Material                              | Recipes / Processes                                              | Requires                               |
 |-------------+---------------------------------------+------------------------------------------------------------------+----------------------------------------|
+| Q131502     | Dynamo {Electric Generator}           |                                                                  |                                        |
 | Q753        | Copper (Cu)                           | [[Gather Malachite]], [[Smelt Ore]]                                      | Q479257, Q164411, Q40558               |
 | Q677        | Iron (Fe)                             | [[https://en.wikipedia.org/wiki/Meteoric_iron][Gather Meteoric Iron]] or ([[Gather Iron Ore]], [[Smelt Ore]])             | Q479257, Q40558                        |
 | Q663        | Aluminium (Al)                        | [[Gather Bauxite]], [[Smelt Ore]]                                        | Q479257, Q40558, Q102078               |

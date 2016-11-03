@@ -1,0 +1,214 @@
+<h1>On Books</h1>
+
+<p>2016-10-29</p>
+
+<h2>Table of Contents</h2>
+<ul>
+  <li><a href="#axioms">Axioms</a></li>
+  <li><a href="#abstract">Abstract</a></li>
+  <li><a href="#exploration">Exploration</a></li>
+  <li><a href="#what-we-need">What We Need</a></li>
+  <li><a href="#sources">Sources</a></li>
+  <li><a href="#concepts">Concepts</a></li>
+  <li><a href="#related-posts">Related Posts</a></li>
+</ul>
+
+<h2><a name="axioms">Axioms</a></h2>
+<p>Here's are some axioms I posit:</p>
+<ul>
+  <li>Many smart people read a lot. Some of the smartest and/or most
+  successful people (Warren Buffet, Elon Musk, Benjamin Franklin, Bill
+  Gates) are un-coincidentally some of the best read.</li>
+  <li>2) Scientific text-books, academic papers, instructional videos
+  / lectures (MOOC, youtube), and scholarly essays are some of the
+  most rich and valuable types of resources for facilitating
+  learning. EDIT: There's also a lot of crap among these formats,
+  which is a problem worth addressing re: deduping, saving edit
+  history.</li>
+  <li>3) Life is short. There's too much to read; there are too many
+  of these resources in existence to reasonable vet in our
+  lifetime. e.g. Amazon, alone, knows of 30,000+ texts on
+  Calculus. How many webpages do you imagine there are which you will
+  never even see in your life time?</li>
+  <li>4) We duplicate each others' efforts a lot. And we do little to
+  prevent duplication. And it costs everyone. We all independently
+  waste inordinate amounts of time searching for and vetting for many
+  of the same books. When authors write new books, they haven't read a
+  fraction of the books on the topic. The next book on calculus will
+  be largely duplicative of other resources in the field, only
+  contributing to the problem of information overload.</li>
+  <li>5) We suck at rating books / heuristics. We compensate for
+  information overload and ignore duplication by using heuristics to
+  surface the best stuff. It's very hard to determine which works are
+  best, and in which order they should be read. Algorithms for ranking
+  books are still primitive (number of reads, citations, star ratings,
+  fulltext search match). It's even harder to know which high quality
+  resources we're missing.</li>
+  <li>6) We suck at showing our work. Partly because many of us don't
+  feel accountable to others unless there's financial incentive. It's
+  easy enough to leave ourselves notes, it's difficult to describe our
+  method and leave a trail which others can understand, follow,
+  reproduce, and further.</li>
+  <li>7) Context is key. Most experts have institutional knowledge
+  about which books and sections to read and in which order content
+  should be read. This is often encoded in collegiate curricula. Most
+  colleges and departments have very different curricula.</li>
+  <li>8) Curricula are imperfect. They suffer from many of the same
+  things as books, web pages, and many of the other mediums described
+  in #2. There are many duplicates, they are not responsive to rapid
+  paced feedback, and they are not interoperable (i.e. There's no easy
+  way to share, browse, edit, or publish these curricula. There's no
+  way to easily cross-reference, compare, and deduplicate these
+  curricula). The open syllabus project is a good step towards
+  addressing this.</li>
+  <li>9) A curricula is basically a mashup of different types of
+  content. The unit is usually something which needs to be purchased
+  or is under copyright. It's not universally accessible.</li>
+  <li>10) Copyright policy makes it hard for us to collaborate by
+  enhancing or mashing up book content.</li>
+</ul>
+
+<h2><a name="abstract">Abstract</a></h2>
+<p>In many ways, what we are able to accomplish in our lifetimes is
+limited by the efficiency of our tools and processes for communicating
+and processing information. Before email, snail-mail wasted days of
+our life. Before cars and planes, horses wasted weeks of our
+lives. Technologies like Google and Wikipedia not only help us answer
+questions more quickly, but perhaps more importantly enable us to
+address a class of problem we'd have had to give up on entirely 20
+years ago. But many processes of our society are just as inefficient
+as they were 20 years ago. If not worse. Including Books.</p>
+ 
+<p>One of the world's most paralyzing and important problems is
+knowing what resources are worth reading / investing time
+on. Especially given we live during an age where evaluating a work can
+cost money and thus may not be achievable at scale. Where distributing
+a work for discussion may violate copyright fair use. And where
+publishing new works can be as easy as clicking an upload button.</p>
+
+<p>Life is short, there are too many books to vet, there are tons of
+duplicate works, our vetting/rating heuristics are bad, it's too hard
+and expensive to access books to evaluate them at scale, and there's
+presently no effective way to harness the community to answer this
+question in a reliable way. There's currently no way (i.e. no
+platform, framework, or protocol, e.g. wikipedia) where by the
+community can answer this question in an objective way.</p>
+
+<h2><a name="exploration">Exploration</a></h2>
+<p>There are interesting community efforts like the Less Wrong "Best
+Textbooks on Every Subject"[1]. I purchased the domain
+https://thebestbookon.com (temporarily defunct -- ssl warning) and
+spent months trying to learn how one could create a system for
+diplomatically and objectively determining the best book on a topic. I
+also crowd sourced a list of great textbooks from people I respect:
+<a href="https://github.com/OpenJournal/awesome-textbooks">Awesome
+textbooks</a>. I've also worked with the community to create
+a <a href="https://books.archivelab.org/?service=classics">fulltext
+search interface</a> which leverages the existing curatory efforts of
+Mortimer Atler who create a 52 volume collection of what he thought
+were the most important, "Great Works".
+
+By and large, it's still a very much open problem. I now spend much
+of my time thinking about this problem at the Internet Archive through
+the Open Library project.
+</p>
+
+<p>Once we have the best book on a subject, then what? The further I
+explore this problem, the more something becomes obvious to
+me. Knowing the best book on a topic is not enough*. We need to
+harness the communities intelligence to figure out what sequences of
+books should be read. And not just books, but sections.</p>
+
+<p>* this said, finding the "best" 1M scholarly books/texts/papers
+really is a really good place to start. Books as units are fairly
+manageable. The fact that they evolve slowly is actually of benefit
+given technology can hopefully catalog them faster than they are
+published. We should strive to figure out what the best 1M works are,
+find a way to legally make them all publicly available, and work
+together to create curricula around them</p>
+
+<h2><a name="what-we-need">What We Need</a></h2>
+<p>We need to be able to ask a question or input a topical query and
+be presented with 3 potential canonical entry points. The tradeoffs
+between these starting points need to be evaluated and made visually
+clear to the user; the user should be able to, by inspection, intuit
+how these entry points into the conversation/dialog eventually connect
+(assuming they do, also useful to know) -- i.e. the characteristics of
+each path through knowledge. We need to be able to visualize (as a
+graph) what the path looks like from this starting point to
+intermediary learnings. That is, physically see (at a bird's eye view)
+how a chapter from one book, leads to a youtube video, leads to a
+paragraph or figure from another book, to an academic paper, to a
+fundamental conclusion or learning.</p>
+
+<p>People need to be able to create or propose various paths (a la
+arguman[2] -- a platform for mapping arguments and voting on good
+points). We need to create a framework which is capable of honoring
+and respecting both our and others' personal values of what is "good"
+content.</p>
+
+<p>This means we need better tools for adapting and expressing media
+which as been designed for physical interactions within digital
+contexts. One should be able to seamlessly reference a chapter,
+paragraph, sentence, or word and link it to other such units. And
+these connections/links should be annotatable (like the body of an
+html anchor tag, as opposed to its href)</p>
+
+<p>We need to overcome the limitations of the book and create a
+community ecosystem which is safe for the rapid development
+(connection/curation and creation) of knowledge (at the speed of
+thought rather than the speed of publishing a new edition), an
+ecosystem which prevents duplication, allows merging and flagging of
+content (e.g. wikidata), preserves provenance/history (e.g. git), and
+which enables works and all their sections, components, and figures to
+be connected in a map, which may be navigated and annotated in
+whichever way makes sense to the viewer. In many ways, these concepts are not far removed from the notion of Vannevar Bush's "memex" (discussed in the essay, <a href="http://www.theatlantic.com/magazine/archive/1945/07/as-we-may-think/303881/">"As We May Think"</a>). More thoughts about what this
+experience looks like[12,13]</p>
+
+
+<h2><a name="sources">Sources</a></h2>
+<ul>
+<li>[1]
+http://lesswrong.com/lw/3gu/the_best_textbooks_on_every_subject</li>
+<li>[2] http://tr.arguman.org -- map arguments</li>
+<li>[3] https://www.khanacademy.org + metacademy.org + arbital.com --
+structured sequences for learning</li>
+<li>[4] http://explorer.opensyllabusproject.org -- Mapping the college
+curriculum across 1M+ syllabi</li>
+</ul>
+
+<h2><a name="concepts">Concepts</a></h2>
+<ul>
+  <li>[5] michaelkarpeles.com/explanations -- to become whyloop.org:
+  recursive explanations</li>
+  <li>[6] dissertate.org -- a wiki for publishing and exploring
+  curricula: curated directed sequences of textbooks and academic
+  papers on specialized topics.</li>
+</ul>
+
+<h2><a name="related-posts">Related Posts</a></h2>
+<ul>
+<li>[7]
+<a href="https://www.facebook.com/michael.karpeles/posts/10102637092696960">ideas
+on deduping books, starting with tables of contents</a></li>
+<li>[8]
+<a href="https://www.facebook.com/michael.karpeles/posts/10102634830315790">
+  there's too many explanations</a>
+</li>
+<li>[9]
+<a href="https://www.facebook.com/michael.karpeles/posts/10102465800433030">a
+curated list of other similar posts</a></li>
+<li>[10]
+<a href="https://www.facebook.com/michael.karpeles/posts/10102138394711720">on curricula</a></li>
+<li>[11] <a href="https://www.facebook.com/photo.php?fbid=10102140608410450">
+on what such a graph system / navigable curricula might look like for
+math</a> (e.g. <a href="http://math.mx">math.mx</a> -- visualizing what maths you know)</li>
+<li>[12]
+<a href="https://www.facebook.com/michael.karpeles/posts/10102441523119960">How books should work</a></li>
+<li>[13]
+<a href="https://www.facebook.com/michael.karpeles/posts/10102415804345590">Complaints about books</a></li>
+</ul>
+
+<p>cc: Drew Winget, Joytika Jit, Jan Paul Posma, Juan Batiz-Benet,
+Jacob Cole, Andrey Fedorov, Ben Woosley, Adrian Perez, Gordon Mohr,
+Richard Caceres, Lachlan Ford</p>
