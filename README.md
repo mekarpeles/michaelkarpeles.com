@@ -17,28 +17,30 @@ In the event something happens to me and the website/service needs to be reinsta
 
 A file /var/www/michaelkarpeles.com/uwsgi.ini must be created with contents:
 
-  [uwsgi]
-  #application's base folder
-  base = /var/www/michaelkarpeles.com
 
-  #python module to import
-  app = app
-  module = %(app)
+      [uwsgi]
+      #application's base folder
+      base = /var/www/michaelkarpeles.com
 
-  #home = %(base)/venv
-  pythonpath = /usr/local/lib/python3.4/site-packages
+      #python module to import
+      app = app
+      module = %(app)
 
-  #socket file's location
-  socket = /var/www/michaelkarpeles.com/%n.sock
+      #home = %(base)/venv
+      pythonpath = /usr/local/lib/python3.4/site-packages
 
-  #permissions for the socket file
-  chmod-socket = 666
+      #socket file's location
+      socket = /var/www/michaelkarpeles.com/%n.sock
 
-  #the variable that holds a flask application inside the module imported at line #6
-  callable = app
+      #permissions for the socket file
+      chmod-socket = 666
 
-  #location of log files
-  logto = /var/log/uwsgi/%n.logmek@production:/var/www/michaelkarpeles.com
+      #the variable that holds a flask application inside the module imported at line #6
+      callable = app
+
+      #location of log files
+      logto = /var/log/uwsgi/%n.logmek@production:/var/www/michaelkarpeles.com
+
 
 ### nginx
 
