@@ -34,6 +34,10 @@ class Verbatim(MethodView):
             return redirect('/')
 
 
+class Projects(MethodView):
+    def get(self):
+        return redirect('https://docs.google.com/document/d/e/2PACX-1vTlJig0XEdoAIcK-FjzJvoFcSz1mnPKcOm0Sb1HdAwRP-xCuWXqKlFpWTb04HgcwDJ0vupplJgcQoM6/pub')
+
 class Partial(MethodView):
     def get(self, partial):
         return render_template('partials/%s.html' % partial)

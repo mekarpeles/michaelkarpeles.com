@@ -1,4 +1,7 @@
 
+.banner {
+    color: #999;
+}
 
 .demo {
     color: #999;
@@ -29,11 +32,14 @@ ol li.sec2:before{
 
 cite a {
     color: green;
-    text-decoration: none;
 }
 
 cite {
     color: green;
+}
+
+cite:hover {
+    cursor: pointer;
 }
 
 
@@ -47,6 +53,10 @@ cite {
 .red .tipsy-arrow-s { border-top-color: red; }
 .red .tipsy-arrow-e { border-left-color: red; }
 .red .tipsy-arrow-w { border-right-color: red; }
+
+:target {
+   background-color: #ffa;
+}
 
 .tipsy { font-size: 10px; position: absolute; padding: 5px; z-index: 100000; }
   .tipsy-inner { background-color: #000; color: #FFF; max-width: 200px; padding: 5px 8px 4px 8px; text-align: center; }
@@ -73,3 +83,8 @@ cite {
     .tipsy-se .tipsy-arrow { bottom: 0; right: 10px; border-top-style: solid; border-bottom: none; border-left-color: transparent; border-right-color: transparent; }
   .tipsy-e .tipsy-arrow { right: 0; top: 50%; margin-top: -5px; border-left-style: solid; border-right: none; border-top-color: transparent; border-bottom-color: transparent; }
   .tipsy-w .tipsy-arrow { left: 0; top: 50%; margin-top: -5px; border-right-style: solid; border-left: none; border-top-color: transparent; border-bottom-color: transparent; }
+
+.metadata {
+    background-color: #eef;
+    padding: 5px;
+}

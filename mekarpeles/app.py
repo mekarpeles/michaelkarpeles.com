@@ -18,6 +18,7 @@ from configs import options
 urls = (
     '/api/v1/quantified-self', views.QSApi,
     '/api/v1/<path:resource>', views.Api,
+    '/table-of-projects', views.Projects,
     '/math', views.Verbatim,
     '/genealogy', views.Verbatim,
     '/<path:resource>', views.Section,
