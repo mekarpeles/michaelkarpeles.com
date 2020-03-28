@@ -1,6 +1,176 @@
 
+body, html {
+    font-family: sans-serif;
+}
+
+body {
+    padding: 0px;
+    margin: 0px;
+    font-size: .9rem;
+    line-height: 1.5;
+}
+
+h1, h2 {
+    font-family: "Linux Libertine", Georgia, Times, serif;
+    font-weight: normal;
+    margin: 10px 0px;
+    border-bottom: 1px solid #bbb;
+    display: grid;
+}
+
+h1 span, h2 span {
+    display: contents;
+}
+
+.box {
+    background-color: #f4f4ff;
+    border: 1px solid #bbb;
+    padding: 10px;
+    font-size: .8rem;
+    line-height: 2em;
+}
+
+.box h2 {
+    margin: 0px;
+}
+
+.site {
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar {
+    display: flex;
+    flex-direction: row;
+    background-color: #f4f4ff;
+    font-size: .8rem;
+    border-bottom: 1px solid #a7d7f9;
+    overflow: auto;
+}
+
+.sidebar ul {
+    margin: 0px;
+    padding: 20px;
+    list-style-type: none;
+}
+
+@media only screen and (min-width: 768px) {
+    .infobox {
+        margin-left: 15px;
+    }
+    .site {
+        display: flex;
+        flex-direction: row;
+    }
+    .sidebar {
+        overflow: unset;
+        display: flex;
+        flex-direction: column;
+        border-right: 1px solid #a7d7f9;
+    }
+    main {
+    }
+}
+
+.contents {
+    display: inline-block;
+    padding-right: 30px;
+}
+
+.box h3 {
+    text-align: center;
+    font-size: .9rem;
+}
+
+main {
+    min-width: 230px;
+    overflow: auto;
+    padding: 10px 30px;
+}
+
+main iframe {
+    min-width: 300px;
+    max-width: 350px;
+}
+
+.show {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.show div {
+    padding: 10px;
+}
+
+.contents h3 {
+    text-align: center;
+    margin: 0px;
+    margin-bottom: 5px;
+}
+
+.infobox {
+    font-family: arial;
+    margin-top: 10px;
+    float: right;
+    max-width: 250px;
+}
+
+.infobox h3 {
+    text-align: center;
+    margin: 0px;
+    margin-bottom: 5px;
+}
+
+.infobox img {
+    display: block;
+    width: 168px;
+    margin: 0 auto;
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+}
+
+.infobox table tr th {
+    vertical-align: text-top;
+    text-align: left;
+}
+
+quote {
+    font-style: italic;
+    margin-left: 2em;
+    display: block;    
+}
+
+.author {
+    text-align: right;
+}
+
+
+article {
+    width: 36em;
+}
+
+article p, article li {
+    width: 36em;
+    line-height: 1.5em;
+    font-size: 1.1em;
+}
+
+.img {
+    background-color: #eee;
+    padding: 10px;
+    max-width: 500px;
+    font-size: .8em;
+}
+
+.img img {
+    width: 100%;
+}
 .banner {
-    color: #999;
+    display: block;
+    background-color: #eee;
+    border-bottom: 1px solid #ddd;
+    width: 100%;
+    padding: 10px;
 }
 
 .demo {
@@ -28,6 +198,23 @@ ol li.sec:before{
 
 ol li.sec2:before{
     font-size: 1.1em;
+}
+
+a {
+    text-decoration: none;
+    color: #0645ad;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+h2 a, h3 a {
+    color: black;
+}
+
+h2 a:hover, h3 a:hover {
+    text-decoration: none;
 }
 
 cite a {
@@ -87,4 +274,9 @@ cite:hover {
 .metadata {
     background-color: #eef;
     padding: 5px;
+}
+
+.highlight {
+    background-color: yellow;
+    padding: 3px;
 }

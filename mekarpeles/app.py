@@ -21,6 +21,9 @@ urls = (
     '/table-of-projects', views.Projects,
     '/math', views.Verbatim,
     '/genealogy', views.Verbatim,
+    '/posts/<path:slug>', views.Posts,
+    '/posts', views.Posts,
+    '/edit', views.Edit,
     '/<path:resource>', views.Section,
     '/<path:uri>', views.Section,
     '/', views.Base

@@ -1,0 +1,35 @@
+<style type="text/css">
+  h1, h2 {
+    display: block
+  }
+  .none {
+    color: #666;
+  }
+  .labels cite, a.related {
+    font-style: normal;
+    background-color: #dce6f8;
+    padding: 5px 10px;
+    border-radius: 3px;
+  }
+</style>
+<div id="essay">
+  <h1>{{title}}</h1>
+  
+  <p>Related posts:
+    {% if related_posts %}
+      {% for rp in related_posts %}
+        <a class="related" href="/posts/{{rp['slug']}}">{{rp['title']}}</a>
+      {% endfor %}
+    {% else %}
+        <i class="none">No other <a href="/posts">posts</a> with these tags.</i>
+    {% endif %}
+  </p>
+
+
+  <p class="labels">Tags: {{tags}}</p>  
+
+  <div>
+    {{post}}
+  </div>
+
+</div>

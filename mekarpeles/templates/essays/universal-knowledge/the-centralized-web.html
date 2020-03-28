@@ -1,15 +1,294 @@
+<article>
 <h1>Decentralization to Centralize Human Thought & Universalize Access to Knowledge</h1>
 <p>5:30p 2015-11-30 Mon</p>
-<p><a href="https://www.facebook.com/michael.karpeles/posts/10102386484452890">Read on Facebook</a></p>
+<p><a href="https://www.facebook.com/michael.karpeles/posts/10102386484452890">Read original post on Facebook</a></p>
+
+<h2>Abstract</h2>
+<p>
+  Over the last three years, we've seen a lot of movement around what
+  people are referring to as the "Decentralized" or "Distributed" Web.
+  It's often accompanied by words like "blockchain", "cryptocurrency",
+  "content-addressability", "P2P" (peer-to-peer), "torrents", "mesh", and
+  protocols/implementations
+  like <a href="https://ipfs.io/">ipfs</a>, <a href="https://datproject.org">dat</a>, <a href="https://ssbc.github.io/secure-scuttlebutt/">secure
+  scuttlebutt</a>, <a href="https://gun.eco/#step1">gun</a>,
+  and <a href="https://solid.mit.edu">solid</a>. What's the deal?
+</p>
+
+<p>
+  In the 1960's, 20 years before the Internet even existed, Ted Nelson
+  was presciently describing a system called Xanadu which featured
+  unbreakable bi-directional hypertext links, version controlled
+  documents which supported incremental publishing, and side-by-side
+  document comparison. By 1991, when Tim Berners-Lee invented the
+  World Wide Web, only a subset of his and Ted's ideas made it
+  mainstream. Now, after 25+ years of learnings, its become clear we
+  didn't get everything perfectly the first time around. Some of these
+  compromises and shorcomings were imposed on us through limitations
+  in technology. Advancements in cryptography, computer networks, web
+  standards, and computing power have since unlocked possibilities
+  which were out of reach the first time around.
+</p>
+
+<div class="img">
+  <img src="https://scontent-sjc3-1.xx.fbcdn.net/v/t1.0-9/38003736_10103486417288670_5693119287040933888_o.jpg?_nc_cat=0&oh=ba2f55ebf0b91e310ee7fb722e1900be&oe=5C13E33B">
+  <p>With Ted Nelson and Tim Berners-Lee at the Internet Archive for the <a href="https://decentralizedweb.net">Decentralized Web Summit 2018</a></p>
+</div>
+
+<p>
+  Hindsight is twenty-twenty. The "Decentralized Web" is an effort to
+  redesign elements of the World Wide Web which revealed themselves to
+  be imperfect and to integrate concepts which were previously too
+  expensive or complex to operate efficiently at scale. For instance,
+  much of the web isn't backed up anywhere and there's only a single
+  copy. If this copy disappears, its lost for good. Also, web sites
+  change over time, often clobbering their previous versions because
+  the web doesn't have version control. Tons of content on the web is
+  duplicated in inefficient ways. The current web user is at the mercy
+  of ISPs to route them to content, which means it would be easy for
+  an ISP to censor information they rely on. The web isn't currently
+  designed for offline access. While we have protocols like bittorrent
+  which allows users to share the load of transfering files, the web
+  wasn't built to work this way.
+</p>
+
+<p>
+  But as is any topic of digital warfare, the drive for a
+  Decentralized Web is not all sunshine and roses.
+</p>
+
+<h2>Table of Contents</h2>
+<ul>
+  <li>What is the web?</li>
+  <li>Evolution of the Web</li>
+<!--
+  <li>What's wrong with the web?</li>
+  <li>What could go wrong?</li>
+-->
+  <li>Centralization, Decentralization & Re-Centralization- Breaking the Cycle</li>
+</ul>
+
+<h2>What is the World Wide Web?</h2>
+<p>
+  We should probably start with one of the most common conflations:
+that between the Internet and the Web (because for many, these two
+technologies are effectively synonymous).
+</p>
+
+<p>
+  In 1961-1965 computer users were less concerned with sending
+  messages between computers and more concerned with communicating
+  with the other handful of users who were time-sharing multiplexed central mainframes
+  with them. To communicate with each
+  other, <a href="http://multicians.org/thvv/mail-history.html">they
+  would create files with names like "TO TOM" and place them in public
+  folders</a>. <a href="http://multicians.org/multicians.html#MorrisNI">Noel
+  Morris</a>
+  and <a href="http://multicians.org/thvv/mail-history.html">Tom Van
+  Vleck</a> ran with the idea to create the MAIL program, which MIT
+  supported because they needed away to alert people when their
+  processes had finished running. Mail will become an important use
+  case later in this story.
+</p>
+
+<p>
+  The early Internet began circa 1969 with
+  the <a href="https://en.wikipedia.org/wiki/ARPANET">ARPANET</a>
+  network, a project funded by the US Department of Defense. One of
+  project's first victories was a packet switching node called the
+  Interface Message Processor (IMP) which enabled participants to
+  interconnect within the ARPANET network. Fun fact, IMP was the topic
+  of the first RFC-1 by Steve Crocker. In June 1970, RFC 54 was
+  published detailing a new protocol called the Network Control
+  Program which allowed two computers to connect on 2 seperate ports
+  (a dedicated channel for each machine to receive and send,
+  respectively). In 1971, Abhay Bhushan built the File Transfer
+  Protocol (FTP) on top of NCP and made it possible and easy for
+  computers to implement and participate in file sharing. Shortly
+  after in
+  1972, <a href="http://history-computer.com/Internet/Maturing/Tomlinson.html">Ray
+  Tomlinson</a> combined his bespoke CPYNET file transfer program
+  (which <a href="https://tools.ietf.org/html/rfc310">Bhushan
+  discusses in RFC 310</a>) with SNDMSG to send the first email. By
+  ~1976, email accounted for 75% of all ARPANET traffic and the idea
+  of networked computers was catching on.
+</p>
+
+<p>
+<quote>
+  "Our experience with ad hoc techniques of data and file transfer over
+  the ARPANET together with a better knowledge of terminal IMP (TIP)
+  capabilities and Datacomputer requirements has indicated to us that
+  the Data Transfer Protocol (DTP) [...] and the File Transfer
+  Protocol (FTP) [...] could undergo revision.  Our effort in
+  implementing DTP and FTP has revealed areas in which the protocols
+  could be simplified without degrading their usefulness."
+  <a href="https://tools.ietf.org/html/rfc310">(source)</a>
+</quote>
+<div class="author">&mdash; A. Bhushan</div></p>
+
+<p>
+  The Internet as we know it today took shape in 1983 when Robert Kahn
+  and Vint Cerf, ARPANET engineers, co-invented the TCP/IP stack which
+  deprecated NCP and provided a new generalized a common interface for
+  multiple computers to address, connect, and transmit information to
+  each other. One key advantage is it only required binding to one
+  duplex port (for sending and receiving), whereas NCP bound to two
+  simplex ports. The IP part of TCP/IP allows each computer to have
+  its own uniquely identifying Internet (Protocol) Address (similar to
+  a street address). Any machines with IP addresses could follow the
+  format of TCP to request and establish a connection with others.
+  When you are downloading a linux distribution using bittorrent, you
+  are using the Internet and taking advantage of the TCP/IP stack but
+  you are not using the web (unless you found the torrent magnet link
+  via a website). IRC protocol and AOL Instant Messenger (AIM)'s TOC2
+  would have been two other examples of services which required
+  Internet access and TCP/IP connections but operated independently of
+  the web.
+</p>
+
+<div class="img">
+<img src="https://scontent-sjc3-1.xx.fbcdn.net/v/t31.0-8/16722741_10102868297894890_392650779598056506_o.jpg?_nc_cat=0&oh=35c25410ea92d2110e67086f1d06d4bc&oe=5BFC796F">
+<p>Me and Vint Cerf at Internet Archive's Innagural Decentralized Web Summit in 2016</p>
+</div>
+
+<p> By the late 80s, the groundwork -- i.e. many of the protocols we
+  still use today -- was in place, but the Internet was being used in
+  one of two ways. First, computers were connecting directly to each
+  other to transfer files from the command line and second, groups
+  were creating an array of bespoke protocols on top of TCP/IP to
+  enable specific uses cases like mail and chat (IRC). So what was
+  missing?
+</p>
+
+<p>
+  For one, in the spirit of mailing, there wasn't a good way to make
+  your messages public to everyone. Sharing was really hard. Tim
+  Berners-Lee envisioned an ecosystem which enabled, "automatic
+  information-sharing between scientists in universities and
+  institutes". With FTP you were very limited in what you could show
+  other users -- they could essentially only download or upload raw
+  files, not seamlessly navigate documents.
+</p>
+
+<p>
+  The web was conceived in much the same way as mail was at
+  MIT. <a href="http://www.nethistory.info/History%20of%20the%20Internet/web.html">Ted
+  Nelson originally demo'd hyperlinks as a way for jumping and
+  navigating documents</a> locally in his Xanadu system, even though
+  his bigger picture was to allow hyperlinking across computers.
+</p>
+
+<p>In December 1990, Tim Berners-Lee created a new type of service
+  which would make the idea of the web mainstream by releasing the
+  first HTTP
+  server: <a href="https://en.wikipedia.org/w/index.php?title=CERN_httpd&oldid=841562980">CERN
+  httpd</a>. The idea was, anyone in the world could install an HTTP
+  server on their computer and, so long as the server was running, it
+  would become part of a global network of documents which could be
+  accessed by a new type of address called a URL. Shortly after in
+  1993, special document viewers called web browsers were born which
+  were able to any person's published documents who was running and
+  http server. This was only possible because many people were running
+  the same software and all the machines were speaking a common
+  language which these web browsers were programmed to speak.
+</p>
+
+<h2>Evolution of the Web</h2>
+<p>
+  This isn't the first time the Web has sought to evolve. We've seen an
+  important drive every 7 or so years. In 1999 there was an effort
+  labeled <a href="https://en.wikipedia.org/wiki/Web_2.0">Web2.0 "The
+  Participative / Social Web"</a> which was a drive to make the Web
+  more social and to empower participation. During this period,
+  websites started to become much more dynamic with the use of
+  javascript. Social networks emerged where conversations and
+  commenting became mainstream online.
+</p>
+
+<p>
+  In 2006, we launched
+  into <a href="https://en.wikipedia.org/wiki/Semantic_Web#Web_3.0">Web3.0
+  "The Semantic Web"</a>, an effort which urged website creators to
+  enrich/annotate their website content with additional semantic
+  metadata to make it more searchable and discoverable. The inclusion
+  of this metadata is part of what allows google and other search
+  engines to show smart results when you type in a query like, "best
+  movies in 2018".
+</p>
+
+<div class="img">
+  <img src="/static/imgs/google-now.png">
+  <p>A search for "best movies for 2018" in google returns smart,
+  zero-click, Google Now results powered by their knowledge graph</p>
+</div>
+
+<p>
+  Between 2011 and now we've seen a variety of important technologies
+  emerge. Javascript build systems and transpilers, React and Angular,
+  single-page-webapps, progressive web apps, polyfills and web
+  components, flex &amp; grid. But more than anything, what we've seen
+  is concentration of power. Google acquired youtube in 2006. Verizon
+  acquired Yahoo and AOL. Facebook owns instagram and
+  whatsapp. Microsoft now owns linkedin, yammer, github, and skype and
+  also has a 11.5% stake in Comcast and 3% of AT&amp;T. During this
+  period <a href="https://en.wikipedia.org/wiki/Websites_blocked_in_mainland_China">google,
+  facebook, youtube, twitter, instagram, pinterest, nytimes,
+  soundcloud, dropbox, archive.org have all experienced blockages from
+  China</a>. In 2017, the United States Federal Communications
+  Commission (FCC) passed a vote
+  on <a href="https://www.supremecourt.gov/docket/docketfiles/html/public/17-108.html">Docket
+  17-108</a> to roll back the Open Internet Order of 2015 which makes
+  it so US Internet Service Providers (ISPs) can offer preferencial
+  treatment (e.g. fast-lines) to the competing web services they own
+  and manage. And the web has become rampant with companies who use
+  supercomputers to play
+  "<a href="http://fortune.com/2018/03/20/tech-humane-tristan-harris/">chess
+  with your mind</a>" and inundate our attention with
+  advertisements. In one sentence, the world wide web is starting to
+  look a lot like cable tv and engineers and activists alike are
+  beginning to look towards changes which may require a fundamental
+  paradigm shift in how the web works.
+</p>
+
+<h2>Healthy Reservations about Decentralization</h2>
+<p>In a few important ways, I’m a cynic of <a href="https://www.facebook.com/jackson.kernion/posts/10156426135140132?comment_id=10156427374760132&reply_comment_id=10156427417855132&comment_tracking=%7B%22tn%22%3A%22R5%22%7D">decentralization</a> and <a href="https://michaelkarpeles.com/essays/politics/software-protocols-are-modern-warfare">technology as a silver bullet</a>. And I think this is a healthy perspective because we’re still in the early days. That doesn’t mean I don’t think it will succeed, or that it shouldn’t succeed. Only that I see efforts like cryptocurrency as the rollercoasters they are — there’s billions of dollars out there and plenty of incentive for capitalists to collude to game the system, numerous ways governments can impose unsavory regulations, security vulnerabilities which have yet to be discovered, and issues around scaling and efficiency which still need to be revealed and addressed. And when these efforts go wrong, or groups which are highly organized and funded step in to undermine a new effort, it can <a href="https://www.facebook.com/jackson.kernion/posts/10156426135140132?comment_id=10156427320445132&comment_tracking=%7B%22tn%22%3A%22R2%22%7D">cause a lot of damage</a>.
+</p>
+
+<p>
+I think we're still missing an critical component to adoption, defensibility, and sustainability, and that's education. Many of these systems are being designed in myopic bubbles and are rapidly being presented to people who don't understand the consequences of the technology. My personal philosophy is to not invest in things I don’t understand well, and not to invest more than I can afford to lose and I feel like perhaps too many people are shooting for the moon with bitcoin and other coins. And maybe they’ll win the bet, but it’s strange to think major financial infrastructure is being built over top of these bets. Without education, there's also the issue of hype. Investory dump money into anything with the name blockchain, AI, or crypto-currency because their top priority is investing in a technology which has the potential to spread massively, like a virus. And I think this type of strategy undermines a lot of legitimate efforts and risks creating things which are indeed a lot like viruses.</p>
+
+<p>I don’t want to be too cynical — hopefully just the right amount of cynical. And right now I think we’re still in a proving and experimenting phase, of what stands to be a really important transition for the world, if done right.</p>
+
+<p>Can I share a short story?</p>
+
+<h3>Stripe</h3>
+
+<p>I remember when John Collison first showed me Stripe.com at the Noisebridge hackerspace in San Francisco.</p>
+
+<p>He was able initiate a payment on my credit card using an http curl. I think this woke me up to the idea that in an ideal world, payments could be done instantly using APIs and maybe didn’t require huge amount of middleware. I also so how much fraud Stripe had to deal with, and PayPal as well — that’s a huge part of the value they add. And so I get the feeling special protocols, or otherwise centralized trust institutions, will still be necessary in the future of the decentralized web.</p>
+
+<p>In short, there will always be risks, and we would do well to <a href="https://michaelkarpeles.com/essays/philosophy/curbing-your-enthusiasm">Curb our Enthusiasm</a>. But we should also <a href="https://michaelkarpeles.com/essays/philosophy/incompleteness-theorem#dweb">keep trying</a>.
+
+
+<!--
+<h2>What's wrong with the web?</h2>
+todo
+
+<h2>Unsolved Problems</h2>
+In 2015 I attended iannotate and met Laura Paglione from ORCID. We entertained a group discussion about the pros and cons of anonymity and pseudonymity
+-->
+
+<h2>Centralization, Decentralization & Re-Centralization- Breaking the Cycle</h2>
+<p>
+This title was retroactively taken from <a href="https://decentralizedwebsummit2018.sched.com/event/FfPC/roundtable-centralization-decentralization-re-centralization-breaking-the-cycle">Cory Doctrow</a>'s Decentralized Web Summit 2018 round table.</p>
+
+<p>
+A strange thing about the web is, in many ways it's always been a decentralized system.
+Organizations like Google and Facebook have actually had a heck of a time centralizing it.
+</p>
 
 <pre>
-A little-spoken about problem of life is, the world is already quite a
-decentralized system. Surprisingly, we haven't figured out how to
-centralize it. I don't mean decentralization as to cite the big "E"
-Economy, or politics/voting, or propagation of news (though these are
-all symptomatic examples / offshoots of the underlying problem). I
-mean fundamentally that...
-
 We have 3B+ people[1] with internet access, each with their own brain,
 each thinking of ideas separately, taking notes separately, sometimes
 even across several different programs (google docs, evernote,
@@ -99,3 +378,4 @@ EDIT (adding citations):
 [1] http://www.statista.com/…/number-of-internet-users-worldwi…/ 
 [2] http://quantifiedself.com/2009/09/the-social-memex/
 </pre>
+</article>
