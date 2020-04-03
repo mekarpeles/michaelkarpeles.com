@@ -227,6 +227,7 @@ cite {
 
 cite:hover {
     cursor: pointer;
+    text-decoration: underline;
 }
 
 

@@ -23,6 +23,7 @@ urls = (
     '/genealogy', views.Verbatim,
     '/posts/<path:slug>', views.Posts,
     '/posts', views.Posts,
+    '/edit/<path:slug>', views.Edit,
     '/edit', views.Edit,
     '/<path:resource>', views.Section,
     '/<path:uri>', views.Section,

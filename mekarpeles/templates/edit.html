@@ -127,6 +127,17 @@
 
 <script type="text/javascript">
 $(document).ready(function() {
+  function findGetParameter(parameterName) {
+    var result = null,
+        tmp = [];
+    var items = location.search.substr(1).split("&");
+    for (var index = 0; index < items.length; index++) {
+        tmp = items[index].split("=");
+        if (tmp[0] === parameterName) result = decodeURIComponent(tmp[1]);
+    }
+    return result;
+  }
+
   var sel, range;
   var MAGIC_KEY = '@';
   var ENTER_KEY = 13;
@@ -136,6 +147,7 @@ $(document).ready(function() {
   var startPos = -1;
   var currentPos = -1;
   var context = null;
+  var apiurl = 'https://graph.global/v1'
 
   // avoid Chrome span spamming bug
   // https://stackoverflow.com/a/37635348/837575
@@ -162,6 +174,12 @@ $(document).ready(function() {
     return p
   }
 
+  // remove graph markup
+  function rmW2g(p) {
+    p = p.replace(/\[{2}([0-9]+)\:([^\]]+)\]{2}/g, '$2');
+    return p
+  }
+
   var renderGraphdown = function() {
     $('summary').empty();
     $('summary').html(
@@ -177,21 +195,56 @@ $(document).ready(function() {
       title: $("article h2").text(),
       post: $("article section").html().replace(/\u00a0/g, " ")
     }
-    // lol there's no validation/checking for if slug exists #yolo
+
     if (data.slug && data.title) {
-      requests.post("https://graph.global/v1/posts", data, function(resp) {
-        // create w2g entities for posts (somehow, tbd)
-        // Entity.create(..., function(data) {  // 1731 is a post
-          console.log(resp);
-          document.location.href = '/posts/' + data.slug;
-        // });
+
+      // see if post with slug exists
+      url = apiurl + '/posts?action=search&limit=1&verbose=1&field=slug&query=' + data.slug;
+      requests.get(url, function(p) {
+        if (p && p.error) {
+          console.log('post?');
+          console.log(p);
+          return;
+        } else if (p && p.posts && p.posts.length) {
+          // if a post exists, update the post
+          requests.post("https://graph.global/v1/posts", data, function(resp) {
+            console.log(resp);
+            document.location.href = '/posts/' + data.slug;
+          });
+        } else {
+          // otherwise search to see if the w2g tag exists
+          Entity.search(rmW2g(data.title), function(es) {
+            if (es && es.error) {
+              console.log('entity?');
+              console.log(es.error);
+              return
+            } else if (es && es.entities.length) {
+              data.entity_id = es.entities[0].id;
+                // create post
+                requests.post("https://graph.global/v1/posts", data, function(resp) {
+                  console.log(resp);
+                 document.location.href = '/posts/' + data.slug;
+                });
+            } else {
+              // create representative w2g entity for post
+              Entity.create({name: rmW2g(data.title)}, function(tag) {
+                data.entity_id = tag.id;
+                // create post
+                requests.post("https://graph.global/v1/posts", data, function(resp) {
+                  console.log(resp);
+                 document.location.href = '/posts/' + data.slug;
+                });
+              });
+            }
+          });
+        }
       });
     } else {
       alert('Title and slug required');
     }
   });
 
-  $(document).keydown(function(e) {   
+  var selectTags = function(e) {   
     // TagMode: Select or Navigate Entities
     if (startPos > -1 && [ENTER_KEY, UP_KEY, DOWN_KEY].includes(e.which)) {
       e.preventDefault();
@@ -213,9 +266,9 @@ $(document).ready(function() {
 //        insertDiv();
       }{
     }
-  });
+  };
 
-  $(document).keyup(function(e) {
+  var repaint = function(e) {
     context = document.activeElement;
 
     // Detect TagMode
@@ -252,7 +305,7 @@ $(document).ready(function() {
       }
     }
     renderGraphdown();
-  });
+  };
 
   function insertTextAtCursor(text) {
     if (window.getSelection) {
@@ -315,7 +368,6 @@ $(document).ready(function() {
     }
   }
 
-
   const getTextSelection = function (editor) {
     const selection = window.getSelection();
 
@@ -377,16 +429,19 @@ $(document).ready(function() {
   }
 
   document.addEventListener('selectionchange', handleSelectionChange);
+  $(document).keydown(selectTags);
+  $(document).keyup(repaint);
+  renderGraphdown();
 
 });
 </script>
 
-<p class="container-filename">https://mek.fyi/posts/<span contenteditable="true" class="slug"></span></p>
+<p class="container-filename">https://mek.fyi/posts/<span contenteditable="true" class="slug">{{slug}}</span></p>
 
 <div class="editor">
   <article class="container">
-    <h2 contenteditable="true" class="container-title">Title</h2>
-    <section contenteditable="true" class="container-body post-body"></section>
+    <h2 contenteditable="true" class="container-title" placeholder='Title'>{{post and post.title or ''}}</h2>
+  <section contenteditable="true" class="container-body post-body">{{post and post.post or ''}}</section>
     <button class="publish">Post</button>
   </article>
   <aside id="entities" class="container">
