@@ -43,9 +43,17 @@ def rest_api(f):
     return inner
 
 
+class Happy(MethodView):
+    def get(self):
+        return Posts().get(slug='happy')
+
+class Learning(MethodView):
+    def get(self):
+        return Posts().get(slug='learning')
+
 def get_post(slug):
     url = "https://graph.global/v1/posts?action=search&field=slug&query=%s&exact=true&limit=1&verbose=1"
-    posts = requests.get(url % slug).json()
+    posts = requests.get(url % slug, verify=False).json()
     if posts['posts']:
         return posts['posts'][0]
 
@@ -53,9 +61,9 @@ def get_post(slug):
 class Posts(MethodView):
     def get(self, slug=None):
         if not slug:
-            return jsonify(requests.get('https://graph.global/v1/posts').json())
+            return jsonify(requests.get('https://graph.global/v1/posts', verify=False).json())
         url = "https://graph.global/v1/posts?action=search&field=slug&query=%s&exact=true&limit=1&verbose=1"
-        results = requests.get(url % slug).json()
+        results = requests.get(url % slug, verify=False).json()
 
         def tagify(text):
             return Markup(
@@ -145,3 +153,18 @@ class QSApi(MethodView):
         gid = "oauobz3"
         url = "%s/%s/%s/public/values?alt=json" % (uri, sid, gid)
         return jsonify(requests.get(url).json())
+
+class QS(MethodView):
+
+    def get(self):
+        return redirect('https://docs.google.com/spreadsheets/d/1k-zl-Ya4OAU7Lp8DsPGy7mSJVCeXSPqK673Wiq8ndt8')
+
+class ASD(MethodView):
+
+    def get(self, year="2020"):        
+        return redirect('https://tinyurl.com/mek-asd-' + year)
+
+class HOPE(MethodView):
+
+    def get(self):
+        return redirect('https://docs.google.com/presentation/d/e/2PACX-1vTrSo8hSwXq8f7lVwrbo6i7bAd2pF3Be1k8RrJYDIb8hCmmYHTTPNbOMdAAbf7XkF2_NPFTA3KSaK4X/pub?start=false')

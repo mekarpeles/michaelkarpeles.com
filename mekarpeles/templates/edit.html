@@ -8,7 +8,12 @@
   }
 
   #entities {
+    position: sticky;
     width: 400px;
+    left: 750px;
+    height: 500px;
+    top: 10px;
+    overflow-y: scroll;
   }
 
   .overlay {
@@ -437,6 +442,7 @@ $(document).ready(function() {
 </script>
 
 <p class="container-filename">https://mek.fyi/posts/<span contenteditable="true" class="slug">{{slug}}</span></p>
+<div style="display: flex;">
 
 <div class="editor">
   <article class="container">
@@ -444,12 +450,12 @@ $(document).ready(function() {
   <section contenteditable="true" class="container-body post-body">{{post and post.post or ''}}</section>
     <button class="publish">Post</button>
   </article>
-  <aside id="entities" class="container">
-    <h2 class="container-title">Knowledge Graph</h2>
-    <ul></ul>
-  </aside>
 </div>
-
 <summary class="container container-body"></summary>
+<aside id="entities" class="container">
+  <h2 class="container-title">Knowledge Graph</h2>
+  <ul></ul>
+  <button class="publish">Save</button>
+</aside>
 
-
+</div>

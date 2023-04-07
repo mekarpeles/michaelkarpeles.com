@@ -9,4 +9,3 @@ $( document ).ready(function() {
   $('#today h1').text(new Date().toJSON().slice(0,10));
 });
 
-

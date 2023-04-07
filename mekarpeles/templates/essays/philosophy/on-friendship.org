@@ -124,7 +124,7 @@ conversations, and great recommendations + resources.
     slowly but surely.
 
     [1] http://pantheon.media.mit.edu/…/HU/…/-4000/2010/H15/pantheon
-    [2] http://michaelkarpeles.com/math.html
+    [2] https://math.mx
 
 *** Start With Your Peculiarities
 It's important to understand your own pecuiliaries. I have a

@@ -1,6 +1,12 @@
 <!doctype html>
 <html class="no-js" lang="">
     <head>
+        <script type="text/javascript">
+          var age = function() {
+          return Math.floor((new Date() - new Date('1988-07-31').getTime()) / 3.15576e+10);
+          }
+        </script>
+
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>mek.fyi | {{ titler() }}</title>
@@ -9,6 +15,9 @@
         <link rel="stylesheet" type="text/css" href="/static/styles/style.css"/>
         <link rel="icon" type="image/png" href="/static/imgs/favicon.ico"/>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
+
+        <meta property="og:title" content="{{ titler() }}" />
+        <meta name="twitter:title" content="{{ titler() }}" />
     </head>
     <body>
         <!--[if lt IE 8]>

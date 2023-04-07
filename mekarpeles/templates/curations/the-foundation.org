@@ -1,5 +1,6 @@
 Rebooting Society from Ground Up
 * The Foundation
+
 As human beings, our capabilities are limited by three factors: access
 to or possession of resources, information describing these resources,
 and the intelligence or mental faculties to use together these
@@ -17,21 +18,33 @@ instructions, information, and resources for implementing from
 raw/naturally found materials the most significant technical
 achievements of humanity.
 
+** Goal
+
+The ultimate goal of this project is to create a type of dynamic
+community wiki where people can publish and interactively link
+together modular recipes for creating foundational technologies. For
+instance, once a module exists which recursively, axiomatically
+defines a flow for building an electric generator, one could mark this
+as a dependency (a requirement) for, for instance, a toaster. i.e. an
+interactive and composable version of appropedia.org
+
 ** Inspiration
 This concept is loosely based on:
 1. [[https://en.wikipedia.org/wiki/Foundation_series][The Foundation Series]], a science fiction series by Isaac Asimov.
 2. [[https://www.youtube.com/watch?v=kS25vitrZ6g][Dr. Richard Feynman's talk on Electricity]]
 3. [[http://www.ted.com/talks/thomas_thwaites_how_i_built_a_toaster_from_scratch][Thomas Thwaites: "How I built a toaster — from scratch"]] (TEDSalon London 2010)
-5. [[http://opensourceecology.org/][Open Source Blueprints for Civilization]]
-6. [[https://class.coursera.org/nand2tetris1-001][From NAND to Tetris]] (Coursera)
-7. Tesla, Mendeleyeev, Voltaire, Maxwell, Farday, and others
+4. [[http://opensourceecology.org/][Open Source Blueprints for Civilization]]
+5. [[https://class.coursera.org/nand2tetris1-001][From NAND to Tetris]] (Coursera)
+6. [[http://opensourceecology.org][Open Source Blueprints]]
+7. [[http://web.archive.org/web/20200422062047/https://recursiverecipes.schollz.com/recipe/pancakes?amount=8&timelimit=1&ingredientsToBuild=pancakes,egg,egg%20laying%20chicken,baby%20chicken,water,chicken%20feed,buttermilk,cow%20milk,cow,sugar,flour,wheat%20berries,soil,salt,seawater,butter][Recursive Recipes (recursive.recipes)]]
+8. Tesla, Mendeleyeev, Voltaire, Maxwell, Farday, and others
 
 #+begin_quote "I saw in a dream a table where all the elements fell into place as required. Awakening, I immediately wrote it down on a piece of paper. Only in one place did a correction later seem necessary" -- <cite wd="Q9106">[[https://en.wikipedia.org/wiki/Dmitri_Mendeleev][Dmitri Mendeleev]]</cite>
-
 
 ** Catastrophe
 How likely is a catastrophic event?
 http://global-catastrophic-risks.com/docs/global-catastrophic-risks.pdf
+
 
 ** Applications
 Sustainable Energy: http://withouthotair.com/ (download at: http://withouthotair.com/download.html)
@@ -40,9 +53,15 @@ Sustainable Energy: http://withouthotair.com/ (download at: http://withouthotair
 This section is an attempt to document the process by which this
 research experiment was conducted.
 
+** How to Create a Primitice Dynamo Electric Generator (fromscrat.ch)
+
+** Explanations
+https://www.youtube.com/watch?v=NqdOyxJZj0U
+
+
 
 ** Index of Raw Materials
-As an aside, here's a neat map of the [[http://www.vanderkrogt.net/elements/][etymology of the elements]].
+As an aside, here's a neat map of the [[http://web.archive.org/web/20200210040958/https://elements.vanderkrogt.net/index.php][etymology of the elements]]
 
 |-------------+---------------------------------------+------------------------------------------------------------------+----------------------------------------|
 | Wikidata ID | Material                              | Recipes / Processes                                              | Requires                               |
@@ -291,6 +310,13 @@ https://www.youtube.com/watch?v=8uHc4Hirexc
 
 
 
+*** DONE Collect Water (Water Wheel)
+- elevates and collects water (irrigation)
+- turns hydropower into grinding, hammering, or electric power
+https://www.youtube.com/watch?v=ahlf-1MF8zo
+Applications:
+- grinding flour
+
 ** TODO
 
 *** [[https://en.wikipedia.org/wiki/Dynamo][Dynamo]] {Electric Generator} "Q131502"
@@ -435,5 +461,9 @@ Zinc is useful for galvenizing or electroplating iron, a process by
 which iron or other metals may be treated to prevent rusting.
 
 1. [[https://en.wikipedia.org/wiki/List_of_countries_by_zinc_production][Locating Zinc Ore]].
+
+
+
+
 
 
