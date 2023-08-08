@@ -1,0 +1,49 @@
+<style type="text/css">
+main {
+ width: 100%;
+}
+
+@media only screen and (max-width: 800px) {
+  main {
+    width: 80%;    
+  }
+  main iframe {
+    height: 500px;
+  }
+}
+main iframe {
+  max-width: unset;
+}
+</style>
+
+<h1>One Month Since We Met</h1>
+<p>May 14, 2023</p>
+<iframe width="100%" height="100%" frameborder="0" style="overflow:hidden;width:100%;" frameborder="0" src="https://crosswordlabs.com/embed/a-month-since-we-met?clue_height=50"></iframe>
+
+<script type="text/javascript">
+var open = 1;
+var really = " ";
+setInterval(function() {
+if (open) {
+do {
+  var password = prompt("guess what, i" + really + "like you").toLowerCase();
+  if (password === "fine") {
+    // Password is correct, allow the user to proceed
+    alert("Access granted! You can proceed.");
+    open = 0;
+  } else {
+    if (password.includes("stop")) {
+      alert("I can't stop, I find myself liking you even more now.");
+    } else if (password === "ok" || password === "") {
+      alert("Is it okay? I'm not sure it's okay because I find myself liking you even more now.");
+    } else if (password === "thank you" || password === "thanks" || password === "thanks?") {
+      alert("Your kindness warms my heart, now I find myself liking you even more.");
+    } else {
+      alert("Incorrect password, I think I like you more now.");
+    }
+    really = really + "really really ";
+  }
+} while (open);
+}
+}, 1000);
+</script>
