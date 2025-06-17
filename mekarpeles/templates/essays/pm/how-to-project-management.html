@@ -1,0 +1,88 @@
+<h2>HOWTO: Project Management</h2>
+
+<p>Back in 2019, <a href="https://www.facebook.com/michael.karpeles/posts/pfbid02K66esSYqX1e5QH1dMdYc7viB3T8SLFxLjdKMXs1YNXD453pXFG3VEnypobA8bWtgl">I posted on facebook asking project manager friends to share their tips and to document my own raw thoughts.</p>
+
+<p>In 2024, my friend Alicia Liu posed <a href="https://www.facebook.com/share/p/1E7ZvoHs5j/">a similar question</a> and I thought I'd take the opportunity to organize some of my thoughts on the topic.</p>
+
+<quote>[...] what high quality resources (books and courses) would you recommend to someone who is learning how to be a manager and lead a team for the first time? This is in a startup environment with a lot of moving pieces.
+I am looking for something comprehensive and structured, specifically a book or a course, rather than an executive coach or a consultant. Something you have a Strong Yes to recommend to someone whose time is limited.</quote>
+
+<p>For those looking to lead teams and manage projects, I think there are a few aspects that are important to internalize, each which can be picked up through different books.</p>
+
+<h3>1. Create a mental map: Understand the space and risks/costs up front</h3>
+
+<p>
+The first thing one does when diving into a new territory is look for (or create) a map and identify safe and treacherous trails. What is hard or unique about the specific industry or project you're solving? What makes it different than other projects you've worked on? What are the implications of these differences and which need to be addressed or mitigated? Are there large/expensive upfront material costs? Does the field have a lot of regulation? Are there formalities that exist industry-wide re: communications? Is there a lot of variable lag time in shipping, distribution, or fabrication?</pre>
+
+<p>Spanning each of these cases, I think there are two important factors (a) the very real cost of "integration" (being a central factor managers discount as well as a leading reason projects fail) and (b) the idea of front-loading risk assessment to the beginning of a project when it's cheapest.</p>
+
+<p>re: integration costs, I think specific sections of <a href="https://openlibrary.org/works/OL8396705W/The_Secret_of_Apollo">The Secret of Apollo</a> was effective at chronicling how integration costs have tanked projects and is probably enough to encourage one to read a book like Brad Rubenstein's <a href="https://openlibrary.org/works/OL19085349W/Risk_up_front?edition=key%3A/books/OL26750361M">Risk Up Front</a> (disclaimer, Brad is a mentor of mine on Open Library. The book is a handful of worksheets that I think are great for getting your mind spinning re: the type of process you might want).</p>
+
+<p>Which leads me to point 2...</p>
+
+
+<h3>2. Not one size fits all: Realize project management is unique per project</h3>
+
+<p>Many projects, problems, or teams will have similar characteristics. Many project management principles may thus apply across projects or share similar templates. Still, it's important to understand how projects are different, what challenges your project faces, and what is desired in a solution.</p>
+
+<p>The one piece of advice I've gotten from project managers I respect is that "every project is different" and trying to take a toolkit from another project risks putting a lot of guard rails in place that may slow things down and not address the key problems actually inherent to the problem you're solving.</p>
+
+<p>Some tooling (in theory) is ubiquitously useful (e.g. a bug tracker) across many projects, but it's useful to let the circumstances of the team and the industry drive how you use tools like these, or to determine which tools are useful. You should know what problem you're trying to solve (by using a tracker) and evaluate which tool will help you best solve that problem.</p>
+
+<p>For Open Library, we not only needed a bug tracker, we needed a place where community could come together and discuss. We needed a place where outsiders could ask questions. We needed something specific to software management workflow. One of our key challenges is there's very little idea of "what we *should* build" and so we need our tooling to consider this and give us some way to reach consensus.</p>
+
+<p>Another project may have a very clear solution (like following a model to build a rocket) but may require assistive tooling to ensure precision of each component on or understand the team's status / state within a build (e.g. "where are we in the process", "what parts are failing", "what percent accuracy have we achieved" in a 6-sigma sense).</p>
+
+<p>Other projects may be very complex, have a dependency graph or order, and success means using some sort of technology to understand which tasks can be parallelized, what needs to be done first, what tasks have deadlines that may block other tasks. Gantt charts might be the solution here. Open Library doesn't have the bandwidth for this level of breakdown and our team is so small that we instead rely on project leads maintaining fuzzy, ad-hoc breakdown documents to capture the most important details for each sub-project (a single project management templates doesn't even reliably work across team members / sub-projects for us, so we allow flexibility and have decided that each team lead can manage the project how they want, so long as their process is able to answer some core questions about e.g. the (a) reason / impetus  for the project, (b) the proposed solution, (c) the risks, mitigations, and open questions, (d) the scope / breakdown / phasing, (e) tech details about implementation, approach, (f) how we know if we'll be successful, and then (g) tooling, check-in processes, and rituals to track progress, identify and address blockers, and to allow for adjustments.</p>
+
+<p>Projects, teams, and problems can be very different across industries, which leads me to point 3</p>
+
+<h3>3. Project management is as much about <i>figuring out</i> the recipe as cooking it</h3>
+
+<p>My feeling is that many people, including myself, don't know what we're doing [especially at first]; we try to use heuristics and "try things" and the more we do, the more we're able to identify the components of a unique toolkit that works for a *specific* problem. Some project managers are lucky to join a team that already has rapport and or tooling and processes in place and a primary challenge is hitting the ground running, making it their own, and bringing experiences to add to the conversation of what is working well, may need changes, or is missing.</p>
+
+<p>In some cases, where a project is starting from zero (e.g. https://openlibrary.org/books/OL25648567M/Zero_to_One), a project lead or manager isn't expected to have the answer, their value is being able to hypothesize a solution and discover increasingly better answers to these types of questions over time (and/or identifying the right gaps to fill with the right staff expertise).</p>
+
+<p>Considering the first case, where a project manager is jumping in to an existing project, it reasons that it is also valuable to document; to understand what works about your process and tools and codifying it over time is a great way to either encourage adoption (by others who find it useful) or challenge (where/when there's an opportunity to improve it).</p>
+
+<p>Open Library uses github to track issues and as scaffolding for our community-oriented open source software pipeline. We benefit from the fact that a lot of software projects have similar needs (continuous integration workflows to see when our tests fail, an issue tracker, a review process, a wiki for documentation, etc). Each year, I know the community will want to participate in planning together, because they have their own ideas of what the project needs, and the project's yearly roadmap benefits from a certain degree of discussion. Different contributors have different reasons for contributing and different availability. So we've learned we need to build some sort of volunteer form, e.g. https://openlibrary.org/volunteer</p>
+
+<p>I gave a presentation specifically on the "community" aspect of project management (why to work with communities and be open source, how to find volunteers, understanding their reasons, how to create the right rituals, how to give back) which calls upon several insights from Nadia Asparouhova's <a href="https://www.youtube.com/watch?v=bjAinwgvQqc">talk</a> from her experience as a PM at github: <a href="https://archive.org/details/mek-openlibrary-growing-open-source-community">https://archive.org/details/mek-openlibrary-growing-open-source-community</a>.
+
+<div>
+<iframe width="560" height="315" src="https://archive.org/embed/mek-openlibrary-growing-open-source-community?start=23"></iframe></div>
+
+<p>I've also done my best to document Open Library's project management process, both via this presentation <a href="https://archive.org/details/mek-open-library-planning">Open Library - Planning Crash Course & 2022 Roadmap</a> (<a href="https://docs.google.com/presentation/d/e/2PACX-1vTzsuiSkrH8qNl79rBtMF1NwVg5FYAATx18_9MXZtwN4DlUc2URBeCUR7JpFVdkEhHo1rwEpap5hLcq/pub?start=false&loop=false&delayms=3000">slides</a>) and also <a href="https://github.com/internetarchive/openlibrary/wiki/HOWTO:-Open-Library-Project-Management">this written overview</a>.</p>
+
+<div>
+  <iframe width="560" height="315" src="https://archive.org/embed/mek-open-library-planning?start=40" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+<p>You can have the best tools and processes in place on paper, but if no one is bought in or doesn't have confidence in the direction or leadership
+</p>
+
+<h3>4. Processes and rituals keep teams together</h3>
+<p>The success of a team or project depends on lots of factors, like a team's makeup and culture, incentives, a leader's approach and style, the specifics of the problem they're solving, time zones and communication mediums, people's reasons and styles...</p>
+
+<p>Of the things I can say with some degree of confidence, it's that what can be known/controlled re: the success of teams and projects is the processes and rituals the team/leadership puts in place (even if the recipe and how it's decided may be quite scenario-dependent).</p>
+
+<p>Open Library does weekly staff meetings on Monday, community calls on Tuesdays, and (at request of the community) design calls on Friday. Once a month we plan and update our monthly milestone. At the end of the year we do a board report and plan with the community for the next year. All of our documents and templates from the last ~decade are <a href="https://docs.google.com/document/d/1KJr3A81Gew7nfuyo9PnCLCjNBDs5c7iR4loOGm1Pafs/edit?tab=t.0#heading=h.2pqg6f58xqb3">public here</a>.</p>
+
+<p>In particular, the community calls are our heartbeat and we see people show up year after year. Some people just want community and a place to express opinions, and honestly, having a reliable base of enthusiastic contributors who believe in the project is every bit as important to motivating the project's success as engineering contributions.</p>
+
+<h3>5. Don't stay static: know when to dial back or push</h3>
+<p>
+The landscape of the problem you're solving will change over time, both as you solve certain sub-problems and as you learn more more about the nature, dynamics, and map of the problem you're solving. Trying to force project management or meetings when they're not needed risks leaving a project worse off. Problems are often built of sub-problems. When those sub-problems no longer exist, you might decide that certain processes, tools, or rituals simply aren't effective any more. Knowing when to add or remove process or tools is the difference between a stagnation -- or worse, being on a ship that drifts towards a direction of least resistance -- and realizing the need to push against a current because what is really being pushed against is a problem that needs solving. A ritual doesn't need to be a "weekly" task. There can also be e.g. a a culture around activities or exercises, e.g. "I wish, I like" that gives team members the ability + encouragement to affect project management or raise when something isn't working well, or if there may be a better solution. Create some sort of open mic space and show that this type of feedback is valued... And sometimes it's important to know when this is best done 1-on-1
+</p>
+
+<h3>6. One-on-ones</h3>
+<p>
+People are humans. One can always try to increase one's salary or incentives to encourage performance, but at the end of the day, my experience and lots of research that I recall suggests people perform best when someone takes an effort to understand their reasons, needs, blockers, and do so in a way that also shows them dignity and respect. People are going to be tired, have life-stuff come up, get sick, go through ups and downs, have inter-person conflicts within the team, hit HR issues that need to be heard, and need guidance on their trajectories. Being empathetic, caring, and good with people doesn't make someone a good manager, but I believe it's incredibly hard to be an effective leader if you're only good at solving a math problem and not the most central human challenges that your teammates are experiencing. At least every other week, it's important that to make time for teammates to be able to discuss either with each other or with you. I find things have gone most of the rails on my projects when I've gone more than two weeks without a human check-in.
+</p>
+
+<h3>Conclusion</h3>
+<p>This isn't meant to be an authoritative or comprehensive guide; just an attempt at sharing experiences to be helpful or generate productive discussion as no doubt others will have conflicting experiences that are very likely just as valid in their contexts which I also stand to learn from.</p>
+
+<p>In case context is useful of the last 15 years, I spent about 7 years either founding startups or serving as a tech lead at YC startups. Since, I've spent about 8 years directing a program at a non-profit). I still feel like I'm a pretty ineffective project manager, especially compared to friends who I see who do team and project management really well, naturally, like Elise Liu, Daisy Chu, CR Saikley, et al. And even then, these people who I look up to tend to a very specific part of project or team management really well, such as planning, fund raising, bucketing issues and applying methodology... And as a result, we'll each be better or worse at solving specific type of projects or problems. Recognize where those around you excel and don't be afraid to ask for help. And of course, I advocate for paying it forward and sharing where / when you're able.</p>
+
+<p>You can explore other raw thoughts on the topic of <a href="https://docs.google.com/document/d/1bLFQ47bNRfLRJrgoDnGNg5GZcumqj_JDLDdiqnbrKBE/edit?fbclid=IwY2xjawGr1qdleHRuA2FlbQIxMQABHQ4s8n4s2qfcvNia7XgLvGZgeuYgqc_p2HOx6hDPgO1itWgEgAEALNF9tA_aem_EnM0Qk7mOZ6qYrvW4fZXkA&tab=t.0#heading=h.1864p2r7a6gm">project management here</a>.</p>

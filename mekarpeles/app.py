@@ -26,6 +26,7 @@ urls = (
     '/genealogy', views.Verbatim,
     '/happy', views.Happy,
     '/learning', views.Learning,
+    '/rss', views.RSS,
     '/posts/<path:slug>', views.Posts,
     '/posts', views.Posts,
     '/edit/<path:slug>', views.Edit,

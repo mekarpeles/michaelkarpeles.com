@@ -15,7 +15,7 @@ import re
 import os
 import json
 import requests
-from flask import render_template, Response, redirect, jsonify, request, Markup
+from flask import render_template, Response, redirect, jsonify, request, Markup, make_response
 from flask.views import MethodView
 from werkzeug import wrappers
 from configs import approot
@@ -57,6 +57,65 @@ def get_post(slug):
     if posts['posts']:
         return posts['posts'][0]
 
+
+class RSS(MethodView):
+    def get(self):
+        json_data = requests.get("https://graph.global/v1/posts", verify=False).json()
+        rss_feed = self.convert_to_rss(json_data)
+        response = make_response(rss_feed)
+        response.headers['Content-Type'] = 'application/rss+xml'
+        return response
+
+    @staticmethod
+    def convert_to_rss(json_data):
+        from xml.etree.ElementTree import Element, SubElement, tostring
+        from xml.dom import minidom
+        # Create the root element for the RSS feed
+        rss = Element('rss', attrib={'version': '2.0'})
+        channel = SubElement(rss, 'channel')
+        
+        # Add required channel elements
+        title = SubElement(channel, 'title')
+        title.text = "Mek's Blog"
+
+        link = SubElement(channel, 'link')
+        link.text = 'https://mek.fyi'
+
+        description = SubElement(channel, 'description')
+        description.text = 'Thinking out loudly'
+        #atom_link = SubElement(channel, 'atom:link', attrib={'href': 'https://mek.fyi/rss', 'rel': 'self', 'type': 'application/rss+xml'})
+        # Add item elements for each post
+        for post in json_data['posts']:
+            item = SubElement(channel, 'item')
+
+            item_title = SubElement(item, 'title')
+            item_title.text = post['title']
+        
+            item_link = SubElement(item, 'link')
+            item_link.text = 'https://mek.fyi/posts/%s' % (post["slug"])
+
+            item_description = SubElement(item, 'description')
+            item_description.text = escape_html(post['post'][:100] + "...")
+
+            pub_date = SubElement(item, 'pubDate')
+            pub_date.text = format_pub_date(post['created'])
+
+            # Add GUID element
+            guid = SubElement(item, 'guid', attrib={'isPermaLink': 'false'})
+            guid.text = 'https://mek.fyi/posts/%s' % (post["slug"])  # You can use a unique identifier here
+
+        # Convert the XML tree to a string        
+        rss_feed = minidom.parseString(tostring(rss)).toprettyxml(indent="    ")
+        return rss_feed
+
+def escape_html(text):
+    # Function to escape HTML characters
+    return text.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;").replace('"', "&quot;").replace("'", "&apos;")
+
+def format_pub_date(date_str):
+    from datetime import datetime
+    # Function to format pubDate to RFC-822
+    return datetime.strptime(date_str, "%a, %d %b %Y %H:%M:%S %Z").strftime('%a, %d %b %Y %H:%M:%S %z')
 
 class Posts(MethodView):
     def get(self, slug=None):
