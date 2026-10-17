@@ -4,8 +4,8 @@ After=network.target
 
 [Service]
 Type=simple
-User=www-data
-Group=www-data
+User=mek
+Group=mek
 WorkingDirectory=/srv/michaelkarpeles.com
 ExecStart=/srv/michaelkarpeles.com/.venv/bin/uvicorn mekarpeles.asgi:app --host 127.0.0.1 --port 8090 --workers 2
 Restart=on-failure
