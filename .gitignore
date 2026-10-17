@@ -64,3 +64,9 @@ coverage.xml
 docs/_build/
 
 # PyBuilder
+
+# python venvs
+.venv/
+.venv-test/
+__pycache__/
+*.pyc
