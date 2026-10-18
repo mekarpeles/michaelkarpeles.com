@@ -70,3 +70,4 @@ docs/_build/
 .venv-test/
 __pycache__/
 *.pyc
+.env
